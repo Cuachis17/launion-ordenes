@@ -1,0 +1,119 @@
+#root {
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Make form controls text dark for better contrast */
+input, select, textarea {
+  color: #0f172a; /* Tailwind gray-900 */
+  padding: 0.5rem 1.25rem; /* py-2 px-5 */
+  background-color: #f8fafc; /* very light gray background */
+  border: 1px solid #e6e7eb; /* subtle border to separate from page */
+  border-radius: 0.5rem;
+}
+
+/* More specific selectors to prevent Tailwind or other utilities from overriding form control styles */
+.container input,
+.container select,
+.container textarea,
+.bg-white input,
+.bg-white select,
+.bg-white textarea,
+header input,
+header select,
+header textarea {
+  color: #0f172a; /* Tailwind gray-900 */
+  padding: 0.5rem 1.25rem; /* py-2 px-5 */
+  background-color: #f8fafc; /* very light gray background */
+  border: 1px solid #e6e7eb; /* subtle border to separate from page */
+  border-radius: 0.5rem;
+}
+
+/* Ensure placeholder text stays lighter */
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #6b7280; /* Tailwind gray-500 */
+  opacity: 1;
+}
+
+/* Keep the specific placeholder rule as well */
+.container input::placeholder,
+.container textarea::placeholder,
+.container select::placeholder,
+.bg-white input::placeholder,
+.bg-white textarea::placeholder,
+.bg-white select::placeholder {
+  color: #6b7280; /* Tailwind gray-500 */
+  opacity: 1;
+}
+
+/* When inputs are disabled, keep them readable */
+input:disabled, textarea:disabled, select:disabled {
+  color: #374151; /* Tailwind gray-700 */
+}
+
+/* Ensure disabled still readable */
+.container input:disabled,
+.container textarea:disabled,
+.container select:disabled,
+.bg-white input:disabled,
+.bg-white textarea:disabled,
+.bg-white select:disabled {
+  color: #374151; /* Tailwind gray-700 */
+}
+
+/* Improve focus outline for accessibility */
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid rgba(79,70,229,0.12);
+  outline-offset: 2px;
+}
+
+/* Keep focus outline for accessibility */
+.container input:focus,
+.container textarea:focus,
+.container select:focus,
+.bg-white input:focus,
+.bg-white textarea:focus,
+.bg-white select:focus {
+  outline: 2px solid rgba(79,70,229,0.12);
+  outline-offset: 2px;
+}
+
+/* Give the Razón Social input a 20px bottom margin to match requested spacing */
+#razonSocial {
+  margin-bottom: 20px;
+}
