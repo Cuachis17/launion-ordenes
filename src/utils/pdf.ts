@@ -2,10 +2,11 @@ import { jsPDF } from 'jspdf'
 import unionLogo from '../assets/union.png'
 import type { Order, CompanyInfo } from '../types'
 
-export async function downloadOrderPdf(order: Order, companyInfo: CompanyInfo) {
+export async function downloadOrderPdf(order: Order, companyInfo: CompanyInfo, user?: any) {
   const doc = new jsPDF({ unit: 'pt', format: 'a4' })
   const margin = 40
   const pageWidth = doc.internal.pageSize.getWidth()
+  const apiUrl = import.meta.env.VITE_API_URL
 
   // Helper that renders the remainder of the PDF (starts from VOUCHER)
   function renderBody(startY = 90) {
@@ -142,7 +143,12 @@ export async function downloadOrderPdf(order: Order, companyInfo: CompanyInfo) {
   // Try to load and draw the logo image centered at the top; fall back to centered text if it fails
   const img = new Image()
   img.crossOrigin = 'anonymous'
-  img.src = unionLogo as string
+
+  if (user?.avatar) {
+    img.src = `${apiUrl}/api/users/${user.id}/avatar`
+  } else {
+    img.src = unionLogo as string
+  }
   img.onload = () => {
     // fixed size 64x64 for the logo
     const imgW = 64
@@ -188,5 +194,280 @@ export async function downloadOrderPdf(order: Order, companyInfo: CompanyInfo) {
     }
 
     renderBody(headerBottom)
+  }
+}
+
+import servansLogo from '../assets/servans.png'
+
+export async function downloadOrderPdfFormat2(order: Order, companyInfo: CompanyInfo, user?: any) {
+  const doc = new jsPDF({ unit: 'pt', format: 'a4' })
+  const margin = 40
+  const pageWidth = doc.internal.pageSize.getWidth()
+  const apiUrl = import.meta.env.VITE_API_URL
+
+  // Helper that renders the rest of the PDF
+  // ... (omitting unchanged code inside renderFormat2Body)
+
+  function renderFormat2Body() {
+    // Top dividing line (moved here to render after images)
+    doc.setDrawColor(20, 30, 60)
+    doc.setLineWidth(1.5)
+    doc.line(margin, margin + 55, pageWidth - margin, margin + 55)
+
+    // 2. Title Box
+    const titleY = margin + 70
+    doc.setDrawColor(220, 220, 220)
+    doc.setLineWidth(1)
+    doc.roundedRect(margin, titleY, pageWidth - margin * 2, 30, 4, 4, 'S')
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(10)
+    doc.setTextColor(80, 90, 110)
+    doc.text('VOUCHER DE TRANSPORTACIÓN   |   ORDEN DE SERVICIO   |   BITÁCORA DE SERVICIOS', pageWidth / 2, titleY + 19, { align: 'center' })
+
+    // 3. Razon Social / SICT section
+    const section1Y = titleY + 60
+    doc.setFontSize(9)
+    doc.text('RAZÓN SOCIAL / DIRECCIÓN:', margin, section1Y)
+    doc.text('PERMISO SICT:', pageWidth / 2, section1Y)
+
+    doc.setFont('helvetica', 'bold')
+
+    // Combine razonSocial and direccion if they exist
+    const combinedRazonDireccion = [companyInfo.razonSocial, companyInfo.direccion]
+      .filter(Boolean)
+      .join(' / ') || '—'
+
+    doc.text(combinedRazonDireccion, margin, section1Y + 14)
+    doc.text(companyInfo.sict || '—', pageWidth / 2, section1Y + 14)
+
+    doc.setFont('helvetica', 'normal')
+
+    doc.setLineDashPattern([2, 2], 0)
+    doc.line(margin, section1Y + 20, pageWidth / 2 - 20, section1Y + 20)
+    doc.line(pageWidth / 2, section1Y + 20, pageWidth - margin, section1Y + 20)
+    doc.setLineDashPattern([], 0) // Reset dash
+
+    // 4. Order Meta section
+    const section2Y = section1Y + 50
+
+    // No. Orden
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(9)
+    doc.setTextColor(100, 100, 100)
+    doc.text('NO. ORDEN', margin, section2Y)
+
+    doc.setFontSize(14)
+    doc.setTextColor(220, 50, 50) // Red order number
+    doc.text(order.id.toUpperCase(), margin, section2Y + 15)
+
+    // Generado
+    doc.setFontSize(9)
+    doc.setTextColor(100, 100, 100)
+    doc.text('GENERADO', margin + 140, section2Y)
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(11)
+    doc.setTextColor(30, 30, 30)
+    doc.text(order.generatedAt, margin + 140, section2Y + 15)
+
+    // Título de reserva (Agencia)
+    doc.setFontSize(9)
+    doc.setTextColor(100, 100, 100)
+    doc.text('TÍTULO DE RESERVA', margin + 280, section2Y)
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(11)
+    doc.setTextColor(30, 30, 30)
+    doc.text(order.agency || '—', margin + 280, section2Y + 15)
+
+    // 5. Main Service Box
+    const serviceBoxY = section2Y + 40
+    doc.setDrawColor(220, 220, 220)
+    doc.setFillColor(252, 252, 252)
+    doc.roundedRect(margin, serviceBoxY, pageWidth - margin * 2, 90, 6, 6, 'FD')
+
+    const col1X = margin + 15
+    const col2X = margin + 150
+    const col3X = margin + 280
+    const col4X = margin + 410
+
+    const row1TitleY = serviceBoxY + 20
+    const row1ValueY = serviceBoxY + 36
+    const row2TitleY = serviceBoxY + 60
+    const row2ValueY = serviceBoxY + 76
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(8)
+    doc.setTextColor(120, 120, 120)
+
+    // Row 1 Titles
+    doc.text('PROVEEDOR', col1X, row1TitleY)
+    doc.text('SERVICIO', col2X, row1TitleY)
+    doc.text('FECHA', col3X, row1TitleY)
+    doc.text('HORA', col4X, row1TitleY)
+
+    // Row 2 Titles
+    doc.text('PASAJEROS', col1X, row2TitleY)
+    doc.text('VUELO', col2X, row2TitleY)
+    doc.text('HOTEL', col3X, row2TitleY)
+    doc.text('HABITACIÓN', col4X, row2TitleY)
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(11)
+    doc.setTextColor(40, 40, 40)
+
+    // Row 1 Values
+    doc.text(order.provider || '—', col1X, row1ValueY)
+    doc.text(order.service || '—', col2X, row1ValueY)
+    doc.text(order.date || '—', col3X, row1ValueY)
+    doc.text(order.time || '—', col4X, row1ValueY)
+
+    // Row 2 Values
+    doc.setFont('helvetica', 'normal') // making these slightly lighter like the image
+    doc.text(String(order.passengers || 0), col1X, row2ValueY)
+    doc.text(order.flight || '—', col2X, row2ValueY)
+    doc.text(order.hotel || '—', col3X, row2ValueY)
+    doc.text(order.room || '—', col4X, row2ValueY)
+
+    // 6. Notes Box
+    const notesBoxY = serviceBoxY + 110
+    doc.setDrawColor(240, 230, 190)
+    doc.setFillColor(255, 253, 240) // Light yellow
+    doc.roundedRect(margin, notesBoxY, pageWidth - margin * 2, 110, 6, 6, 'FD')
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(11)
+    doc.setTextColor(110, 60, 10) // Brownish
+    doc.text('NOTAS IMPORTANTES', margin + 25, notesBoxY + 25)
+
+    doc.setFont('helvetica', 'normal')
+    doc.setFontSize(9)
+    doc.setTextColor(60, 60, 60)
+
+    const defaultNotes = '• Salidas: llegar 10 minutos antes\n• Llegadas: monitorear vuelo\n• Rescates: Dar tiempo estimado\n• No show: Todos se pagan como local 400 mxn'
+    const notes = order.notes ? `${order.notes}\n\n${defaultNotes}` : defaultNotes
+
+    const splitNotes = doc.splitTextToSize(notes, pageWidth - margin * 2 - 40)
+    doc.text(splitNotes, margin + 25, notesBoxY + 45)
+
+    // 7. Footer
+    const footerY = 740
+    doc.setDrawColor(20, 30, 60)
+    doc.setLineWidth(1.5)
+    doc.line(margin, footerY, pageWidth - margin, footerY)
+
+    doc.setFont('helvetica', 'italic')
+    doc.setFontSize(8)
+    doc.setTextColor(120, 120, 120)
+    doc.text('Este documento es una orden de servicio generada', margin, footerY + 20)
+    doc.text('electrónicamente.', margin, footerY + 30)
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(10)
+    doc.setTextColor(50, 50, 50)
+    doc.text('Teléfono de', margin + 320, footerY + 20)
+    doc.text('cobranza:', margin + 320, footerY + 32)
+
+    doc.setFont('helvetica', 'normal')
+    doc.setFontSize(10)
+    doc.text(companyInfo.cobranza || '', margin + 390, footerY + 28)
+
+    doc.setDrawColor(180, 180, 180)
+    doc.setLineWidth(1)
+    doc.line(margin + 390, footerY + 30, pageWidth - margin, footerY + 30) // underline for phone
+
+    doc.save(`orden_${order.id}_formato2.pdf`)
+  }
+
+  // Handle Image Loading
+  const imgUserLogo = new Image()
+  imgUserLogo.crossOrigin = 'anonymous'
+
+  // Use user avatar if available, otherwise static logo
+  if (user?.avatar) {
+    imgUserLogo.src = `${apiUrl}/api/users/${user.id}/avatar`
+  } else {
+    imgUserLogo.src = servansLogo as string
+  }
+
+  const imgUnion = new Image()
+  imgUnion.crossOrigin = 'anonymous'
+  imgUnion.src = unionLogo as string
+
+  let loadedImages = 0
+  const checkImagesLoaded = () => {
+    loadedImages++
+    if (loadedImages === 2) {
+      renderFormat2Body()
+    }
+  }
+
+  // Define a fixed height for BOTH logos
+  const fixedLogoHeight = 50
+
+  // Render left logo (User/Servans)
+  imgUserLogo.onload = () => {
+    try {
+      // Calculate width proportionally to the fixed height
+      const imgW = (imgUserLogo.width * fixedLogoHeight) / imgUserLogo.height
+      const yOffset = margin - 10
+      doc.addImage(imgUserLogo, 'PNG', margin, yOffset, imgW, fixedLogoHeight)
+    } catch {
+      // Fallback
+      doc.setFillColor(230, 230, 230)
+      doc.rect(margin, margin, 180, 40, 'F')
+      doc.setFont('helvetica', 'normal')
+      doc.setFontSize(10)
+      doc.setTextColor(150, 150, 150)
+      doc.text(companyInfo?.razonSocial || 'SERVANS TRAVEL', margin + 90, margin + 25, { align: 'center' })
+    }
+    checkImagesLoaded()
+  }
+  imgUserLogo.onerror = () => {
+    doc.setFillColor(230, 230, 230)
+    doc.rect(margin, margin, 180, 40, 'F')
+    doc.setFont('helvetica', 'normal')
+    doc.setFontSize(10)
+    doc.setTextColor(150, 150, 150)
+    doc.text(companyInfo?.razonSocial || 'SERVANS TRAVEL', margin + 90, margin + 25, { align: 'center' })
+    checkImagesLoaded()
+  }
+
+  // Render right logo (Union)
+  imgUnion.onload = () => {
+    try {
+      // Calculate width proportionally to the fixed height
+      const imgW = (imgUnion.width * fixedLogoHeight) / imgUnion.height
+      const yOffset = margin - 10
+      // Right align using calculated width
+      doc.addImage(imgUnion, 'PNG', pageWidth - margin - imgW, yOffset, imgW, fixedLogoHeight)
+    } catch {
+      // Fallback
+      doc.setFont('helvetica', 'bold')
+      doc.setFontSize(16)
+      doc.setTextColor(20, 30, 60)
+      doc.text('UNION', pageWidth - margin, margin + 15, { align: 'right' })
+      doc.setFontSize(12)
+      doc.text('TTL Q.ROO', pageWidth - margin, margin + 30, { align: 'right' })
+      doc.setFont('helvetica', 'italic')
+      doc.setFontSize(9)
+      doc.setTextColor(100, 100, 100)
+      doc.text('Driving tourism with excellence', pageWidth - margin, margin + 45, { align: 'right' })
+    }
+    checkImagesLoaded()
+  }
+  imgUnion.onerror = () => {
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(16)
+    doc.setTextColor(20, 30, 60)
+    doc.text('UNION', pageWidth - margin, margin + 15, { align: 'right' })
+    doc.setFontSize(12)
+    doc.text('TTL Q.ROO', pageWidth - margin, margin + 30, { align: 'right' })
+    doc.setFont('helvetica', 'italic')
+    doc.setFontSize(9)
+    doc.setTextColor(100, 100, 100)
+    doc.text('Driving tourism with excellence', pageWidth - margin, margin + 45, { align: 'right' })
+    checkImagesLoaded()
   }
 }

@@ -1,5 +1,5 @@
 import type { Order, CompanyInfo } from '../types'
-import { downloadOrderPdf } from '../utils/pdf'
+import { downloadOrderPdf, downloadOrderPdfFormat2 } from '../utils/pdf'
 
 // Iconos SVG pequeños y serios
 function IconDownload({ className = 'w-4 h-4' }: { className?: string }) {
@@ -11,6 +11,7 @@ function IconDownload({ className = 'w-4 h-4' }: { className?: string }) {
     </svg>
   )
 }
+// Nuevo icono para diferenciar el segundo formato (Eliminado)
 function IconTrash({ className = 'w-4 h-4' }: { className?: string }) {
   return (
     <svg width="16" height="16" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -62,12 +63,16 @@ export default function ReservationList({
   onDelete,
   onEdit,
   companyInfo,
+  user,
 }: {
   reservations: Order[]
   onDelete: (id: string) => void
   onEdit?: (o: Order) => void
   companyInfo: CompanyInfo
+  user: any
 }) {
+  const isRoot = !!user
+
   if (reservations.length === 0) return <p className="text-gray-500">No hay reservas</p>
 
   return (
@@ -81,14 +86,19 @@ export default function ReservationList({
             </div>
             <div className="flex items-center gap-2">
               <button
-                onClick={() => downloadOrderPdf(o, companyInfo)}
-                className="p-2 bg-green-50 rounded-md text-green-700"
+                onClick={() => isRoot ? downloadOrderPdfFormat2(o, companyInfo, user) : downloadOrderPdf(o, companyInfo, user)}
+                className="p-2 bg-green-50 rounded-md text-green-700 hover:bg-green-100 transition-colors"
                 title="Descargar PDF"
                 aria-label="Descargar PDF"
               >
                 <IconDownload className="w-4 h-4" />
               </button>
-              <button onClick={() => onEdit && onEdit(o)} className="p-2 bg-blue-50 rounded-md text-blue-700" title="Editar" aria-label="Editar">
+              <button
+                onClick={() => onEdit && onEdit(o)}
+                className="p-2 bg-blue-50 rounded-md text-blue-700 hover:bg-blue-100 transition-colors"
+                title="Editar"
+                aria-label="Editar"
+              >
                 <IconEdit className="w-4 h-4" />
               </button>
               <button
@@ -97,7 +107,7 @@ export default function ReservationList({
                     onDelete(o.id)
                   }
                 }}
-                className="p-2 bg-red-50 rounded-md text-red-700"
+                className="p-2 bg-red-50 rounded-md text-red-700 hover:bg-red-100 transition-colors"
                 title="Eliminar"
                 aria-label="Eliminar"
               >

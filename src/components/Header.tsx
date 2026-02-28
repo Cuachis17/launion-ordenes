@@ -1,7 +1,11 @@
 import unionLogo from '../assets/union.png'
 
-export default function Header({ count, onOpenEditor }: { count: number; onOpenEditor: () => void }) {
- 
+export default function Header({ count, onOpenEditor, onLoginClick, onProfileClick, user }: { count: number; onOpenEditor: () => void; onLoginClick: () => void; onProfileClick: () => void; user: any }) {
+  const apiUrl = import.meta.env.VITE_API_URL
+  const avatarUrl = user?.avatar
+    ? `${apiUrl}/api/users/${user.id}/avatar?t=${Date.now()}`
+    : null
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200 flex flex-col items-center">
 
@@ -9,8 +13,8 @@ export default function Header({ count, onOpenEditor }: { count: number; onOpenE
       <div className="container mx-auto px-6 py-4 w-full">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10  rounded-lg flex items-center justify-center">
-              <img src={unionLogo} alt="La Union" className="object-contain" />
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden bg-gray-50 border border-gray-100 shadow-sm">
+              <img src={unionLogo} alt="Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <p className="text-xl font-semibold text-gray-900">La Union</p>
@@ -18,22 +22,43 @@ export default function Header({ count, onOpenEditor }: { count: number; onOpenE
             </div>
           </div>
 
-          <div className="flex items-center gap-4 cursor-pointer"
-          onClick={onOpenEditor}>
-            <div className="text-right">
-              <p className="text-sm text-gray-700 font-medium">Cambiar razón social</p>
-              <p className="text-xs text-gray-500">{count} {count === 1 ? 'reserva' : 'reservas'} activas</p>
-            </div>
+          <div className="flex flex-col sm:flex-row items-center gap-2">
             <button
-            
-              className="p-2 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
-              title="Editar información del PDF"
+              onClick={user ? onProfileClick : onLoginClick}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors font-medium text-sm ${user ? 'text-green-600 bg-green-50 hover:bg-green-100' : 'text-indigo-600 bg-indigo-50 hover:bg-indigo-100'
+                }`}
             >
-              <svg className="w-5 h-5 text-gray-600" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z" fill="currentColor" />
-                <path d="M20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" fill="currentColor" />
-              </svg>
+              <div className="w-6 h-6 rounded-full overflow-hidden bg-white/50 flex items-center justify-center border border-gray-200 shadow-sm">
+                {avatarUrl ? (
+                  <img src={avatarUrl} alt="User Avatar" className="w-full h-full object-cover" />
+                ) : (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                )}
+              </div>
+              {user ? user.username : 'Iniciar sesión'}
             </button>
+
+
+            <div className="flex items-center gap-4 cursor-pointer"
+              onClick={onOpenEditor}>
+              <div className="text-right">
+                <p className="text-xs text-gray-700 font-medium">Razón social</p>
+                <p className="text-xs text-gray-500">{count} {count === 1 ? 'reserva' : 'reservas'} activas</p>
+              </div>
+              <button
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
+                title="Editar información del PDF"
+              >
+                <svg className="w-5 h-5 text-gray-600" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                  <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z" fill="currentColor" />
+                  <path d="M20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+
           </div>
         </div>
       </div>

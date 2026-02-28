@@ -15,4 +15,7 @@ export type Order = {
 
 export type CompanyInfo = {
   razonSocial?: string
+  direccion?: string
+  sict?: string
+  cobranza?: string
 }
