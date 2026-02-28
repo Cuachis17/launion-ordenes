@@ -1,11 +1,13 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import ReservationForm from './components/ReservationForm'
 import ReservationList from './components/ReservationList'
 import EditReservationModal from './components/EditReservationModal'
-import Login from './components/login'
+import Login from './components/Login'
 import UserProfileModal from './components/UserProfileModal'
+import Register from './components/register'
+import ChangePasswordModal from './components/ChangePasswordModal'
 import { loadOrders, saveOrders, loadCompany, saveCompany } from './utils/storage'
 import type { Order, CompanyInfo } from './types'
 
@@ -19,6 +21,8 @@ export default function App() {
   const [tempCobranza, setTempCobranza] = useState(companyInfo.cobranza || '')
   const [showLoginModal, setShowLoginModal] = useState(false)
   const [showProfileModal, setShowProfileModal] = useState(false)
+  const [showRegisterModal, setShowRegisterModal] = useState(false)
+  const [showChangePasswordModal, setShowChangePasswordModal] = useState(false)
   const [user, setUser] = useState<any>(null)
 
   const apiUrl = import.meta.env.VITE_API_URL
@@ -136,7 +140,7 @@ export default function App() {
   const isRoot = !!user
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header
         count={reservations.length}
         onOpenEditor={handleOpenEditor}
@@ -154,6 +158,30 @@ export default function App() {
             checkAuth() // Refresh user data to show new avatar
           }}
           onLogout={handleLogout}
+          onRegisterClick={() => {
+            setShowProfileModal(false)
+            setShowRegisterModal(true)
+          }}
+          onChangePasswordClick={() => {
+            setShowProfileModal(false)
+            setShowChangePasswordModal(true)
+          }}
+        />
+      )}
+
+      {showChangePasswordModal && (
+        <ChangePasswordModal
+          onClose={() => setShowChangePasswordModal(false)}
+        />
+      )}
+
+      {showRegisterModal && (
+        <Register
+          onClose={() => setShowRegisterModal(false)}
+          onSuccess={() => {
+            setShowRegisterModal(false)
+            alert('Usuario registrado exitosamente')
+          }}
         />
       )}
 

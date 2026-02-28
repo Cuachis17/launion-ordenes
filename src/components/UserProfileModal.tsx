@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 interface UserProfileModalProps {
     user: any
     onClose: () => void
     onUpdateSuccess: () => void
     onLogout: () => void
+    onRegisterClick: () => void
+    onChangePasswordClick: () => void
 }
 
-export default function UserProfileModal({ user, onClose, onUpdateSuccess, onLogout }: UserProfileModalProps) {
+export default function UserProfileModal({ user, onClose, onUpdateSuccess, onLogout, onRegisterClick, onChangePasswordClick }: UserProfileModalProps) {
     const [uploading, setUploading] = useState(false)
+
     const apiUrl = import.meta.env.VITE_API_URL
 
     const handleAvatarChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -101,7 +104,31 @@ export default function UserProfileModal({ user, onClose, onUpdateSuccess, onLog
                         </div>
                     </div>
 
+                    <div className="mt-6 border-t border-gray-100 pt-6">
+                        <button
+                            onClick={onChangePasswordClick}
+                            className="text-sm text-indigo-600 hover:text-indigo-800 font-medium flex items-center justify-center gap-1 mx-auto py-2 px-4 rounded-lg bg-indigo-50 hover:bg-indigo-100 transition-colors"
+                        >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                            </svg>
+                            Cambiar mi contraseña
+                        </button>
+                    </div>
+
                     <div className="mt-8 space-y-3">
+                        {user?.role === 'admin' && (
+                            <button
+                                onClick={onRegisterClick}
+                                className="w-full py-3 px-4 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition-colors font-medium flex items-center justify-center gap-2 border border-indigo-100"
+                            >
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                                </svg>
+                                Registrar nuevo usuario
+                            </button>
+                        )}
+
                         <button
                             onClick={onLogout}
                             className="w-full py-3 px-4 bg-red-50 text-red-600 rounded-lg hover:bg-red-100 transition-colors font-medium flex items-center justify-center gap-2 border border-red-100"

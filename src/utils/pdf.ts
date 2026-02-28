@@ -197,7 +197,7 @@ export async function downloadOrderPdf(order: Order, companyInfo: CompanyInfo, u
   }
 }
 
-import servansLogo from '../assets/servans.png'
+
 
 export async function downloadOrderPdfFormat2(order: Order, companyInfo: CompanyInfo, user?: any) {
   const doc = new jsPDF({ unit: 'pt', format: 'a4' })
@@ -388,7 +388,8 @@ export async function downloadOrderPdfFormat2(order: Order, companyInfo: Company
   if (user?.avatar) {
     imgUserLogo.src = `${apiUrl}/api/users/${user.id}/avatar`
   } else {
-    imgUserLogo.src = servansLogo as string
+    // Skip loading and just mark as "done" to leave space blank
+    setTimeout(() => checkImagesLoaded(), 0)
   }
 
   const imgUnion = new Image()
@@ -414,23 +415,12 @@ export async function downloadOrderPdfFormat2(order: Order, companyInfo: Company
       const yOffset = margin - 10
       doc.addImage(imgUserLogo, 'PNG', margin, yOffset, imgW, fixedLogoHeight)
     } catch {
-      // Fallback
-      doc.setFillColor(230, 230, 230)
-      doc.rect(margin, margin, 180, 40, 'F')
-      doc.setFont('helvetica', 'normal')
-      doc.setFontSize(10)
-      doc.setTextColor(150, 150, 150)
-      doc.text(companyInfo?.razonSocial || 'SERVANS TRAVEL', margin + 90, margin + 25, { align: 'center' })
+      // No fallback text or box, leave blank
     }
     checkImagesLoaded()
   }
   imgUserLogo.onerror = () => {
-    doc.setFillColor(230, 230, 230)
-    doc.rect(margin, margin, 180, 40, 'F')
-    doc.setFont('helvetica', 'normal')
-    doc.setFontSize(10)
-    doc.setTextColor(150, 150, 150)
-    doc.text(companyInfo?.razonSocial || 'SERVANS TRAVEL', margin + 90, margin + 25, { align: 'center' })
+    // No fallback text or box, leave blank
     checkImagesLoaded()
   }
 

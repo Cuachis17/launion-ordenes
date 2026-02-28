@@ -25,3 +25,16 @@ dist-ssr
 
 #env
 *.env
+
+#assets
+./uploads./*
+
+#db
+*.db
+./server/db/users.db
+./server/db/users.db-shm
+./server/db/users.db-wal
+./server/db/users.db-shm
+./server/db/users.db-wal
+
+

@@ -44,7 +44,7 @@ router.post('/register', verifyToken, upload.single('avatar'), resizeImage, asyn
             return res.status(403).json({ message: 'Forbidden. Only admins can register new users.' });
         }
 
-        const { username, password, role } = req.body;
+        const { username, password, role, phone } = req.body;
 
         if (!username || !password) {
             return res.status(400).json({ message: 'Username and password are required' });
@@ -62,6 +62,7 @@ router.post('/register', verifyToken, upload.single('avatar'), resizeImage, asyn
         // Prepare user document
         const user = {
             username,
+            phone,
             password: hashedPassword,
             role: role || 'user', // Admins can assign a role, defaults to 'user'
             avatar: req.file ? req.file.path : null, // Path saved by resizeImage middleware
@@ -156,6 +157,41 @@ router.post('/logout', (req, res) => {
         sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
     });
     res.json({ message: 'Logged out successfully' });
+});
+
+// POST /users/change-password: Change user password
+router.post('/users/change-password', verifyToken, async (req, res) => {
+    try {
+        const { currentPassword, newPassword } = req.body;
+
+        if (!currentPassword || !newPassword) {
+            return res.status(400).json({ message: 'Current and new password are required' });
+        }
+
+        const user = await db.findOne({ _id: req.user.id });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Verify current password
+        const isMatch = await bcrypt.compare(currentPassword, user.password);
+        if (!isMatch) {
+            return res.status(401).json({ message: 'La contraseña actual es incorrecta' });
+        }
+
+        // Hash new password
+        const hashedPassword = await bcrypt.hash(newPassword, parseInt(process.env.SALT_ROUNDS));
+
+        // Update password
+        await db.update({ _id: req.user.id }, { $set: { password: hashedPassword } });
+        db.persistence.compactDatafile();
+
+        res.json({ message: 'Contraseña actualizada correctamente' });
+
+    } catch (error) {
+        console.error('Change password error:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
 
 // GET /users: Read all users
