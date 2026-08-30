@@ -14,7 +14,7 @@ export default function Login({ onClose, onLoginSuccess }: { onClose: () => void
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ phone, password }),
+                body: JSON.stringify({ username: phone.trim(), phone: phone.trim(), password }),
             })
             const data = await res.json()
             if (res.ok) {
@@ -61,15 +61,16 @@ export default function Login({ onClose, onLoginSuccess }: { onClose: () => void
                     <div className="rounded-md shadow-sm space-y-4">
                         <div>
                             <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                                Número de teléfono
+                                Teléfono o correo
                             </label>
                             <input
                                 id="phone"
                                 name="phone"
-                                type="tel"
+                                type="text"
+                                autoComplete="username"
                                 required
                                 className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm mt-1"
-                                placeholder="Ej: 555 123 4567"
+                                placeholder="Tu teléfono o tu correo"
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                             />

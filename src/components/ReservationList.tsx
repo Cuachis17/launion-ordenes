@@ -73,7 +73,15 @@ export default function ReservationList({
 }) {
   const isRoot = !!user
 
-  if (reservations.length === 0) return <p className="text-gray-500">No hay reservas</p>
+  if (reservations.length === 0) return (
+    <div className="py-12 flex flex-col items-center text-center">
+      <svg className="w-10 h-10 text-gray-300 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      </svg>
+      <p className="text-gray-500 font-medium">Aún no hay reservas</p>
+      <p className="text-sm text-gray-400 mt-1">Crea la primera en el formulario de la izquierda.</p>
+    </div>
+  )
 
   return (
     <div className="space-y-3">
@@ -87,7 +95,7 @@ export default function ReservationList({
             <div className="flex items-center gap-2">
               <button
                 onClick={() => isRoot ? downloadOrderPdfFormat2(o, companyInfo, user) : downloadOrderPdf(o, companyInfo, user)}
-                className="p-2 bg-green-50 rounded-md text-green-700 hover:bg-green-100 transition-colors"
+                className="p-2 min-w-11 min-h-11 flex items-center justify-center bg-green-50 rounded-md text-green-700 hover:bg-green-100 transition-colors"
                 title="Descargar PDF"
                 aria-label="Descargar PDF"
               >
@@ -95,7 +103,7 @@ export default function ReservationList({
               </button>
               <button
                 onClick={() => onEdit && onEdit(o)}
-                className="p-2 bg-blue-50 rounded-md text-blue-700 hover:bg-blue-100 transition-colors"
+                className="p-2 min-w-11 min-h-11 flex items-center justify-center bg-blue-50 rounded-md text-blue-700 hover:bg-blue-100 transition-colors"
                 title="Editar"
                 aria-label="Editar"
               >
@@ -107,7 +115,7 @@ export default function ReservationList({
                     onDelete(o.id)
                   }
                 }}
-                className="p-2 bg-red-50 rounded-md text-red-700 hover:bg-red-100 transition-colors"
+                className="p-2 min-w-11 min-h-11 flex items-center justify-center bg-red-50 rounded-md text-red-700 hover:bg-red-100 transition-colors"
                 title="Eliminar"
                 aria-label="Eliminar"
               >
@@ -116,7 +124,7 @@ export default function ReservationList({
             </div>
           </div>
 
-          <div className="mt-3 text-sm text-gray-600 grid grid-cols-3 gap-2">
+          <div className="mt-3 text-sm text-gray-600 grid grid-cols-1 sm:grid-cols-3 gap-2">
             <div className="flex items-center gap-2"><IconCalendar className="text-gray-500" /> <span>{o.date}</span></div>
             <div className="flex items-center gap-2"><IconClock className="text-gray-500" /> <span>{o.time || '—'}</span></div>
             <div className="flex items-center gap-2"><IconUsers className="text-gray-500" /> <span>{o.passengers}</span></div>

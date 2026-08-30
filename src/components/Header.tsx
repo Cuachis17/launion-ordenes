@@ -1,6 +1,6 @@
 import unionLogo from '../assets/union.png'
 
-export default function Header({ count, onOpenEditor, onLoginClick, onProfileClick, user }: { count: number; onOpenEditor: () => void; onLoginClick: () => void; onProfileClick: () => void; user: any }) {
+export default function Header({ count, onOpenEditor, onLoginClick, onProfileClick, onOpenMenu, subtitulo, unidad, user }: { count: number; onOpenEditor: () => void; onLoginClick: () => void; onProfileClick: () => void; onOpenMenu: () => void; subtitulo: string; unidad: [string, string]; user: any }) {
   const apiUrl = import.meta.env.VITE_API_URL
   const avatarUrl = user?.avatar
     ? `${apiUrl}/api/users/${user.id}/avatar?t=${Date.now()}`
@@ -10,22 +10,32 @@ export default function Header({ count, onOpenEditor, onLoginClick, onProfileCli
     <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200 flex flex-col items-center">
 
 
-      <div className="container mx-auto px-6 py-4 w-full">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+      <div className="container mx-auto px-3 sm:px-6 py-2.5 sm:py-4 w-full">
+        <div className="flex items-center justify-between gap-2 min-w-0">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <button
+              onClick={onOpenMenu}
+              aria-label="Abrir menú de aplicaciones"
+              className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center
+                         text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors shrink-0"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
             <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden bg-gray-50 border border-gray-100 shadow-sm">
               <img src={unionLogo} alt="Logo" className="w-full h-full object-contain" />
             </div>
             <div>
-              <p className="text-xl font-semibold text-gray-900">La Union</p>
-              <p className="text-xs text-gray-500">Registro de Reservas</p>
+              <p className="text-base sm:text-xl font-semibold text-gray-900 leading-tight truncate">La Union</p>
+              <p className="text-[11px] sm:text-xs text-gray-500 truncate">{subtitulo}</p>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-2">
+          <div className="flex flex-row items-center gap-1.5 sm:gap-2 shrink-0">
             <button
               onClick={user ? onProfileClick : onLoginClick}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors font-medium text-sm ${user ? 'text-green-600 bg-green-50 hover:bg-green-100' : 'text-indigo-600 bg-indigo-50 hover:bg-indigo-100'
+              className={`flex items-center gap-2 px-2 sm:px-4 py-2 rounded-lg transition-colors font-medium text-sm ${user ? 'text-green-600 bg-green-50 hover:bg-green-100' : 'text-indigo-600 bg-indigo-50 hover:bg-indigo-100'
                 }`}
             >
               <div className="w-6 h-6 rounded-full overflow-hidden bg-white/50 flex items-center justify-center border border-gray-200 shadow-sm">
@@ -37,15 +47,15 @@ export default function Header({ count, onOpenEditor, onLoginClick, onProfileCli
                   </svg>
                 )}
               </div>
-              {user ? user.username : 'Iniciar sesión'}
+              <span className="hidden sm:inline">{user ? user.username : 'Iniciar sesión'}</span>
             </button>
 
 
-            <div className="flex items-center gap-4 cursor-pointer"
+            <div className="flex items-center gap-2 sm:gap-4 cursor-pointer"
               onClick={onOpenEditor}>
-              <div className="text-right">
+              <div className="text-right hidden sm:block">
                 <p className="text-xs text-gray-700 font-medium">Razón social</p>
-                <p className="text-xs text-gray-500">{count} {count === 1 ? 'reserva' : 'reservas'} activas</p>
+                <p className="text-xs text-gray-500">{count} {count === 1 ? unidad[0] : unidad[1]}</p>
               </div>
               <button
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"

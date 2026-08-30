@@ -1,18 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import ReservationForm from './components/ReservationForm'
+import AppDrawer, { APPS, type AppId } from './components/AppDrawer'
+import ReceiptForm from './components/ReceiptForm'
+import ReceiptList from './components/ReceiptList'
+import EditReceiptModal from './components/EditReceiptModal'
+import { loadReceipts, saveReceipts } from './utils/receiptStorage'
+import { siguienteVoucher, type Receipt } from './types'
 import ReservationList from './components/ReservationList'
 import EditReservationModal from './components/EditReservationModal'
 import Login from './components/Login'
 import UserProfileModal from './components/UserProfileModal'
-import Register from './components/register'
+import Register from './components/Register'
 import ChangePasswordModal from './components/ChangePasswordModal'
 import { loadOrders, saveOrders, loadCompany, saveCompany } from './utils/storage'
 import type { Order, CompanyInfo } from './types'
 
 export default function App() {
   const [reservations, setReservations] = useState<Order[]>(() => loadOrders())
+  const [appActiva, setAppActiva] = useState<AppId>('ordenes')
+  const [menuAbierto, setMenuAbierto] = useState(false)
+  const [receipts, setReceipts] = useState<Receipt[]>(() => loadReceipts())
+  const [editingReceipt, setEditingReceipt] = useState<Receipt | null>(null)
+  // En teléfono no caben formulario y lista a la vez: se alternan con pestañas.
+  // Desde lg: los dos paneles se muestran juntos y las pestañas desaparecen.
+  const [panelMovil, setPanelMovil] = useState<'form' | 'lista'>('form')
   const [companyInfo, setCompanyInfo] = useState<CompanyInfo>(() => loadCompany())
   const [showCompanyEditor, setShowCompanyEditor] = useState(false)
   const [tempRazonSocial, setTempRazonSocial] = useState(companyInfo.razonSocial || '')
@@ -139,14 +152,64 @@ export default function App() {
 
   const isRoot = !!user
 
+  function handleAddReceipt(entrante: Receipt) {
+    // El voucher es opcional al capturar: si viene vacío se asigna el siguiente
+    // de la serie, para que ningún comprobante quede sin folio.
+    const r: Receipt = entrante.voucher.trim()
+      ? { ...entrante, voucher: entrante.voucher.trim() }
+      : { ...entrante, voucher: siguienteVoucher(receipts) }
+    const siguientes = [r, ...receipts]
+    setReceipts(siguientes)
+    if (!saveReceipts(siguientes)) {
+      alert('No se pudo guardar el comprobante: el almacenamiento del navegador está lleno o bloqueado.')
+    }
+  }
+
+  // Duplicar es lo más pedido en operación: el mismo traslado con otro pasajero.
+  function handleDuplicateReceipt(r: Receipt) {
+    setEditingReceipt({
+      ...r,
+      id: crypto.randomUUID(),
+      voucher: '',
+      passenger: '',
+      generatedAt: new Date().toISOString(),
+    })
+  }
+
+  function handleSaveEditedReceipt(r: Receipt) {
+    const existe = receipts.some((x) => x.id === r.id)
+    const siguientes = existe ? receipts.map((x) => (x.id === r.id ? r : x)) : [r, ...receipts]
+    setReceipts(siguientes)
+    saveReceipts(siguientes)
+    setEditingReceipt(null)
+  }
+
+  function handleDeleteReceipt(id: string) {
+    const siguientes = receipts.filter((x) => x.id !== id)
+    setReceipts(siguientes)
+    saveReceipts(siguientes)
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header
-        count={reservations.length}
+        count={appActiva === 'ordenes' ? reservations.length : receipts.length}
         onOpenEditor={handleOpenEditor}
         onLoginClick={() => setShowLoginModal(true)}
         onProfileClick={() => setShowProfileModal(true)}
+        onOpenMenu={() => setMenuAbierto(true)}
+        subtitulo={APPS.find((a) => a.id === appActiva)?.nombre ?? ''}
+        unidad={appActiva === 'ordenes'
+          ? ['reserva activa', 'reservas activas']
+          : ['comprobante emitido', 'comprobantes emitidos']}
         user={user}
+      />
+
+      <AppDrawer
+        abierto={menuAbierto}
+        activa={appActiva}
+        onElegir={setAppActiva}
+        onCerrar={() => setMenuAbierto(false)}
       />
 
       {/* Modal de Perfil de Usuario */}
@@ -199,7 +262,7 @@ export default function App() {
       {/* Modal de Edición de Información de Empresa */}
       {showCompanyEditor && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-2xl max-w-md w-full">
+          <div className="bg-white rounded-xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h2 className="text-xl font-semibold text-gray-900">Configuración del PDF</h2>
               <button
@@ -333,17 +396,25 @@ export default function App() {
         </div>
       )}
 
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-8">
+      {appActiva === 'ordenes' && (
+      <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-8 max-w-6xl">
+        <PestanasMovil
+          valor={panelMovil}
+          onCambiar={setPanelMovil}
+          etiquetas={['Nueva reserva', `Reservas (${reservations.length})`]}
+        />
+        <div className="grid lg:grid-cols-2 gap-5 lg:gap-8 items-start">
           {/* Form Section */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">Nueva Reserva</h2>
+          <div className={`bg-white rounded-xl shadow-lg p-3 sm:p-6 min-w-0 ${
+            panelMovil === 'form' ? '' : 'hidden lg:block'}`}>
+            <h2 className="hidden lg:block text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">Nueva Reserva</h2>
             <ReservationForm onSubmit={handleAddReservation} />
           </div>
 
           {/* List Section */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">Reservas Recientes</h2>
+          <div className={`bg-white rounded-xl shadow-lg p-3 sm:p-6 min-w-0 ${
+            panelMovil === 'lista' ? '' : 'hidden lg:block'}`}>
+            <h2 className="hidden lg:block text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">Reservas Recientes</h2>
             <ReservationList
               reservations={reservations}
               onDelete={handleDeleteReservation}
@@ -354,9 +425,103 @@ export default function App() {
           </div>
         </div>
       </div>
+      )}
+
+      {appActiva === 'comprobantes' && (
+        <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-8 max-w-6xl">
+          <PestanasMovil
+            valor={panelMovil}
+            onCambiar={setPanelMovil}
+            etiquetas={['Nuevo comprobante', `Comprobantes (${receipts.length})`]}
+          />
+          <div className="grid lg:grid-cols-5 gap-5 lg:gap-8 items-start">
+            <div className={`bg-white rounded-xl shadow-lg p-3 sm:p-6 lg:col-span-3 min-w-0 ${
+              panelMovil === 'form' ? '' : 'hidden lg:block'}`}>
+              <h2 className="hidden lg:block text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">Nuevo comprobante</h2>
+              {user
+                ? <ReceiptForm onSubmit={handleAddReceipt} />
+                : <SesionRequerida onIniciar={() => setShowLoginModal(true)} />}
+            </div>
+            <div className={`bg-white rounded-xl shadow-lg p-3 sm:p-6 lg:col-span-2 min-w-0 ${
+              panelMovil === 'lista' ? '' : 'hidden lg:block'}`}>
+              <h2 className="hidden lg:block text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">Comprobantes recientes</h2>
+              <ReceiptList
+                receipts={receipts}
+                onDelete={handleDeleteReceipt}
+                onEdit={user ? setEditingReceipt : undefined}
+                onDuplicate={user ? handleDuplicateReceipt : undefined}
+                companyInfo={companyInfo}
+                user={user}
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {editingReceipt && (
+        <EditReceiptModal
+          receipt={editingReceipt}
+          onClose={() => setEditingReceipt(null)}
+          onSave={handleSaveEditedReceipt}
+        />
+      )}
+
       {editingReservation && (
         <EditReservationModal reservation={editingReservation} onClose={() => setEditingReservation(null)} onSave={handleSaveEditedReservation} />
       )}
+    </div>
+  )
+}
+
+// Un comprobante de venta debe poder atribuirse a quien lo emitió, y su logo
+// sale del perfil de esa sesión. Sin usuario no se captura.
+function SesionRequerida({ onIniciar }: { onIniciar: () => void }) {
+  return (
+    <div className="py-10 flex flex-col items-center text-center">
+      <div className="w-12 h-12 rounded-full bg-indigo-50 grid place-items-center mb-4">
+        <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.7">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg>
+      </div>
+      <p className="text-gray-900 font-semibold">Inicia sesión para emitir comprobantes</p>
+      <p className="text-sm text-gray-500 mt-1 max-w-xs">
+        El comprobante lleva tu logo y queda a nombre de quien lo emite, así que necesita una sesión activa.
+      </p>
+      <button
+        onClick={onIniciar}
+        className="mt-5 px-5 h-11 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+      >
+        Iniciar sesión
+      </button>
+    </div>
+  )
+}
+
+// En teléfono no caben formulario y lista a la vez: se alternan con estas
+// pestañas. Desde lg los dos paneles se ven juntos y las pestañas desaparecen.
+function PestanasMovil({
+  valor, onCambiar, etiquetas,
+}: {
+  valor: 'form' | 'lista'
+  onCambiar: (v: 'form' | 'lista') => void
+  etiquetas: [string, string]
+}) {
+  const opciones: Array<'form' | 'lista'> = ['form', 'lista']
+  return (
+    <div className="lg:hidden mb-2 grid grid-cols-2 gap-1 p-1 rounded-xl bg-white/70 border border-gray-200 shadow-sm">
+      {opciones.map((op, i) => (
+        <button
+          key={op}
+          onClick={() => onCambiar(op)}
+          aria-current={valor === op ? 'page' : undefined}
+          className={`h-9 rounded-lg text-sm font-medium transition-colors ${
+            valor === op ? 'bg-indigo-600 text-white shadow-sm' : 'text-gray-600 hover:bg-gray-100'
+          }`}
+        >
+          {etiquetas[i]}
+        </button>
+      ))}
     </div>
   )
 }
