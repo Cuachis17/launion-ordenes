@@ -1,0 +1,166 @@
+{
+  "vigencia": "2025-12-10",
+  "fuente": "TARIFARIO_UNION_2026.pdf",
+  "notas": ["Tarifas sin casetas"],
+  "unidades": [
+    { "clave": "van", "nombre": "Van" },
+    { "clave": "sprinter", "nombre": "Sprinter / Suburban" }
+  ],
+  "zonas": [
+    { "clave": "aeropuerto_cun", "nombre": "Aeropuerto Cancún" },
+    { "clave": "aeropuerto_tqo", "nombre": "Aeropuerto Tulum (TQO)" },
+    { "clave": "isla_blanca", "nombre": "Isla Blanca" },
+    { "clave": "costa_mujeres", "nombre": "Costa Mujeres" },
+    { "clave": "playa_mujeres", "nombre": "Playa Mujeres" },
+    { "clave": "puerto_juarez", "nombre": "Puerto Juárez" },
+    { "clave": "cancun_centro", "nombre": "Cancún Centro" },
+    { "clave": "zh_cancun", "nombre": "Zona Hotelera Cancún" },
+    { "clave": "moon_hilton_desatadora", "nombre": "Moon Palace / Hilton / Desatadora" },
+    { "clave": "petempich", "nombre": "Bahía Petempich" },
+    { "clave": "ocean_turquesa", "nombre": "Ocean Turquesa / Dreams Sapphire" },
+    { "clave": "puerto_morelos", "nombre": "Puerto Morelos" },
+    { "clave": "maroma", "nombre": "Maroma / Nickelodeon" },
+    { "clave": "kanai", "nombre": "Kanai / Corasol" },
+    { "clave": "playa_del_carmen", "nombre": "Playa del Carmen" },
+    { "clave": "puerto_aventuras", "nombre": "Puerto Aventuras" },
+    { "clave": "akumal", "nombre": "Akumal / Chemuyil" },
+    { "clave": "xelha_soliman", "nombre": "Xel-Há / Bahía Solimán" },
+    { "clave": "tulum_centro", "nombre": "Tulum Centro" },
+    { "clave": "tulum_zh", "nombre": "Tulum Zona Hotelera" }
+  ],
+  "tablas": [
+    {
+      "clave": "desde_aeropuerto_cun", "nombre": "Aeropuerto Cancún (llegadas y salidas)",
+      "origenes": ["aeropuerto_cun"], "cargos": [{ "concepto": "Recepción", "monto": 50 }],
+      "filas": [
+        { "destinos": ["zh_cancun", "cancun_centro", "moon_hilton_desatadora"], "van": 430, "sprinter": 800 },
+        { "destinos": ["puerto_juarez"], "van": 500, "sprinter": 900 },
+        { "destinos": ["playa_mujeres"], "van": 600, "sprinter": 1000 },
+        { "destinos": ["costa_mujeres"], "van": 700, "sprinter": 1100 },
+        { "destinos": ["isla_blanca"], "van": 900, "sprinter": 1200 },
+        { "destinos": ["petempich"], "van": 500, "sprinter": 900 },
+        { "destinos": ["ocean_turquesa"], "van": 550, "sprinter": 950 },
+        { "destinos": ["puerto_morelos"], "van": 600, "sprinter": 1000 },
+        { "destinos": ["maroma"], "van": 700, "sprinter": 1100 },
+        { "destinos": ["kanai"], "van": 800, "sprinter": 1200 },
+        { "destinos": ["playa_del_carmen"], "van": 900, "sprinter": 1300 },
+        { "destinos": ["puerto_aventuras"], "van": 1000, "sprinter": 1500 },
+        { "destinos": ["akumal"], "van": 1200, "sprinter": 1700 },
+        { "destinos": ["xelha_soliman", "tulum_centro"], "van": 1500, "sprinter": 2100 },
+        { "destinos": ["tulum_zh"], "van": 1700, "sprinter": 2400 }
+      ]
+    },
+    {
+      "clave": "desde_aeropuerto_tqo", "nombre": "Aeropuerto Tulum TQO (llegadas y salidas)",
+      "origenes": ["aeropuerto_tqo"], "cargos": [],
+      "filas": [
+        { "destinos": ["tulum_centro"], "van": 900, "sprinter": 1300 },
+        { "destinos": ["tulum_zh"], "van": 1200, "sprinter": 1600 },
+        { "destinos": ["xelha_soliman"], "van": 1300, "sprinter": 1700 },
+        { "destinos": ["akumal"], "van": 1400, "sprinter": 1800 },
+        { "destinos": ["puerto_aventuras"], "van": 1600, "sprinter": 2200 },
+        { "destinos": ["playa_del_carmen"], "van": 1800, "sprinter": 2400 },
+        { "destinos": ["kanai", "maroma"], "van": 2200, "sprinter": 2700 },
+        { "destinos": ["puerto_morelos"], "van": 2300, "sprinter": 2800 },
+        { "destinos": ["ocean_turquesa"], "van": 2350, "sprinter": 2850 },
+        { "destinos": ["aeropuerto_cun", "moon_hilton_desatadora"], "van": 2400, "sprinter": 2900 },
+        { "destinos": ["zh_cancun"], "van": 2500, "sprinter": 3000 },
+        { "destinos": ["puerto_juarez"], "van": 2600, "sprinter": 3200 },
+        { "destinos": ["playa_mujeres"], "van": 2700, "sprinter": 3400 },
+        { "destinos": ["costa_mujeres"], "van": 2800, "sprinter": 3800 },
+        { "destinos": ["isla_blanca"], "van": 2900, "sprinter": 3900 }
+      ]
+    },
+    {
+      "clave": "desde_zh_cancun", "nombre": "Inter hoteles desde ZH Cancún",
+      "origenes": ["zh_cancun", "cancun_centro", "moon_hilton_desatadora"], "cargos": [],
+      "filas": [
+        { "destinos": ["zh_cancun", "cancun_centro", "moon_hilton_desatadora"], "van": 450, "sprinter": 800 },
+        { "destinos": ["puerto_juarez", "playa_mujeres"], "van": 500, "sprinter": 850 },
+        { "destinos": ["costa_mujeres"], "van": 600, "sprinter": 900 },
+        { "destinos": ["petempich"], "van": 600, "sprinter": 900 },
+        { "destinos": ["puerto_morelos"], "van": 700, "sprinter": 1000 },
+        { "destinos": ["ocean_turquesa"], "van": 700, "sprinter": 1000 },
+        { "destinos": ["maroma"], "van": 800, "sprinter": 1100 },
+        { "destinos": ["kanai"], "van": 1000, "sprinter": 1300 },
+        { "destinos": ["playa_del_carmen"], "van": 1200, "sprinter": 1500 },
+        { "destinos": ["puerto_aventuras"], "van": 1400, "sprinter": 1700 },
+        { "destinos": ["akumal"], "van": 1600, "sprinter": 1900 },
+        { "destinos": ["xelha_soliman", "tulum_centro"], "van": 1800, "sprinter": 2200 },
+        { "destinos": ["tulum_zh"], "van": 2000, "sprinter": 2500 }
+      ]
+    },
+    {
+      "clave": "desde_playa_del_carmen", "nombre": "Inter hoteles desde Playa del Carmen",
+      "origenes": ["playa_del_carmen"], "cargos": [],
+      "filas": [
+        { "destinos": ["playa_del_carmen"], "van": 450, "sprinter": 800 },
+        { "destinos": ["kanai"], "van": 500, "sprinter": 850 },
+        { "destinos": ["maroma"], "van": 600, "sprinter": 900 },
+        { "destinos": ["puerto_morelos"], "van": 700, "sprinter": 1000 },
+        { "destinos": ["ocean_turquesa"], "van": 750, "sprinter": 1050 },
+        { "destinos": ["petempich"], "van": 800, "sprinter": 1200 },
+        { "destinos": ["aeropuerto_cun"], "van": 900, "sprinter": 1300 },
+        { "destinos": ["zh_cancun", "cancun_centro"], "van": 1200, "sprinter": 1500 },
+        { "destinos": ["puerto_juarez", "playa_mujeres"], "van": 1300, "sprinter": 1600 },
+        { "destinos": ["costa_mujeres"], "van": 1500, "sprinter": 1900 },
+        { "destinos": ["puerto_aventuras"], "van": 700, "sprinter": 1000 },
+        { "destinos": ["akumal"], "van": 800, "sprinter": 1100 },
+        { "destinos": ["xelha_soliman"], "van": 900, "sprinter": 1200 },
+        { "destinos": ["tulum_centro"], "van": 900, "sprinter": 1200 },
+        { "destinos": ["tulum_zh"], "van": 1100, "sprinter": 1400 }
+      ]
+    },
+    {
+      "clave": "desde_tulum", "nombre": "Desde Tulum",
+      "origenes": ["tulum_centro", "tulum_zh"], "cargos": [],
+      "filas": [
+        { "destinos": ["tulum_centro"], "van": 450, "sprinter": 800 },
+        { "destinos": ["tulum_zh"], "van": 500, "sprinter": 800 },
+        { "destinos": ["xelha_soliman"], "van": 600, "sprinter": 900 },
+        { "destinos": ["akumal"], "van": 700, "sprinter": 1000 },
+        { "destinos": ["puerto_aventuras"], "van": 800, "sprinter": 1100 },
+        { "destinos": ["playa_del_carmen"], "van": 900, "sprinter": 1200 },
+        { "destinos": ["kanai", "maroma"], "van": 1000, "sprinter": 1300 },
+        { "destinos": ["puerto_morelos"], "van": 1200, "sprinter": 1500 },
+        { "destinos": ["ocean_turquesa"], "van": 1400, "sprinter": 1700 },
+        { "destinos": ["aeropuerto_cun", "moon_hilton_desatadora"], "van": 1500, "sprinter": 1800 },
+        { "destinos": ["zh_cancun"], "van": 1800, "sprinter": 2100 },
+        { "destinos": ["puerto_juarez", "playa_mujeres"], "van": 1900, "sprinter": 2200 },
+        { "destinos": ["costa_mujeres"], "van": 2000, "sprinter": 2300 },
+        { "destinos": ["isla_blanca"], "van": 2100, "sprinter": 2400 }
+      ]
+    }
+  ],
+  "tours": [
+    { "salida": "Zona blanca (P. Morelos, Costa Mujeres, P. Juárez)", "items": [
+      { "nombre": "Tulum Express (ruinas y un cenote)", "van": 4000, "sprinter": 5000 },
+      { "nombre": "Tulum Completo (ruinas, cenote y PDC)", "van": 4300, "sprinter": 5300 },
+      { "nombre": "Xcaret Full Day", "van": 3500, "sprinter": 4500 },
+      { "nombre": "Xel-Há Full Day", "van": 3900, "sprinter": 4900 },
+      { "nombre": "Chichén / Cenote / Valladolid", "van": 5000, "sprinter": 6300 } ] },
+    { "salida": "Cancún / ZH Cancún", "items": [
+      { "nombre": "Tulum Express (ruinas y un cenote)", "van": 3500, "sprinter": 4500 },
+      { "nombre": "Tulum Completo (ruinas, cenote y PDC)", "van": 4000, "sprinter": 5000 },
+      { "nombre": "Xcaret Full Day", "van": 3500, "sprinter": 4500 },
+      { "nombre": "Xel-Há Full Day", "van": 3800, "sprinter": 4800 },
+      { "nombre": "Chichén / Cenote / Valladolid", "van": 4500, "sprinter": 6000 } ] },
+    { "salida": "PDC y Tulum", "items": [
+      { "nombre": "Tulum Express (ruinas y un cenote)", "van": 2500, "sprinter": 3500 },
+      { "nombre": "Tulum Completo (ruinas, cenote y PDC)", "van": 3000, "sprinter": 4000 },
+      { "nombre": "Xcaret Full Day", "van": 2500, "sprinter": 3500 },
+      { "nombre": "Xel-Há Full Day", "van": 2500, "sprinter": 3500 },
+      { "nombre": "Chichén / Cenote / Valladolid", "van": 4500, "sprinter": 6000 } ] }
+  ],
+  "extras": [
+    { "nombre": "Servicio abierto por hora Cancún / zona blanca", "van": 450, "sprinter": 800 },
+    { "nombre": "Servicio abierto por hora PDC", "van": 450, "sprinter": 800 },
+    { "nombre": "Servicio abierto por hora Tulum", "van": 450, "sprinter": 800 },
+    { "nombre": "Río Lagartos", "van": 5000, "sprinter": 6000 },
+    { "nombre": "Mérida", "van": 7000, "sprinter": 8000 },
+    { "nombre": "Mahahual", "van": 7000, "sprinter": 8000 },
+    { "nombre": "Chetumal / Bacalar", "van": 7000, "sprinter": 8000 },
+    { "nombre": "Chiquilá", "van": 2700, "sprinter": 3700 },
+    { "nombre": "Valladolid", "van": 3000, "sprinter": 4000 }
+  ]
+}

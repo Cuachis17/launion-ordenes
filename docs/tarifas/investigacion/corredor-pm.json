@@ -1,0 +1,1194 @@
+[
+  {
+    "nombre": "Royalton Splash Riviera Cancun, An Autograph Collection All-Inclusive Resort",
+    "alias": [
+      "royalton splash",
+      "royalton splash riviera cancun",
+      "royalton splash cancun",
+      "splash riviera cancun"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Federal 307 Chetumal-Cancún Km 332, Puerto Morelos",
+    "km_carretera": "Km 332",
+    "estado": "abierto",
+    "fuente": "https://www.royaltonresorts.com/resorts/splash-riviera-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Royalton Riviera Cancun, An Autograph Collection All-Inclusive Resort & Casino",
+    "alias": [
+      "royalton riviera cancun",
+      "royalton riviera",
+      "royalton cancun petempich",
+      "royalton riviera cancun resort"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Federal 307 Chetumal-Cancún Km 332.15, Puerto Morelos",
+    "km_carretera": "Km 332.15",
+    "estado": "abierto",
+    "fuente": "https://www.royaltonresorts.com/resorts/riviera-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hideaway at Royalton Riviera Cancun, An Autograph Collection All-Inclusive Resort - Adults Only",
+    "alias": [
+      "hideaway at royalton riviera cancun",
+      "hideaway royalton riviera cancun",
+      "hideaway royalton",
+      "royalton hideaway"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, dentro del complejo Royalton Riviera Cancun, Carretera Federal 307 Km 332.15, Puerto Morelos",
+    "km_carretera": "Km 332.15",
+    "estado": "abierto",
+    "fuente": "https://www.royaltonresorts.com/resorts/hideaway-riviera-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Palmar Beach Resort Riviera Maya",
+    "alias": [
+      "azul beach resort riviera cancun",
+      "azul beach resort",
+      "azul beach hotel",
+      "azul beach by karisma",
+      "hotel palmar beach resort"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Puerto Morelos Km 27.5, Lote 4-02, Puerto Morelos",
+    "km_carretera": "Km 27.5",
+    "estado": "renombrado",
+    "fuente": "https://www.taferresorts.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Paraíso de la Bonita, a Luxury Collection Adult All-Inclusive Resort, Riviera Maya",
+    "alias": [
+      "zoetry paraiso de la bonita",
+      "zoetry paraiso de la bonita riviera maya",
+      "royalton reserve paraiso de la bonita",
+      "paraiso de la bonita"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Chetumal Km 328 (Km 27.5), SM 11, Mz 9, Lote 1, Puerto Morelos",
+    "km_carretera": "Km 328",
+    "estado": "renombrado",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunpl-paraiso-de-la-bonita-a-luxury-collection-adult-all-inclusive-resort-riviera-maya/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Margaritaville Island Reserve Riviera Cancun",
+    "alias": [
+      "margaritaville riviera cancun",
+      "margaritaville island reserve",
+      "margaritaville petempich",
+      "azul beach resort riviera maya"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Puerto Morelos Km 27.5, Puerto Morelos",
+    "km_carretera": "Km 27.5",
+    "estado": "abierto",
+    "fuente": "https://www.margaritavilleresorts.com/margaritaville-island-reserve-riviera-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Margaritaville Island Reserve Riviera Maya - Adults Only",
+    "alias": [
+      "margaritaville riviera maya",
+      "margaritaville adults only riviera maya",
+      "margaritaville island reserve riviera maya adults only"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Puerto Morelos Km 27.5, SM 12, Mz 41, Puerto Morelos",
+    "km_carretera": "Km 27.5",
+    "estado": "abierto",
+    "fuente": "https://www.margaritavilleresorts.com/margaritaville-island-reserve-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sensira Resort & Spa Riviera Maya",
+    "alias": [
+      "sensira resort",
+      "sensira riviera maya",
+      "sensira resort and spa",
+      "sensira petempich"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Tulum Km 27.5, Lote 4-01, Puerto Morelos",
+    "km_carretera": "Km 27.5",
+    "estado": "abierto",
+    "fuente": "https://www.sensiraresorts.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Breathless Riviera Cancun Resort & Spa",
+    "alias": [
+      "breathless riviera cancun",
+      "breathless puerto morelos",
+      "breathless cancun",
+      "breathless resort"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Puerto Morelos Km 27.5, Mz 41, Sm 12, Puerto Morelos",
+    "km_carretera": "Km 27.5",
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/breathless/mexico/riviera-cancun-resort-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Desire Riviera Maya Resort",
+    "alias": [
+      "desire riviera maya",
+      "desire rm",
+      "desire resort petempich",
+      "desire pearl partner resort"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Puerto Morelos Km 27.5, Sm 12, Mz 41, Puerto Morelos",
+    "km_carretera": "Km 27.5",
+    "estado": "abierto",
+    "fuente": "https://www.desireresorts.com/resorts/desire-riviera-maya-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Acamaya Reef Cabañas",
+    "alias": [
+      "acamaya reef",
+      "acamaya reef cabanas",
+      "acamaya reef beach club"
+    ],
+    "zona": "petempich",
+    "ubicacion": "Bahía Petempich, Carretera Cancún-Tulum Km 26.5, Puerto Morelos",
+    "km_carretera": "Km 26.5",
+    "estado": "abierto",
+    "fuente": "https://www.facebook.com/acamayareefcabanas/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Sapphire Resort & Spa",
+    "alias": [
+      "dreams sapphire",
+      "now sapphire riviera cancun",
+      "now sapphire",
+      "dreams sapphire puerto morelos"
+    ],
+    "zona": "ocean_turquesa",
+    "ubicacion": "Zona Federal Marítima, Carretera Federal 307 Chetumal-Cancún Km 328, SM 11, Mz 08, Lote 1-1, Puerto Morelos",
+    "km_carretera": "Km 328",
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/dreams/mexico/sapphire-resort-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ocean Coral & Turquesa Resort",
+    "alias": [
+      "ocean coral and turquesa",
+      "ocean coral & turquesa",
+      "ocean turquesa",
+      "ocean coral riviera cancun",
+      "h10 ocean coral"
+    ],
+    "zona": "ocean_turquesa",
+    "ubicacion": "Predio Santa Anita, Carretera Cancún-Chetumal Km 325, SM 12, Mz 5, Lote 1-5, Puerto Morelos",
+    "km_carretera": "Km 325",
+    "estado": "abierto",
+    "fuente": "https://www.oceanhotels.net/en/riviera-maya-hotels/ocean-coral-turquesa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Jade Resort & Spa",
+    "alias": [
+      "dreams jade",
+      "now jade riviera cancun",
+      "now jade",
+      "dreams jade puerto morelos"
+    ],
+    "zona": "ocean_turquesa",
+    "ubicacion": "Unidad 26 Mz 20 Lote 1-1, SM 3, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/dreams/mexico/jade-resort-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Excellence Riviera Cancun",
+    "alias": [
+      "excellence riviera cancun",
+      "excellence riviera",
+      "excellence puerto morelos",
+      "hotel excellence riviera"
+    ],
+    "zona": "ocean_turquesa",
+    "ubicacion": "Carretera Federal 307 Chetumal-Cancún Km 324.8, Mz 7, Lote 1, SM 11, Puerto Morelos",
+    "km_carretera": "Km 324.8",
+    "estado": "abierto",
+    "fuente": "https://www.excellenceresorts.com/cancun/excellence-riviera-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Riviera Cancun Resort & Spa",
+    "alias": [
+      "dreams riviera cancun",
+      "dreams riviera",
+      "dreams riviera cancun resort",
+      "dreams puerto morelos"
+    ],
+    "zona": "ocean_turquesa",
+    "ubicacion": "Calle 55, SM 11, Mz 4, Lote 1-01, acceso norte de Puerto Morelos",
+    "km_carretera": "Km 307",
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/dreams/mexico/riviera-cancun-resort-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Marina El Cid Spa & Beach Resort",
+    "alias": [
+      "marina el cid",
+      "el cid puerto morelos",
+      "el cid marina",
+      "hotel marina el cid"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Boulevard El Cid Mz 20 Lote 1-01, Unidad 15, SM 03, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.elcid.com/hotel-marina-el-cid-spa-beach-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ventus at Marina El Cid Spa & Beach Resort",
+    "alias": [
+      "ventus marina el cid",
+      "ventus el cid",
+      "ventus puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Boulevard El Cid Mz 20 Lote 1-01, Unidad 15, SM 03, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.elcid.com/ventus-at-marina-el-cid-spa-beach-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ventus Ha' at Marina El Cid Spa & Beach Resort",
+    "alias": [
+      "ventus ha marina el cid",
+      "ventus ha",
+      "ventus ha el cid"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Boulevard El Cid Mz 20 Lote 1-01, Unidad 15, SM 03, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.elcid.com/ventus-ha-at-marina-el-cid-spa-beach-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Holiday Inn Club Vacations Grand Residences Riviera Cancun",
+    "alias": [
+      "grand residences riviera cancun",
+      "grand residences puerto morelos",
+      "grand residences",
+      "grand residences royal resorts"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Boulevard El Cid Unidad 28, Lote 1-02, SM 03, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://grandresidencesrivieracancun.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Desire Riviera Maya Pearl Resort",
+    "alias": [
+      "desire pearl",
+      "desire pearl resort",
+      "desire pearl puerto morelos",
+      "ceiba del mar",
+      "ceiba del mar beach & spa resort"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Costera Norte Lote 1, SM 10, Mz 26, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "renombrado",
+    "fuente": "https://www.desireresorts.com/resorts/desire-pearl-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Fives Oceanfront Puerto Morelos",
+    "alias": [
+      "the fives oceanfront",
+      "the fives puerto morelos",
+      "fives oceanfront"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Av. Javier Rojo Gómez SM 02 Mz 25 Lote 01, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.thefiveshotels.com/the-fives-oceanfront",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hacienda Morelos Beachfront Hotel",
+    "alias": [
+      "hacienda morelos",
+      "hotel hacienda morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Av. Rafael E. Melgar SM 1 Mz 5 Lote 5, Centro, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://haciendamorelos.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Ojo de Agua Puerto Morelos",
+    "alias": [
+      "ojo de agua",
+      "hotel ojo de agua"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Calle Gómez Farías Mz 2 Lote 16, SM 02, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelojodeagua.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Caracol Puerto Morelos",
+    "alias": [
+      "hotel caracol",
+      "caracol puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Av. Niños Héroes SM 01 Mz 06 Lote 06, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/caracol-puerto-morelos.html",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Posada Amor",
+    "alias": [
+      "posada amor",
+      "posada amor puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Calle Javier Rojo Gómez SM 01 Mz 04 Lote 06, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.posadaamor.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa del Puerto by Klubs",
+    "alias": [
+      "casa del puerto",
+      "casa del puerto hotel boutique",
+      "casa del puerto puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Calle Privada Lote 1, SM 03 Mz 15, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.casadelpuerto.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Arrecifes Suites",
+    "alias": [
+      "arrecifes suites",
+      "arrecifes suites puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Av. Javier Rojo Gómez Mz 15 Lote 03, SM 02, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://arrecifessuites.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Rancho Sak-Ol",
+    "alias": [
+      "rancho sak ol",
+      "rancho sak-ol puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Av. Javier Rojo Gómez S/N, SM 02, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/rancho-sak-ol.html",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "We Hotel Puerto Morelos",
+    "alias": [
+      "we hotel",
+      "we hotel puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Av. Rafael E. Melgar Lote 7, Mz 2, SM 01, Puerto Morelos",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.wehotelpuertomorelos.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Lunita Jungle Experience",
+    "alias": [
+      "lunita jungle hotel",
+      "lunita jungle",
+      "hotel lunita puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Ruta de los Cenotes Km 16.5, Puerto Morelos",
+    "km_carretera": "Km 16.5 Ruta Cenotes",
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/lunita-jungle-experience.html",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Proyecto K8",
+    "alias": [
+      "proyecto km8",
+      "proyecto k8 puerto morelos"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Ruta de los Cenotes Km 8.9, Puerto Morelos",
+    "km_carretera": "Km 8.9 Ruta Cenotes",
+    "estado": "abierto",
+    "fuente": "https://www.facebook.com/ProyectoK8/",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Aldea Maya-Ha",
+    "alias": [
+      "aldea maya ha",
+      "maya-ha cabanas"
+    ],
+    "zona": "puerto_morelos",
+    "ubicacion": "Ruta de los Cenotes Km 3.5, Puerto Morelos",
+    "km_carretera": "Km 3.5 Ruta Cenotes",
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/aldea-maya-ha-cenotes-y-cabanas.html",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Nickelodeon Hotels & Resorts Riviera Maya",
+    "alias": [
+      "nickelodeon riviera maya",
+      "nickelodeon resort",
+      "nickelodeon karisma",
+      "hotel nickelodeon"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Cancún-Tulum Km 45, Playa del Secreto, Riviera Maya",
+    "km_carretera": "Km 45",
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/nickelodeon-hotels-resorts/riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Dorado Royale, Cat Gourmet Inclusive Resort by Karisma",
+    "alias": [
+      "el dorado royale",
+      "eldorado royale",
+      "el dorado royale karisma"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Cancún-Tulum Km 45, Playa del Secreto, Riviera Maya",
+    "km_carretera": "Km 45",
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/el-dorado-spa-resorts/royale",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Dorado Casitas Royale, by Karisma",
+    "alias": [
+      "el dorado casitas royale",
+      "casitas royale",
+      "el dorado casitas"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Cancún-Tulum Km 45, Playa del Secreto, Riviera Maya",
+    "km_carretera": "Km 45",
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/el-dorado-spa-resorts/casitas-royale",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Generations Riviera Maya, by Karisma",
+    "alias": [
+      "generations riviera maya",
+      "generations resort",
+      "generations karisma"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Cancún-Tulum Km 45, Playa del Secreto, Riviera Maya",
+    "km_carretera": "Km 45",
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/generations-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Valentin Imperial Riviera Maya",
+    "alias": [
+      "valentin imperial",
+      "valentin imperial maya",
+      "valentin imperial riviera maya all inclusive",
+      "valentin resort"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Federal 307 Chetumal-Puerto Juárez Km 311, Playa del Secreto",
+    "km_carretera": "Km 311",
+    "estado": "abierto",
+    "fuente": "https://www.valentinmaya.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Villas Playa del Secreto",
+    "alias": [
+      "playa del secreto villas",
+      "villas del secreto",
+      "playa del secreto gated community"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Fraccionamiento Playa del Secreto, Carretera Federal 307 Km 312, Playa del Secreto",
+    "km_carretera": "Km 312",
+    "estado": "abierto",
+    "fuente": "https://www.locogringo.com/mexico/riviera-maya/playa-del-secreto",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Luxxe at Vidanta Riviera Maya",
+    "alias": [
+      "grand luxxe vidanta",
+      "grand luxxe riviera maya",
+      "vidanta grand luxxe"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Vidanta Riviera Maya, Carretera Federal Cancún-Playa del Carmen Km 48, Playa Paraíso",
+    "km_carretera": "Km 48",
+    "estado": "abierto",
+    "fuente": "https://www.vidanta.com/riviera-maya/grand-luxxe",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Grand Mayan at Vidanta Riviera Maya",
+    "alias": [
+      "grand mayan vidanta",
+      "the grand mayan riviera maya",
+      "vidanta grand mayan"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Vidanta Riviera Maya, Carretera Federal Cancún-Playa del Carmen Km 48, Playa Paraíso",
+    "km_carretera": "Km 48",
+    "estado": "abierto",
+    "fuente": "https://www.vidanta.com/riviera-maya/the-grand-mayan",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Bliss at Vidanta Riviera Maya",
+    "alias": [
+      "the bliss vidanta",
+      "the bliss riviera maya",
+      "vidanta the bliss"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Vidanta Riviera Maya, Carretera Federal Cancún-Playa del Carmen Km 48, Playa Paraíso",
+    "km_carretera": "Km 48",
+    "estado": "abierto",
+    "fuente": "https://www.vidanta.com/riviera-maya/the-bliss",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Cascades at Vidanta Riviera Maya",
+    "alias": [
+      "the cascades vidanta",
+      "the cascades riviera maya",
+      "vidanta cascades"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Vidanta Riviera Maya, Carretera Federal Cancún-Playa del Carmen Km 48, Playa Paraíso",
+    "km_carretera": "Km 48",
+    "estado": "abierto",
+    "fuente": "https://www.vidanta.com/riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mayan Palace at Vidanta Riviera Maya",
+    "alias": [
+      "mayan palace vidanta",
+      "mayan palace riviera maya",
+      "vidanta mayan palace"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Vidanta Riviera Maya, Carretera Federal Cancún-Playa del Carmen Km 48, Playa Paraíso",
+    "km_carretera": "Km 48",
+    "estado": "abierto",
+    "fuente": "https://www.vidanta.com/riviera-maya/mayan-palace",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Cirque du Soleil JOYÀ / Jungala Aqua Experience at Vidanta Riviera Maya",
+    "alias": [
+      "cirque du soleil joya",
+      "joya vidanta",
+      "jungala aqua experience",
+      "jungala park"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Vidanta Riviera Maya, Carretera Federal Cancún-Playa del Carmen Km 48, Playa Paraíso",
+    "km_carretera": "Km 48",
+    "estado": "abierto",
+    "fuente": "https://www.cirquedusoleil.com/joya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "JOIA Paraíso by Iberostar",
+    "alias": [
+      "iberostar grand paraiso",
+      "joia paraiso",
+      "joia paraiso by iberostar",
+      "grand paraiso iberostar"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Iberostar Playa Paraíso, Carretera Chetumal-Puerto Juárez Km 309, Playa Paraíso",
+    "km_carretera": "Km 309",
+    "estado": "renombrado",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/joia-paraiso-by-iberostar/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Selection Paraíso Maya Suites",
+    "alias": [
+      "iberostar paraiso maya",
+      "iberostar selection paraiso maya",
+      "paraiso maya iberostar"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Iberostar Playa Paraíso, Carretera Chetumal-Puerto Juárez Km 309, Playa Paraíso",
+    "km_carretera": "Km 309",
+    "estado": "abierto",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/iberostar-paraiso-maya/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Selection Paraíso Lindo",
+    "alias": [
+      "iberostar paraiso lindo",
+      "iberostar selection paraiso lindo",
+      "paraiso lindo iberostar"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Iberostar Playa Paraíso, Carretera Chetumal-Puerto Juárez Km 309, Playa Paraíso",
+    "km_carretera": "Km 309",
+    "estado": "abierto",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/iberostar-paraiso-lindo/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Waves Paraíso Beach",
+    "alias": [
+      "iberostar paraiso beach",
+      "iberostar waves paraiso beach",
+      "paraiso beach iberostar"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Iberostar Playa Paraíso, Carretera Chetumal-Puerto Juárez Km 309, Playa Paraíso",
+    "km_carretera": "Km 309",
+    "estado": "renombrado",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/iberostar-paraiso-beach/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Waves Paraíso del Mar",
+    "alias": [
+      "iberostar paraiso del mar",
+      "iberostar waves paraiso del mar",
+      "paraiso del mar iberostar"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Complejo Iberostar Playa Paraíso, Carretera Chetumal-Puerto Juárez Km 309, Playa Paraíso",
+    "km_carretera": "Km 309",
+    "estado": "renombrado",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/iberostar-paraiso-del-mar/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Maroma, A Belmond Hotel, Riviera Maya",
+    "alias": [
+      "belmond maroma",
+      "maroma belmond",
+      "hotel maroma",
+      "maroma resort and spa"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 51, Punta Maroma",
+    "km_carretera": "Km 51",
+    "estado": "abierto",
+    "fuente": "https://www.belmond.com/hotels/north-america/mexico/riviera-maya/belmond-maroma-resort-and-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets Maroma Beach Riviera Cancun",
+    "alias": [
+      "secrets maroma",
+      "secrets maroma beach",
+      "secrets maroma riviera cancun"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Federal 307 Chetumal-Puerto Juárez Km 306.5, Solidaridad, Punta Maroma",
+    "km_carretera": "Km 306.5",
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets/mexico/maroma-beach-riviera-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Catalonia Playa Maroma",
+    "alias": [
+      "catalonia maroma",
+      "catalonia playa maroma all inclusive",
+      "hotel catalonia maroma"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Federal 307 Chetumal-Puerto Juárez Km 307, Punta Maroma",
+    "km_carretera": "Km 307",
+    "estado": "abierto",
+    "fuente": "https://www.cataloniahotels.com/en/hotel/catalonia-playa-maroma",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Chablé Maroma",
+    "alias": [
+      "chable maroma",
+      "chable resort maroma",
+      "hotel chable maroma"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Camino predio El Chillar Mz 40 Lote 29, Punta Maroma",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://chablehotels.com/maroma/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Dorado Maroma, by Karisma",
+    "alias": [
+      "el dorado maroma",
+      "eldorado maroma",
+      "el dorado maroma beach"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Cancún-Tulum Km 55.3, Punta Maroma",
+    "km_carretera": "Km 55.3",
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/el-dorado-spa-resorts/maroma",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Palafitos Overwater Bungalows at El Dorado Maroma",
+    "alias": [
+      "palafitos overwater bungalows",
+      "palafitos maroma",
+      "palafitos el dorado"
+    ],
+    "zona": "maroma",
+    "ubicacion": "Carretera Cancún-Tulum Km 55.3, Punta Maroma",
+    "km_carretera": "Km 55.3",
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/el-dorado-spa-resorts/palafitos-overwater-bungalows",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Kimpton Tres Ríos Riviera Maya",
+    "alias": [
+      "hacienda tres rios",
+      "hacienda tres rios resort spa and nature park",
+      "kimpton tres rios",
+      "tres rios riviera maya"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Cancún-Tulum Km 54, Tres Ríos, Solidaridad",
+    "km_carretera": "Km 54",
+    "estado": "renombrado",
+    "fuente": "https://www.ihg.com/kimptonhotels/hotels/us/en/tres-rios-riviera-maya/cuntr/hoteldetail",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The St. Regis Kanai Resort, Riviera Maya",
+    "alias": [
+      "st regis kanai",
+      "st. regis kanai",
+      "st regis riviera maya",
+      "the st regis kanai resort"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Kanai, Paseo Kanai 15, Solidaridad, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunsr-the-st-regis-kanai-resort-riviera-maya/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Riviera Maya EDITION at Kanai",
+    "alias": [
+      "edition kanai",
+      "riviera maya edition",
+      "the edition kanai",
+      "edition hotel riviera maya"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Kanai, Paseo Kanai 14, Solidaridad, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.editionhotels.com/riviera-maya/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Etéreo, Auberge Resorts Collection",
+    "alias": [
+      "etereo kanai",
+      "etereo auberge",
+      "etereo riviera maya",
+      "etereo resort"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Kanai, Paseo Kanai 16, Solidaridad, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://aubergeresorts.com/etereo/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "BlueBay Grand Esmeralda",
+    "alias": [
+      "bluebay grand esmeralda",
+      "blue bay grand esmeralda",
+      "bluebay esmeralda",
+      "bb esmeralda"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Federal Chetumal-Puerto Juárez Km 298, Solidaridad, Playa del Carmen",
+    "km_carretera": "Km 298",
+    "estado": "abierto",
+    "fuente": "https://www.bluebaygrandesmeralda.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ocean Maya Royale - Adults Only",
+    "alias": [
+      "ocean maya royale",
+      "ocean maya",
+      "h10 ocean maya",
+      "ocean maya royale adults only"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Federal Chetumal-Cancún Km 299, Solidaridad, Playa del Carmen",
+    "km_carretera": "Km 299",
+    "estado": "abierto",
+    "fuente": "https://www.oceanhotels.net/en/riviera-maya-hotels/ocean-maya-royale",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Rosewood Mayakoba",
+    "alias": [
+      "rosewood mayakoba",
+      "rosewood riviera maya",
+      "hotel rosewood mayakoba"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Mayakoba, Carretera Federal Cancún-Playa del Carmen Km 298, Solidaridad",
+    "km_carretera": "Km 298",
+    "estado": "abierto",
+    "fuente": "https://www.rosewoodhotels.com/en/mayakoba-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Banyan Tree Mayakoba",
+    "alias": [
+      "banyan tree mayakoba",
+      "banyan tree riviera maya",
+      "hotel banyan tree mayakoba"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Mayakoba, Carretera Federal Cancún-Playa del Carmen Km 298, Solidaridad",
+    "km_carretera": "Km 298",
+    "estado": "abierto",
+    "fuente": "https://www.banyantree.com/mexico/mayakoba",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Fairmont Mayakoba",
+    "alias": [
+      "fairmont mayakoba",
+      "fairmont riviera maya",
+      "hotel fairmont mayakoba"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Mayakoba, Carretera Federal Cancún-Playa del Carmen Km 298, Solidaridad",
+    "km_carretera": "Km 298",
+    "estado": "abierto",
+    "fuente": "https://www.fairmont.com/mayakoba-riviera-maya/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Andaz Mayakoba Resort Riviera Maya",
+    "alias": [
+      "andaz mayakoba",
+      "andaz mayakoba resort",
+      "andaz riviera maya"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Complejo Mayakoba, Carretera Federal Cancún-Playa del Carmen Km 298, Solidaridad",
+    "km_carretera": "Km 298",
+    "estado": "abierto",
+    "fuente": "https://www.hyatt.com/andaz/cunam-andaz-mayakoba-resort-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Velas Riviera Maya",
+    "alias": [
+      "grand velas riviera maya",
+      "grand velas",
+      "grand velas zen grand",
+      "grand velas ambassador",
+      "grand velas grand class"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Cancún-Tulum Km 298, Solidaridad, Playa del Carmen",
+    "km_carretera": "Km 298",
+    "estado": "abierto",
+    "fuente": "https://rivieramaya.grandvelas.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Riviera Princess All Suites & Spa Resort",
+    "alias": [
+      "grand riviera princess",
+      "princess riviera maya",
+      "grand riviera princess resort"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Prolongación 5ta Avenida Mz 20 Lote 006, Playa Xcalacoco, Playa del Carmen",
+    "km_carretera": "Km 296",
+    "estado": "abierto",
+    "fuente": "https://www.princess-hotels.com/riviera-maya/grand-riviera-princess/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Sunset Princess All Suites & Spa Resort",
+    "alias": [
+      "grand sunset princess",
+      "sunset princess",
+      "grand sunset princess resort"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Prolongación 5ta Avenida Mz 20 Lote 006, Playa Xcalacoco, Playa del Carmen",
+    "km_carretera": "Km 296",
+    "estado": "abierto",
+    "fuente": "https://www.princess-hotels.com/riviera-maya/grand-sunset-princess/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Platinum Yucatan Princess All Suites & Spa Resort - Adults Only",
+    "alias": [
+      "platinum yucatan princess",
+      "platinum princess adults only",
+      "princess platinum riviera maya"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Prolongación 5ta Avenida Mz 20 Lote 006, Playa Xcalacoco, Playa del Carmen",
+    "km_carretera": "Km 296",
+    "estado": "abierto",
+    "fuente": "https://www.princess-hotels.com/riviera-maya/platinum-yucatan-princess/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Family Club at Grand Riviera Princess",
+    "alias": [
+      "family club princess",
+      "family club grand riviera princess"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Prolongación 5ta Avenida Mz 20 Lote 006, Playa Xcalacoco, Playa del Carmen",
+    "km_carretera": "Km 296",
+    "estado": "abierto",
+    "fuente": "https://www.princess-hotels.com/riviera-maya/family-club-princess/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sandos Caracol Eco Resort",
+    "alias": [
+      "sandos caracol",
+      "sandos caracol eco resort & spa",
+      "sandos caracol playa del carmen"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Cancún-Chetumal Km 295, Solidaridad, Playa del Carmen",
+    "km_carretera": "Km 295",
+    "estado": "abierto",
+    "fuente": "https://www.sandos.com/sandos-caracol/eco-resort",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Select Club Adults Only at Sandos Caracol",
+    "alias": [
+      "select club sandos caracol",
+      "sandos caracol select club",
+      "sandos caracol adults only"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Cancún-Chetumal Km 295, Solidaridad, Playa del Carmen",
+    "km_carretera": "Km 295",
+    "estado": "abierto",
+    "fuente": "https://www.sandos.com/sandos-caracol/select-club-adults-only",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ocean Riviera Paradise",
+    "alias": [
+      "ocean riviera paradise",
+      "ocean riviera",
+      "h10 ocean riviera paradise",
+      "ocean riviera paradise el beso",
+      "ocean riviera paradise daisy"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Federal Chetumal-Cancún Km 296, Mz 020, Lote 007-1, Xcalacoco, Playa del Carmen",
+    "km_carretera": "Km 296",
+    "estado": "abierto",
+    "fuente": "https://www.oceanhotels.net/en/riviera-maya-hotels/ocean-riviera-paradise",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Petit Lafitte Beachfront Hotel & Bungalows",
+    "alias": [
+      "petit lafitte",
+      "hotel petit lafitte",
+      "petit lafitte bungalows"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Carretera Cancún-Chetumal Km 296 + 2.1, Playa Xcalacoco, Playa del Carmen",
+    "km_carretera": "Km 296",
+    "estado": "abierto",
+    "fuente": "https://www.petitlafitte.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Le Rêve by MIJ Beachfront Hotel",
+    "alias": [
+      "le reve hotel",
+      "le reve hotel & spa",
+      "le reve boutique hotel",
+      "le reve xcalacoco"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Playa Xcalacoco Lote 1, Solidaridad, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.mijhotels.com/en/hotel-le-reve-hotel-and-spa-in-playa-del-carmen/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Fives Beach Hotel & Residences",
+    "alias": [
+      "the fives beach",
+      "the fives beach hotel",
+      "the fives azul beach resort",
+      "the fives xcalacoco",
+      "the fives residences"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Predio El Limonar Fracción 1, Playa Xcalacoco, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.thefiveshotels.com/the-fives-beach",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Viceroy Riviera Maya",
+    "alias": [
+      "viceroy riviera maya",
+      "viceroy",
+      "hotel viceroy",
+      "viceroy xcalacoco"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Playa Xcalacoco Fracción 7, Solidaridad, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.viceroyhotelsandresorts.com/riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets Moxché Playa del Carmen",
+    "alias": [
+      "secrets moxche",
+      "secrets moxche playa del carmen",
+      "secrets moxche corasol"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Comunidad Residencial Corasol, Carretera Federal Cancún-Chetumal Km 294, Playa del Carmen",
+    "km_carretera": "Km 294",
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets/mexico/moxche-playa-del-carmen/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Impression Moxché by Secrets",
+    "alias": [
+      "impression moxche",
+      "impression moxche by secrets",
+      "impression by secrets moxche"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Comunidad Residencial Corasol, Carretera Federal Cancún-Chetumal Km 294, Playa del Carmen",
+    "km_carretera": "Km 294",
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/en/resorts-hotels/impression-by-secrets/mexico/moxche/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mareazul Resort Playa del Carmen",
+    "alias": [
+      "mareazul",
+      "mareazul corasol",
+      "mareazul resort",
+      "mareazul playa del carmen"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Comunidad Residencial Corasol, Carretera Federal Cancún-Chetumal Km 294, Playa del Carmen",
+    "km_carretera": "Km 294",
+    "estado": "abierto",
+    "fuente": "https://www.mareazul.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Nick Price Residences Corasol",
+    "alias": [
+      "nick price corasol",
+      "nick price residences",
+      "nick price condo corasol"
+    ],
+    "zona": "kanai",
+    "ubicacion": "Comunidad Residencial Corasol, Carretera Federal Cancún-Chetumal Km 294, Playa del Carmen",
+    "km_carretera": "Km 294",
+    "estado": "abierto",
+    "fuente": "https://corasol.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Punta Esmeralda",
+    "alias": [
+      "hotel punta esmeralda",
+      "punta esmeralda hotel",
+      "punta esmeralda suites"
+    ],
+    "zona": "kanai",
+    "ubicacion": "5ta Avenida Norte Mz 271 Lote 5 entre Calle 110 y 112, Col. Luis Donaldo Colosio / Punta Esmeralda, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/punta-esmeralda.html",
+    "confianza": "alta"
+  }
+]

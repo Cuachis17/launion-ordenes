@@ -1,0 +1,882 @@
+[
+  {
+    "nombre": "Playacar Palace",
+    "alias": ["Playacar Palace Resort", "Palace Resorts Playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Bahía del Espíritu Santo s/n, Playacar Fase I, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.palaceresorts.com/playacar-palace",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Palace Riviera Maya",
+    "alias": ["riu palace", "riu playacar palace"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Mz 9 y 10 Lote 1, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/playa-del-carmen/hotel-riu-palace-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Palace Mexico",
+    "alias": ["riu mexico", "riu palace mexico playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Mz 3 Lote 4, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/playa-del-carmen/hotel-riu-palace-mexico",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Playacar",
+    "alias": ["hotel riu playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Mz 6 Lote 6, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/playa-del-carmen/hotel-riu-playacar",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Yucatan",
+    "alias": ["hotel riu yucatan"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Mz 3 Lote 1, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/playa-del-carmen/hotel-riu-yucatan",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Tequila",
+    "alias": ["hotel riu tequila"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Mz 25 Lote 19, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/playa-del-carmen/hotel-riu-tequila",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Lupita",
+    "alias": ["hotel riu lupita", "riu lupita playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Mz 20 Lote 1, cerca del Club de Golf Playacar, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/playa-del-carmen/hotel-riu-lupita",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Royal Hideaway Playacar",
+    "alias": ["Royal Hideaway", "Barcelo Royal Hideaway"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Lote Hotelero 6, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/royal-hideaway-playacar",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sandos Playacar All Inclusive",
+    "alias": ["Sandos Playacar Beach Resort", "Select Club at Sandos Playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Paseo Xaman-Ha Mz 1 Lote 1, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.sandos.com/es/sandos-playacar/resort-todo-incluido",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Waves Tucan",
+    "alias": ["Iberostar Tucan", "Hotel Iberostar Waves Tucan"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Lote 19-20, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "renombrado",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/iberostar-waves-tucan",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Waves Quetzal",
+    "alias": ["Iberostar Quetzal", "Hotel Iberostar Waves Quetzal"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Xaman-Ha Lote 19-20, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "renombrado",
+    "fuente": "https://www.iberostar.com/hoteles/riviera-maya/iberostar-waves-quetzal",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Viva Maya by Wyndham",
+    "alias": ["Viva Wyndham Maya"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Paseo Xaman-Ha Lote 5 Mz 2, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.wyndhamhotels.com/viva/playa-del-carmen-mexico/viva-maya-by-wyndham-all-inclusive-resort/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Viva Azteca by Wyndham",
+    "alias": ["Viva Wyndham Azteca"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Paseo Xaman-Ha Lote 8 Mz 2, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.wyndhamhotels.com/viva/playa-del-carmen-mexico/viva-azteca-by-wyndham-all-inclusive-resort/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Reef Playacar Resort & Spa",
+    "alias": ["The Reef Playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Paseo Xaman-Ha Lote 1 Fracc, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.thereefresorts.com/thereefplayacar",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Allegro Playacar",
+    "alias": ["Occidental Allegro Playacar", "Allegro Playacar Resort"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Lote Hotelero 7, Playacar Fase II, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/allegro-playacar",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sunset Fishermen Beach Resort Playa del Carmen",
+    "alias": ["Sunset Fishermen", "Sunset Fishermen Beach & Spa Resort"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle Bahía del Espíritu Santo s/n, Playacar Fase I, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.sunsetfishermen.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Condominio Xaman Ha",
+    "alias": ["Xaman Ha Condos", "Condos Xaman-Ha Playacar"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Playacar Fase I, frente al mar, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.xamanha.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Palmaïa, The House of AïA",
+    "alias": ["Palmaia", "The House of AiA Palmaia"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Paseo Xaman-Ha Mz 1 Lote 1 Sur, Playacar Sur, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://thehouseofaia.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Xcaret México",
+    "alias": ["Hotel Xcaret", "Xcaret Mexico"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Carretera Federal Chetumal-Puerto Juárez Km 282, Playa del Carmen",
+    "km_carretera": 282,
+    "estado": "abierto",
+    "fuente": "https://www.hotelxcaret.com/es/hotel-xcaret-mexico",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Xcaret Arte",
+    "alias": ["Xcaret Arte", "Hotel Xcaret Arte Solo Adultos"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Carretera Federal Chetumal-Puerto Juárez Km 282, Playa del Carmen",
+    "km_carretera": 282,
+    "estado": "abierto",
+    "fuente": "https://www.hotelxcaret.com/es/hotel-xcaret-arte",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "La Casa de la Playa by Xcaret",
+    "alias": ["La Casa de la Playa", "Casa de la Playa Xcaret"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Carretera Federal Chetumal-Puerto Juárez Km 282, Playa del Carmen",
+    "km_carretera": 282,
+    "estado": "abierto",
+    "fuente": "https://www.lacasadelaplaya.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Occidental at Xcaret Destination",
+    "alias": ["Occidental Grand Xcaret", "Occidental Xcaret"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Carretera Federal Chetumal-Puerto Juárez Km 282, Playa del Carmen",
+    "km_carretera": 282,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/occidental-at-xcaret-destination",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Hyatt Playa del Carmen Resort",
+    "alias": ["Grand Hyatt Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "1ª Avenida Esquina Calle 26 Norte, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyatt.com/grand-hyatt/es-ES/cunpc-grand-hyatt-playa-del-carmen-resort",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hilton Playa del Carmen, an All-Inclusive Adult Only Resort",
+    "alias": ["The Royal Playa del Carmen", "Hilton Playa del Carmen All Inclusive"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Constituyentes 2, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/pvrpchi-hilton-playa-del-carmen-an-all-inclusive-adult-only-resort",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hyatt Centric Playa del Carmen Downtown House",
+    "alias": ["Thompson Playa del Carmen Main House", "Thompson Downtown Playa del Carmen", "Hyatt Centric Downtown House"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 12 Norte entre 5ª Avenida y 10ª Avenida, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "renombrado",
+    "fuente": "https://www.hyatt.com/hyatt-centric/pvrct-hyatt-centric-playa-del-carmen",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hyatt Centric Playa del Carmen Beach House",
+    "alias": ["Thompson Playa del Carmen Beach House", "Thompson Beach House", "Hyatt Centric Beach House"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 8 Norte con Playa, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "renombrado",
+    "fuente": "https://www.hyatt.com/hyatt-centric/pvrct-hyatt-centric-playa-del-carmen",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Fives Downtown Hotel & Residences, Curio Collection by Hilton",
+    "alias": ["The Fives Downtown", "Curio Collection by Hilton Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "10ª Avenida Norte esquina Calle 2 Norte, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/czmupqq-the-fives-downtown-hotel-and-residences",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mahekal Beach Resort",
+    "alias": ["Mahekal Beach Front Resort", "Mahekal Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 38 Norte entre 5ª Avenida y Zona Federal Marítima, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.mahekalbeachresort.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Paradisus Playa del Carmen",
+    "alias": ["Paradisus Riviera Maya", "Paradisus Playa del Carmen Family Concierge"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "5ª Avenida con Calle 88 y Calle 112 Norte, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.melia.com/es/hoteles/mexico/playa-del-carmen/paradisus-playa-del-carmen",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Paradisus La Perla - Adults Only",
+    "alias": ["Paradisus La Perla", "Paradisus Playa del Carmen La Perla"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "5ª Avenida con Calle 88 y Calle 112 Norte, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.melia.com/es/hoteles/mexico/playa-del-carmen/paradisus-la-perla",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Reef Coco Beach Resort & Spa",
+    "alias": ["The Reef Coco Beach"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 48 Norte s/n Fracc. Gonzalo Guerrero, Coco Beach, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.thereefresorts.com/thereefcocobeach",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Elements Oceanfront Condos",
+    "alias": ["The Elements Playa del Carmen", "The Elements Condos Coco Beach"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 46 Norte y Av. Flamingos, Coco Beach, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://theelementscondos.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Palm at Playa",
+    "alias": ["The Palm Hotel Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 8 Norte entre 5ª Avenida y 10ª Avenida, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://thepalmatplaya.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Reina Roja Hotel",
+    "alias": ["Hotel Reina Roja Adults Only"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 20 Norte entre 5ª Avenida y 10ª Avenida, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://reinarojahotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "HM Playa del Carmen",
+    "alias": ["Hotel HM Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Constituyentes entre Calle 15 y 20 Norte, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hmhotels.net/es/hoteles/hm-playa-del-carmen",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "HM Suites Playa del Carmen",
+    "alias": ["Hotel HM Suites"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 20 Norte entre Av. 10 y 15, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hmhotels.net/es/hoteles/hm-suites-playa-del-carmen",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Soho Playa Hotel",
+    "alias": ["Hotel Soho Playa"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. 10 Norte entre Calles 24 y 26 Norte, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://sohoplayahotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Magic Blue Spa Boutique Hotel",
+    "alias": ["Magic Blue Adults Only", "Magic Blue Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 10 Norte entre 5ª y 10ª Avenida, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.magicblueboutiquehotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Tukan Hotel & Beach Club",
+    "alias": ["Tukan Hotel Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "5ª Avenida entre Calles 14 y 16 Norte, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.tukanhotels.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Carmen Hotel",
+    "alias": ["The Carmen Beachfront Hotel Adults Only"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 8 Norte con Zona Federal Marítima, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.carmenhotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Aloft Playa del Carmen",
+    "alias": ["Aloft Hotel Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 34 Norte entre 10ª y 5ª Avenida, Gonzalo Guerrero, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunlp-aloft-playa-del-carmen/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Fiesta Inn Playa del Carmen",
+    "alias": ["Hotel Fiesta Inn Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 10 Norte entre Av. 20 y 25 Norte, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.fiestainn.com/hoteles/fiesta-inn-playa-del-carmen",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "City Express by Marriott Playa del Carmen",
+    "alias": ["City Express Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Balamkanche Lote 30 Mz 30, Fracc. Playacar / Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/es/hotels/cuncp-city-express-playa-del-carmen/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "City Express Suites by Marriott Playa del Carmen",
+    "alias": ["City Express Suites Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Av. Balamkanche Lote 30 Mz 30, Fracc. Playacar / Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/es/hotels/cunsp-city-express-suites-playa-del-carmen/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Wyndham Garden Playa del Carmen",
+    "alias": ["Wyndham Garden Plaza Maya Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Lote 65 Mz 29 Plaza Maya, Fracc. Playacar, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.wyndhamhotels.com/wyndham-garden/playa-del-carmen-mexico/wyndham-garden-playa-del-carmen/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Colibri Beach",
+    "alias": ["Colibri Beach Hotel"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 1 y Calle 12 Norte Bis, Playa Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hotelcolibribeach.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Antera Hotel & Residences",
+    "alias": ["Antera Hotel Playa del Carmen"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Calle 1 Sur entre Av. 5 y 10, Centro, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://anterahotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Estación Tren Maya Playa del Carmen",
+    "alias": ["Tren Maya Playa del Carmen", "Estacion de Tren Maya PDC"],
+    "zona": "playa_del_carmen",
+    "ubicacion": "Carretera Federal Cancún-Tulum con Av. Tintal, Playa del Carmen",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.trenmaya.gob.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Aventuras Riviera Maya",
+    "alias": ["Dreams Puerto Aventuras Resort & Spa", "Dreams Puerto Aventuras"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Bahía de Xcacel Lote 1 Mz 21, Complejo Náutico Puerto Aventuras",
+    "km_carretera": 269,
+    "estado": "renombrado",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-y-hoteles/dreams/aventuras-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Catalonia Riviera Maya Resort & Spa",
+    "alias": ["Catalonia Riviera Maya"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Av. Bahía Xcacel Lote 1 Mz 13, Complejo Náutico Puerto Aventuras",
+    "km_carretera": 269,
+    "estado": "abierto",
+    "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Catalonia Yucatan Beach",
+    "alias": ["Catalonia Yucatan Beach Resort & Spa"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Av. Bahía Xcacel Lote 1 Mz 13, Complejo Náutico Puerto Aventuras",
+    "km_carretera": 269,
+    "estado": "abierto",
+    "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-yucatan-beach",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hard Rock Hotel Riviera Maya - Hacienda",
+    "alias": ["Hard Rock Riviera Maya", "Hard Rock Hotel Riviera Maya"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Cancún-Chetumal Km 72 (Km 272), Puerto Aventuras",
+    "km_carretera": 272,
+    "estado": "abierto",
+    "fuente": "https://www.hardrockhotels.com/riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hard Rock Hotel Riviera Maya - Heaven",
+    "alias": ["Hard Rock Heaven", "Hard Rock Hotel Riviera Maya Adults Only"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Cancún-Chetumal Km 72 (Km 272), Puerto Aventuras",
+    "km_carretera": 272,
+    "estado": "abierto",
+    "fuente": "https://www.hardrockhotels.com/riviera-maya/heaven",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Puerto Aventuras Hotel & Beach Club",
+    "alias": ["Omni Puerto Aventuras Beach Resort", "Omni Puerto Aventuras", "PA Beach Club & Hotel"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Av. Bahía Xcacel Lote 1 Mz 10, Complejo Náutico Puerto Aventuras",
+    "km_carretera": 269,
+    "estado": "renombrado",
+    "fuente": "https://puertoaventurashotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Aventuras Club Lagoon & Marina",
+    "alias": ["Aventuras Club Marina", "Aventuras Club Condos Puerto Aventuras"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Bahía de Xcacel Lote 1 Mz 18, Puerto Aventuras",
+    "km_carretera": 269,
+    "estado": "abierto",
+    "fuente": "https://www.aventurasclub.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Paamul",
+    "alias": ["Paamul Hotel", "Cabañas Paamul", "Paamul Beach"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Bahía de Paamul, Carretera Federal Cancún-Tulum Km 275",
+    "km_carretera": 275,
+    "estado": "abierto",
+    "fuente": "https://www.paamul.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Punta Venado Caribbean Eco-Park",
+    "alias": ["Punta Venado Beach Club", "Punta Venado"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Federal Cancún-Chetumal Km 278, entre Playa del Carmen y Puerto Aventuras",
+    "km_carretera": 278,
+    "estado": "abierto",
+    "fuente": "https://puntavenado.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Barceló Maya Beach",
+    "alias": ["Barcelo Maya Grand Resort", "Barcelo Maya Beach Resort"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 266.3, Xpu-Há / Puerto Aventuras",
+    "km_carretera": 266.3,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/barcelo-maya-beach",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Barceló Maya Caribe",
+    "alias": ["Barcelo Maya Caribe Resort"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 266.3, Xpu-Há / Puerto Aventuras",
+    "km_carretera": 266.3,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/barcelo-maya-caribe",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Barceló Maya Colonial",
+    "alias": ["Barcelo Maya Colonial Resort"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 266.3, Xpu-Há / Puerto Aventuras",
+    "km_carretera": 266.3,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/barcelo-maya-colonial",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Barceló Maya Tropical",
+    "alias": ["Barcelo Maya Tropical Resort"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 266.3, Xpu-Há / Puerto Aventuras",
+    "km_carretera": 266.3,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/barcelo-maya-tropical",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Barceló Maya Palace",
+    "alias": ["Barcelo Maya Palace Deluxe"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 266.3, Xpu-Há / Puerto Aventuras",
+    "km_carretera": 266.3,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/barcelo-maya-palace",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Barceló Maya Riviera - Adults Only",
+    "alias": ["Barcelo Maya Riviera", "Barcelo Maya Riviera Solo Adultos"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 266.3, Xpu-Há / Puerto Aventuras",
+    "km_carretera": 266.3,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/barcelo-maya-riviera",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Esencia",
+    "alias": ["Esencia", "Hotel Esencia Xpu-Ha"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Cancún-Tulum Km 265, Bahía Xpu-Há",
+    "km_carretera": 265,
+    "estado": "abierto",
+    "fuente": "https://hotelesencia.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Catalonia Royal Tulum Beach & Spa Resort - Adults Only",
+    "alias": ["Catalonia Royal Tulum", "Catalonia Royal Tulum Adults Only"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Federal Cancún-Chetumal Km 264, Bahía Xpu-Há",
+    "km_carretera": 264,
+    "estado": "abierto",
+    "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-royal-tulum",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Serenity Authentic Glamping",
+    "alias": ["Serenity Eco Luxury Camp", "Serenity Camp Xpu-Ha", "Serenity Glamping"],
+    "zona": "puerto_aventuras",
+    "ubicacion": "Carretera Cancún-Chetumal Km 265, Bahía Xpu-Há",
+    "km_carretera": 265,
+    "estado": "abierto",
+    "fuente": "https://serenityglamping.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Dorado Seaside Suites, by Karisma",
+    "alias": ["El Dorado Seaside Suites", "Karisma Seaside Suites"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Cancún-Tulum Km 256, Bahía Kantenah",
+    "km_carretera": 256,
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/el-dorado-seaside-suites",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Dorado Seaside Palms, by Karisma",
+    "alias": ["El Dorado Seaside Palms", "Karisma Seaside Palms"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Cancún-Tulum Km 256, Bahía Kantenah",
+    "km_carretera": 256,
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/el-dorado-seaside-palms",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hidden Beach Resort Au Naturel Club, by Karisma",
+    "alias": ["Hidden Beach Resort", "Hidden Beach Au Naturel Adults Only"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Cancún-Tulum Km 256, Bahía Kantenah",
+    "km_carretera": 256,
+    "estado": "abierto",
+    "fuente": "https://www.karismahotels.com/hidden-beach",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Palladium Kantenah Resort & Spa",
+    "alias": ["Grand Palladium Kantenah", "Palladium Kantenah"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 256-100, Bahía Kantenah, Akumal",
+    "km_carretera": 256.1,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/rivieramaya/grand-palladium-kantenah-resort-spa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Palladium Colonial Resort & Spa",
+    "alias": ["Grand Palladium Colonial", "Palladium Colonial"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 256-100, Bahía Kantenah, Akumal",
+    "km_carretera": 256.1,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/rivieramaya/grand-palladium-colonial-resort-spa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Palladium White Sand Resort & Spa",
+    "alias": ["Grand Palladium White Sand", "Palladium White Sand"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 256-100, Bahía Kantenah, Akumal",
+    "km_carretera": 256.1,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/rivieramaya/grand-palladium-white-sand-resort-spa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "TRS Yucatan Hotel",
+    "alias": ["The Royal Suites Yucatan", "TRS Yucatan Adults Only", "TRS Yucatan Palladium"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 256-100, Bahía Kantenah, Akumal",
+    "km_carretera": 256.1,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/rivieramaya/trs-yucatan-hotel",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Family Selection at Grand Palladium Kantenah Resort & Spa",
+    "alias": ["Family Selection Kantenah", "Family Selection Palladium"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 256-100, Bahía Kantenah, Akumal",
+    "km_carretera": 256.1,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/rivieramaya/family-selection-at-grand-palladium-kantenah-resort-spa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Sirenis Riviera Maya Resort & Spa",
+    "alias": ["Grand Sirenis", "Sirenis Riviera Maya", "Grand Sirenis Akumal"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Cancún-Tulúm Km 256.3, Akumal",
+    "km_carretera": 256.3,
+    "estado": "abierto",
+    "fuente": "https://www.sirenishotels.com/es/hoteles-riviera-maya/grand-sirenis-riviera-maya-resort-spa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "UNICO 20°87° Hotel Riviera Maya",
+    "alias": ["Unico 20 87", "Unico Hotel Riviera Maya", "Unico 2087"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Chetumal-Puerto Juárez Km 260, Manzana 22 Lote 1, Akumal",
+    "km_carretera": 260,
+    "estado": "abierto",
+    "fuente": "https://www.unicohotelrivieramaya.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets Akumal Riviera Maya",
+    "alias": ["Secrets Akumal"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 254 + 600, Bahía de Akumal",
+    "km_carretera": 254.6,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-y-hoteles/secrets/akumal-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Akumal Bay Beach & Wellness Resort",
+    "alias": ["Akumal Bay", "Akumal Bay Resort"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 254, Bahía de Akumal",
+    "km_carretera": 254,
+    "estado": "abierto",
+    "fuente": "https://www.akumalbayresort.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Oasis Riviera",
+    "alias": ["Grand Oasis Tulum", "Sunscape Akumal Beach Resort & Spa", "The Sens Tulum Riviera", "Oasis Tulum"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Cancún-Chetumal Km 252, Aventuras Akumal",
+    "km_carretera": 252,
+    "estado": "renombrado",
+    "fuente": "https://oasishoteles.com/es/hoteles/grand-oasis-riviera",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Club Akumal Caribe",
+    "alias": ["Club Akumal Caribe", "Hotel Akumal Caribe"],
+    "zona": "akumal",
+    "ubicacion": "Plaza Central Akumal s/n, Bahía de Akumal",
+    "km_carretera": 254,
+    "estado": "abierto",
+    "fuente": "https://www.hotelakumalcaribe.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Las Villas Akumal",
+    "alias": ["Villas Akumal"],
+    "zona": "akumal",
+    "ubicacion": "Bahía de Yalku / Half Moon Bay, Carretera Federal Km 256, Akumal",
+    "km_carretera": 256,
+    "estado": "abierto",
+    "fuente": "https://lasvillasakumal.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Del Sol Beachfront Condominiums",
+    "alias": ["Del Sol Beachfront", "Del Sol Condos Akumal"],
+    "zona": "akumal",
+    "ubicacion": "Half Moon Bay Lote 19, Akumal",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.delsolcondos.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Bahia Principe Grand Coba",
+    "alias": ["Grand Bahia Principe Coba", "Bahia Principe Coba"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Chetumal-Cancún Km 250, Akumal",
+    "km_carretera": 250,
+    "estado": "abierto",
+    "fuente": "https://www.bahia-principe.com/es/hoteles-en-riviera-maya/resort-coba",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Bahia Principe Grand Tulum",
+    "alias": ["Grand Bahia Principe Tulum", "Bahia Principe Tulum"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Chetumal-Cancún Km 250, Akumal",
+    "km_carretera": 250,
+    "estado": "abierto",
+    "fuente": "https://www.bahia-principe.com/es/hoteles-en-riviera-maya/resort-tulum",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Bahia Principe Luxury Akumal",
+    "alias": ["Luxury Bahia Principe Akumal", "Bahia Principe Akumal"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Chetumal-Cancún Km 250, Akumal",
+    "km_carretera": 250,
+    "estado": "abierto",
+    "fuente": "https://www.bahia-principe.com/es/hoteles-en-riviera-maya/resort-akumal",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Bahia Principe Luxury Sian Ka'an",
+    "alias": ["Luxury Bahia Principe Sian Kaan", "Bahia Principe Sian Kaan Adults Only"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Federal Chetumal-Cancún Km 250, Akumal",
+    "km_carretera": 250,
+    "estado": "abierto",
+    "fuente": "https://www.bahia-principe.com/es/hoteles-en-riviera-maya/resort-sian-kaan",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Conrad Tulum Riviera Maya",
+    "alias": ["Conrad Tulum", "Conrad Riviera Maya"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Cancún-Tulum Km 245, Chemuyil, Tulum",
+    "km_carretera": 245,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/tumpmci-conrad-tulum-riviera-maya",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hilton Tulum Riviera Maya All-Inclusive Resort",
+    "alias": ["Hilton Tulum All Inclusive", "Hilton Tulum Riviera Maya"],
+    "zona": "akumal",
+    "ubicacion": "Carretera Cancún-Tulum Km 245, Chemuyil, Tulum",
+    "km_carretera": 245,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/tuzrnhi-hilton-tulum-riviera-maya-all-inclusive-resort",
+    "confianza": "alta"
+  }
+]

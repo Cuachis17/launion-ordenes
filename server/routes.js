@@ -5,12 +5,15 @@ import jwt from 'jsonwebtoken';
 import Datastore from 'nedb-promises';
 import path from 'path';
 import fs from 'fs';
+import { fileURLToPath } from 'url';
 import { verifyToken, resizeImage } from './middleware.js';
 
 const router = express.Router();
 
 // Initialize Database
-const db = Datastore.create({ filename: 'db/users.db', autoload: true });
+// Ruta absoluta: si el server se arranca desde otra carpeta, no crea un users.db vacío en el CWD
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const db = Datastore.create({ filename: path.join(__dirname, 'db/users.db'), autoload: true });
 db.persistence.setAutocompactionInterval(1000 * 60 * 60); // Compaction every hour
 
 // Create default admin if database is empty

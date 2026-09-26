@@ -38,3 +38,11 @@ dist-ssr
 ./server/db/users.db-wal
 
 
+
+# pruebas e2e
+test-results
+playwright-report
+e2e/screenshots
+
+# db creada por arrancar el server fuera de server/
+/db

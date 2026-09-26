@@ -1,0 +1,17 @@
+[
+  { "clave": "aeropuerto_cun", "nombre": "Aeropuerto Cancún", "tipo": "aeropuerto", "zona": "aeropuerto_cun", "alias": ["CUN", "Cancun Airport", "Aeropuerto de Cancún", "Aeropuerto Internacional de Cancún", "apto", "aero"] },
+  { "clave": "aeropuerto_tqo", "nombre": "Aeropuerto Tulum", "tipo": "aeropuerto", "zona": "aeropuerto_tqo", "alias": ["TQO", "Tulum Airport", "Aeropuerto de Tulum", "Felipe Carrillo Puerto"] },
+  { "clave": "cancun_centro", "nombre": "Cancún Centro", "tipo": "centro", "zona": "cancun_centro", "alias": ["centro cancun", "downtown cancun", "ADO Cancún", "Av. Tulum", "Colosio"] },
+  { "clave": "zh_cancun", "nombre": "Zona Hotelera Cancún", "tipo": "centro", "zona": "zh_cancun", "alias": ["ZH", "hotel zone", "zona hotelera"] },
+  { "clave": "puerto_juarez", "nombre": "Puerto Juárez (ferry Isla Mujeres)", "tipo": "centro", "zona": "puerto_juarez", "alias": ["ferry isla mujeres", "gran puerto", "ultramar puerto juarez"] },
+  { "clave": "playa_mujeres", "nombre": "Playa Mujeres", "tipo": "centro", "zona": "playa_mujeres", "alias": [] },
+  { "clave": "costa_mujeres", "nombre": "Costa Mujeres", "tipo": "centro", "zona": "costa_mujeres", "alias": [] },
+  { "clave": "isla_blanca", "nombre": "Isla Blanca", "tipo": "centro", "zona": "isla_blanca", "alias": [] },
+  { "clave": "puerto_morelos_centro", "nombre": "Puerto Morelos Centro", "tipo": "centro", "zona": "puerto_morelos", "alias": ["puerto morelos", "pto morelos", "PM"] },
+  { "clave": "playa_centro", "nombre": "Playa del Carmen Centro", "tipo": "centro", "zona": "playa_del_carmen", "alias": ["playa centro", "PDC", "quinta avenida", "5ta avenida", "ADO Playa del Carmen", "ferry cozumel", "Playacar"] },
+  { "clave": "tren_maya_pdc", "nombre": "Estación Tren Maya Playa del Carmen", "tipo": "centro", "zona": "playa_del_carmen", "alias": ["tren maya playa", "estacion playa del carmen"] },
+  { "clave": "puerto_aventuras_centro", "nombre": "Puerto Aventuras", "tipo": "centro", "zona": "puerto_aventuras", "alias": ["pto aventuras", "marina puerto aventuras"] },
+  { "clave": "akumal_centro", "nombre": "Akumal", "tipo": "centro", "zona": "akumal", "alias": ["akumal pueblo", "bahia akumal"] },
+  { "clave": "tulum_centro", "nombre": "Tulum Centro", "tipo": "centro", "zona": "tulum_centro", "alias": ["tulum pueblo", "centro tulum", "ADO Tulum", "Aldea Zama", "La Veleta"] },
+  { "clave": "tulum_zh", "nombre": "Tulum Zona Hotelera", "tipo": "centro", "zona": "tulum_zh", "alias": ["zona hotelera tulum", "playa tulum", "el arco"] }
+]

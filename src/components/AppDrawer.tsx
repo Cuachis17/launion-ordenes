@@ -1,7 +1,7 @@
 import { useEffect, type ReactNode } from 'react'
 import unionLogo from '../assets/union.png'
 
-export type AppId = 'ordenes' | 'comprobantes'
+export type AppId = 'ordenes' | 'comprobantes' | 'cotizador'
 
 // La lista está pensada para crecer: añadir una app es añadir un objeto aquí.
 export const APPS: { id: AppId; nombre: string; descripcion: string; icono: ReactNode }[] = [
@@ -22,6 +22,16 @@ export const APPS: { id: AppId; nombre: string; descripcion: string; icono: Reac
     icono: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 14h6m-6-4h6m-8 9l1.5-1.5L10 19l1.5-1.5L13 19l1.5-1.5L16 19l1.5-1.5L19 19V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14z" />
+      </svg>
+    ),
+  },
+  {
+    id: 'cotizador',
+    nombre: 'Cotizador de traslados',
+    descripcion: 'Tarifas de rutas, tours y extras',
+    icono: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 19h16M6 16V8m6 8V5m6 11v-6M4 5h16" />
       </svg>
     ),
   },

@@ -5,7 +5,9 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "dev": "node --watch app.js"
+    "dev": "node --watch app.js",
+    "test": "node --test 'tarifas/*.test.js'",
+    "seed:tarifas": "node tarifas/seed.js"
   },
   "author": "k&c solutions",
   "license": "ISC",

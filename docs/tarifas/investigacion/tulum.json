@@ -1,0 +1,1373 @@
+[
+  {
+    "nombre": "Parque Xel-Há",
+    "alias": [
+      "Xel-Ha",
+      "Xel-Há Park",
+      "Parque Xelha"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 240, Quintana Roo",
+    "km_carretera": 240,
+    "estado": "abierto",
+    "fuente": "https://www.xelha.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Tulum Resort & Spa",
+    "alias": [
+      "Dreams Tulum",
+      "Dreams Resort Tulum"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Chetumal-Puerto Juárez Km 236.7, Tankah / Tulum",
+    "km_carretera": 236.7,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "PavoReal Beach Resort Tulum",
+    "alias": [
+      "Pavoreal Beach Resort",
+      "Pavo Real Tulum"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 237, Bahía Tankah",
+    "km_carretera": 237,
+    "estado": "abierto",
+    "fuente": "https://pavorealbeachresort.therivieramayahotels.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Wakax Hacienda - Cenote & Boutique Hotel",
+    "alias": [
+      "Wakax Hacienda",
+      "Hacienda Wakax"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 239",
+    "km_carretera": 239,
+    "estado": "abierto",
+    "fuente": "https://wakaxhacienda.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Casa Tortuga Cenotes Tulum",
+    "alias": [
+      "Casa Tortuga Tulum",
+      "Cenotes Casa Tortuga"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 239, Ejido Jacinto Pat",
+    "km_carretera": 239,
+    "estado": "abierto",
+    "fuente": "https://www.cenotescasatortuga.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Yellow Nest Tulum",
+    "alias": [
+      "The Yellow Nest"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 244 (Parque Dos Ojos, Jacinto Pat)",
+    "km_carretera": 244,
+    "estado": "abierto",
+    "fuente": "https://theyellownest.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Treehouse Tulum H2Ojos",
+    "alias": [
+      "H2Ojos Tulum",
+      "Treehouse H2Ojos"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Parque Dos Ojos, Ejido Jacinto Pat, Carretera Cancún-Tulum Km 244",
+    "km_carretera": 244,
+    "estado": "abierto",
+    "fuente": "https://h2ojos.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Jashita Hotel",
+    "alias": [
+      "Hotel Jashita",
+      "Jashita Tulum"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Solimán Mza 3 Lt 17, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.jashitahotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mantaray Tulum",
+    "alias": [
+      "Mantaray Soliman Bay",
+      "Manta Ray Tulum"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Solimán, Manzana 03 Lote 8 Casa 17, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.mantaraytulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Tulum Nueve",
+    "alias": [
+      "Hotel Tulum Nueve"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Solimán / Carretera Federal Chetumal-Cancún Km 240",
+    "km_carretera": 240,
+    "estado": "abierto",
+    "fuente": "https://tulumnueve.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Marea Ocean Residence",
+    "alias": [
+      "Marea Soliman Bay",
+      "Marea Tulum"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Solimán, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://solimanstays.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Cielo Maya Beach Tulum",
+    "alias": [
+      "Hotel Cielo Maya",
+      "Cielo Maya Tulum"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Tankah III, Mza 3 Lt 36, Bahía Tankah",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://cielomayahotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mereva Tulum",
+    "alias": [
+      "Blue Sky Tulum",
+      "Hotel Mereva"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Tankah Manzana 3, Lote 34, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.mereva.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Nerea Tulum",
+    "alias": [
+      "Hotel Nerea",
+      "Nerea Tankah"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Tankah III, Lote 44, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.nereatulum.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Alea Tulum",
+    "alias": [
+      "Hotel Alea",
+      "Alea Tankah"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Tankah Mza 3, Lote 35, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://aleatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Cenote Hotel & Restaurant",
+    "alias": [
+      "Hotel Casa Cenote",
+      "Casa Cenote"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Tankah Lote 32, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.casacenote.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Caleta Tankah",
+    "alias": [
+      "Caleta Tankah",
+      "Posada Tankah"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Carretera Federal Cancún-Tulum Km 233.5, Caleta Tankah",
+    "km_carretera": 233.5,
+    "estado": "abierto",
+    "fuente": "https://caletatankah.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Altamar",
+    "alias": [
+      "Hotel Casa Altamar"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Tankah Tres, Lote 16, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://casaaltamar.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Tankah Inn",
+    "alias": [
+      "Hotel Tankah Inn",
+      "Tankah Inn B&B"
+    ],
+    "zona": "xelha_soliman",
+    "ubicacion": "Bahía Tankah Manzana 3, Lote 23, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://speedyshuttlecancun.net",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Aloft Tulum",
+    "alias": [
+      "Aloft Hotel Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Cobá Manzana 05 Lote 01, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/tuyal-aloft-tulum/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Bardo",
+    "alias": [
+      "Bardo Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Río Otate & Río Basca, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelbardo.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Una Vida Tulum",
+    "alias": [
+      "Una Vida"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Río Otate & Río Basca, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelbardo.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Kimpton Aluna Tulum",
+    "alias": [
+      "Aluna Tulum",
+      "Hotel Aluna"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Itzamná Polígono 0014, Lote 1-11, Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://alunatulumhotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Copal Tulum Hotel",
+    "alias": [
+      "Copal Tulum",
+      "Stay Copal Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Ixchel esq. Av. Juanek, Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://staycopaltulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Motto by Hilton Tulum",
+    "alias": [
+      "Motto Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Juanek Lote 1, Aldea Zamá (Hunab Mall), Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Orchid House Tulum Jungle",
+    "alias": [
+      "Orchid House Jungle",
+      "Orchid House Aldea Zama"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Kinich Na, Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.orchidhousehotels.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Náay Tulum Curamoria Collection",
+    "alias": [
+      "Naay Tulum",
+      "Hotel Naay"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Itzamná Mza 26, Lote B88, Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.curamoria.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Teva Tulum",
+    "alias": [
+      "Hotel Teva Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://booking.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Zereno Tulum Hotel Boutique",
+    "alias": [
+      "Zereno Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://tulumtownhotels.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Ophelia Tulum Hotel",
+    "alias": [
+      "Ophelia Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://tulumtownhotels.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Niik Tulum",
+    "alias": [
+      "Hotel Niik Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Aldea Zamá, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://tulumtownhotels.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Holistika Tulum",
+    "alias": [
+      "Holistika",
+      "Hotel Holistika"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. 10 Sur Lote 4, Zona 11, Manzana 902, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://besthotelstulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Milam",
+    "alias": [
+      "Milam Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 10 Sur Lote 4-Zona 11, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelmilam.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Muaré Tulum",
+    "alias": [
+      "Muare Tulum",
+      "Muaré - Adults Only"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 7 Poniente, Mz 43 Lt 01, La Veleta / Región 15, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyatt.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "KAN Tulum",
+    "alias": [
+      "Kan Hotel Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. 17 Poniente, Mz. 96, Lt. 001, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.kantulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Era Tulum",
+    "alias": [
+      "Era Hotel & Spa Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 6 Sur entre 7 Sur y 5 Sur, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://besthotelstulum.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Little Gem Hotel Tulum La Veleta",
+    "alias": [
+      "Little Gem Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 14 Sur, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://booking.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Boutique TerraNova",
+    "alias": [
+      "TerraNova Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 8 Sur con 5a Poniente, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://booking.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Kobaab Tulum",
+    "alias": [
+      "Hotel Casa Kobaab"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://booking.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Central Park Tulum by Los Amigos",
+    "alias": [
+      "Central Park Tulum",
+      "Los Amigos Central Park"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Prolongación Manzana 21, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.centralparktulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Panacea Condo Tulum",
+    "alias": [
+      "Hotel Panacea Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 6 Sur entre Calle 11 y 13 Sur, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hotelpanaceatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Amaka Calma Tulum",
+    "alias": [
+      "Amaka Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 9 Sur por 10 Sur y 12 Sur, La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.amakacalmatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sonido del Mar",
+    "alias": [
+      "Hotel Sonido del Mar"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "La Veleta, Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://booking.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Layla Tulum Boutique Hotel",
+    "alias": [
+      "Layla Tulum",
+      "Hotel Layla"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Centauro Sur Lote 13, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.laylatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Elements Tulum Boutique Hotel",
+    "alias": [
+      "Elements Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Sol Oriente entre Av. Cobá y Escorpión Sur, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://elementstulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Mestizo Gallery",
+    "alias": [
+      "Mestizo Gallery",
+      "Mestizo Hotel Boutique"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Cobá Mz 36 Lt 4 y 5, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hotelmestizo.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Biwa Tulum",
+    "alias": [
+      "Hotel Biwa"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Avenida Satélite Norte, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://biwatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Tiki Tiki Tulum",
+    "alias": [
+      "Tiki Tiki Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle 6 Sur, Fracc. Yuyas, Mza 913 Lt 03, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://tikitiki-tulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Blanco Tulum",
+    "alias": [
+      "Blanco Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Avenida Cobá entre Calle Gama Ote y Asteroide, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://besthotelstulum.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Teetotum Hotel",
+    "alias": [
+      "Teetoo Tulum",
+      "Teetotum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Cobá Sur Lote 2, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelteetotum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Pueblo Tulum",
+    "alias": [
+      "Casa Pueblo Pueblo"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Tulum 106, Mza 6 Lt 15, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://casapueblo.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Selina Tulum Downtown",
+    "alias": [
+      "Selina Downtown Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Av. Cobá S/N, Col. Huracanes, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.selina.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Maka Hotel Boutique",
+    "alias": [
+      "Maka Tulum"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Polar Pte, Centro (cerca Parque Dos Aguas), Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://expedia.mx",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Kaab Downtown Tulum",
+    "alias": [
+      "Kaab Tulum",
+      "Collection O Kaab"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Sol Oriente entre Calle Escorpión Sur y Av. Cobá, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://guestreservations.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "LiveTulum",
+    "alias": [
+      "Live Tulum Aparthotel"
+    ],
+    "zona": "tulum_centro",
+    "ubicacion": "Calle Andrómeda Oriente entre Escorpión y Cobá Sur, Tulum Centro",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://tulumhotels.net",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Kore Tulum Retreat & Spa Resort",
+    "alias": [
+      "Kore Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 3.8, Lote 48, Zona Hotelera Tulum",
+    "km_carretera": 3.8,
+    "estado": "abierto",
+    "fuente": "http://koretulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mezzanine Colibri Boutique Hotel",
+    "alias": [
+      "Mezzanine Tulum",
+      "Hotel Mezzanine"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 1.5, Playa Las Palmas",
+    "km_carretera": 1.5,
+    "estado": "abierto",
+    "fuente": "https://www.mezzaninetulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Mi Amor Colibri Boutique Hotel",
+    "alias": [
+      "Mi Amor Tulum",
+      "Hotel Mi Amor"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 4.1 hacia Ruinas, Zona Hotelera Norte",
+    "km_carretera": 4.1,
+    "estado": "abierto",
+    "fuente": "https://www.tulumhotelmiamor.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Pez Colibri Boutique Hotel",
+    "alias": [
+      "El Pez Tulum",
+      "Hotel El Pez"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 5.5, Punta Piedra, Zona Hotelera",
+    "km_carretera": 5.5,
+    "estado": "abierto",
+    "fuente": "https://www.tulumhotelelpez.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "La Zebra Colibri Boutique Hotel",
+    "alias": [
+      "La Zebra Tulum",
+      "Hotel La Zebra"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.2, Zona Hotelera",
+    "km_carretera": 8.2,
+    "estado": "abierto",
+    "fuente": "https://www.lazebratulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "El Paraíso Hotel Tulum",
+    "alias": [
+      "Hotel Playa Paraiso",
+      "El Paraiso Beach Club"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Playa Paraíso, Parque Nacional Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://elparaisohotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Villa Pescadores Tulum",
+    "alias": [
+      "Villa Pescadores",
+      "VP Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Playa Pescadores, Carretera Tulum-Boca Paila Km 0.5",
+    "km_carretera": 0.5,
+    "estado": "abierto",
+    "fuente": "https://www.vptulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Kai Tulum",
+    "alias": [
+      "Hotel Kai Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 0.5, Playa Paraíso",
+    "km_carretera": 0.5,
+    "estado": "abierto",
+    "fuente": "https://www.kaihoteltulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Poc Na Tulum",
+    "alias": [
+      "Hotel Poc Na",
+      "Playa Poc Na"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 1.5, Zona Hotelera Norte",
+    "km_carretera": 1.5,
+    "estado": "abierto",
+    "fuente": "https://playapocnatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ikal Tulum Hotel",
+    "alias": [
+      "Ikal Hotel",
+      "Ikal Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Playa Paraíso, Parque Nacional Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://ikaltulumhotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Diamante K",
+    "alias": [
+      "Hotel Diamante K"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Boca Paila Km 2.5, Parque Nacional Tulum",
+    "km_carretera": 2.5,
+    "estado": "abierto",
+    "fuente": "https://www.diamantek.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Playa Esperanza Tulum",
+    "alias": [
+      "Hotel Playa Esperanza"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 2.5, Zona Hotelera Norte",
+    "km_carretera": 2.5,
+    "estado": "abierto",
+    "fuente": "http://playa-esperanza.com/es/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel & Cabañas Zazil-Kin",
+    "alias": [
+      "Zazil Kin Tulum",
+      "Hotel Zazil Kin"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Playa Paraíso, Parque Nacional Tulum",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://therivieramayahotels.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Cinco Tulum",
+    "alias": [
+      "Cinco Glamping Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 1.9, Playa Paraíso",
+    "km_carretera": 1.9,
+    "estado": "abierto",
+    "fuente": "https://cincotulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Papaya Playa Project",
+    "alias": [
+      "PPP Tulum",
+      "Papaya Playa"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 4.5, Zona Costera",
+    "km_carretera": 4.5,
+    "estado": "abierto",
+    "fuente": "https://www.papayaplayaproject.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Our Habitas Tulum",
+    "alias": [
+      "Habitas Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 4.5, Zona Hotelera",
+    "km_carretera": 4.5,
+    "estado": "abierto",
+    "fuente": "https://www.ourhabitas.com/tulum",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Posada Margherita",
+    "alias": [
+      "Hotel Posada Margherita"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 4.5, Zona Hotelera",
+    "km_carretera": 4.5,
+    "estado": "abierto",
+    "fuente": "http://posadamargherita.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Azulik Tulum",
+    "alias": [
+      "Azulik"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Ruinas Km 5, Rumbo a Boca Paila, Zona Hotelera",
+    "km_carretera": 5.0,
+    "estado": "abierto",
+    "fuente": "https://azulik.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Zamas Hotel",
+    "alias": [
+      "Hotel Zamas"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 5, Zona Hotelera",
+    "km_carretera": 5.0,
+    "estado": "abierto",
+    "fuente": "https://www.zamas.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Amansala Resort",
+    "alias": [
+      "Amansala Tulum",
+      "Amansala Eco-Chic Resort"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 5.5, Zona Hotelera",
+    "km_carretera": 5.5,
+    "estado": "abierto",
+    "fuente": "https://amansala.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Roc Luxe Tulum",
+    "alias": [
+      "Roc Luxe"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 5.5, Zona Hotelera",
+    "km_carretera": 5.5,
+    "estado": "abierto",
+    "fuente": "https://expedia.com",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Cabañas La Luna",
+    "alias": [
+      "Cabanas La Luna Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 6.5, Zona Hotelera",
+    "km_carretera": 6.5,
+    "estado": "abierto",
+    "fuente": "https://cabanaslaluna.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dune Boutique Hotel",
+    "alias": [
+      "Dune Hotel Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://dunehoteltulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Maya Tulum Resort",
+    "alias": [
+      "Maya Tulum By G Hotels"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7 Lt 10, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://mayatulum.backhotelite.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Delek Tulum",
+    "alias": [
+      "Hotel Delek"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://delektulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ana y José Hotel & Spa",
+    "alias": [
+      "Ana y Jose Tulum",
+      "Hotel Ana y Jose"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7, Punta Piedra, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://www.anayjose.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Orchid House Tulum Beach",
+    "alias": [
+      "Orchid Beach House"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://www.orchidhousehotels.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Shibari Tulum",
+    "alias": [
+      "Hotel Shibari"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Punta Allen Km 7, Boca Paila, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://shibaritulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Beach Tulum",
+    "alias": [
+      "The Beach Hotel Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7.2, Zona Hotelera",
+    "km_carretera": 7.2,
+    "estado": "abierto",
+    "fuente": "https://www.thebeach-tulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Cabañas Tulum",
+    "alias": [
+      "Hotel Cabañas Tulum",
+      "Cabanas Tulum Beach Hotel & Spa"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7, Zona Hotelera",
+    "km_carretera": 7.0,
+    "estado": "abierto",
+    "fuente": "https://www.hotelcabanastulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ahau Tulum",
+    "alias": [
+      "Hotel Ahau"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum a Boca Paila Km 7.5, Zona Costera",
+    "km_carretera": 7.5,
+    "estado": "abierto",
+    "fuente": "https://ahaucollection.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Ganesh Tulum",
+    "alias": [
+      "Casa Ganesh"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7.6, Zona Hotelera",
+    "km_carretera": 7.6,
+    "estado": "abierto",
+    "fuente": "https://ahaucollection.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Selina Tulum",
+    "alias": [
+      "Selina Tulum Beach",
+      "Selina Beachfront Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 7.5, Zona Hotelera",
+    "km_carretera": 7.5,
+    "estado": "abierto",
+    "fuente": "https://www.selina.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Coco Tulum",
+    "alias": [
+      "Coco Tulum Beach Club",
+      "Coco Limited"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8, Zona Hotelera",
+    "km_carretera": 8.0,
+    "estado": "abierto",
+    "fuente": "https://cocotulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Coco Unlimited",
+    "alias": [
+      "Hotel Coco Unlimited"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8, Zona Hotelera",
+    "km_carretera": 8.0,
+    "estado": "abierto",
+    "fuente": "https://cocounlimitedhotel.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hip Hotel Tulum",
+    "alias": [
+      "Hip Hotel by Ana y José"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8, Zona Hotelera",
+    "km_carretera": 8.0,
+    "estado": "abierto",
+    "fuente": "https://hiphotel.com.mx",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Villa Las Estrellas",
+    "alias": [
+      "Hotel Villa Las Estrellas"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8, Zona Hotelera",
+    "km_carretera": 8.0,
+    "estado": "abierto",
+    "fuente": "https://villalasestrellas.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Lula Tulum",
+    "alias": [
+      "Sanará Tulum",
+      "Sanara Tulum",
+      "Hotel Sanara"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.2, Zona Costera",
+    "km_carretera": 8.2,
+    "estado": "renombrado",
+    "fuente": "https://sanaracollective.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Violeta",
+    "alias": [
+      "Hotel Casa Violeta"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.27, Franja Ejidal Tulum",
+    "km_carretera": 8.27,
+    "estado": "abierto",
+    "fuente": "https://www.casavioletatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Alaya Tulum",
+    "alias": [
+      "Hotel Alaya"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum a Boca Paila Km 8.3, Zona Hotelera",
+    "km_carretera": 8.3,
+    "estado": "abierto",
+    "fuente": "https://ahaucollection.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Playa Canek Beachfront Eco Hotel",
+    "alias": [
+      "Playa Canek",
+      "Hotel Playa Canek"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.3, Zona Hotelera",
+    "km_carretera": 8.3,
+    "estado": "abierto",
+    "fuente": "https://tulum-hotels.net",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Pueblo Boca Paila",
+    "alias": [
+      "Casa Pueblo Beach"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.5, Zona Hotelera",
+    "km_carretera": 8.5,
+    "estado": "abierto",
+    "fuente": "https://casapueblo.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Panamera",
+    "alias": [
+      "Panamera Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.5, Zona Hotelera",
+    "km_carretera": 8.5,
+    "estado": "abierto",
+    "fuente": "https://www.hotelpanamera.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sueños Tulum",
+    "alias": [
+      "Suenos Tulum",
+      "Hotel Sueños Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.5, Zona Hotelera",
+    "km_carretera": 8.5,
+    "estado": "abierto",
+    "fuente": "https://www.suenostulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "La Valise Tulum",
+    "alias": [
+      "La Valise"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.7, Zona Hotelera",
+    "km_carretera": 8.7,
+    "estado": "abierto",
+    "fuente": "https://lavalise.com/tulum",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Encantada Tulum",
+    "alias": [
+      "Hotel Encantada"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.7, Zona Hotelera",
+    "km_carretera": 8.7,
+    "estado": "abierto",
+    "fuente": "http://www.encantadatulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Radhoo Tulum",
+    "alias": [
+      "Hotel Radhoo"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 8.7, Zona Hotelera",
+    "km_carretera": 8.7,
+    "estado": "abierto",
+    "fuente": "https://www.radhootulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Chiringuito Tulum",
+    "alias": [
+      "Hotel Chiringuito"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 9, Zona Hotelera",
+    "km_carretera": 9.0,
+    "estado": "abierto",
+    "fuente": "https://chiringuito-tulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Malca",
+    "alias": [
+      "Hotel Casa Malca"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 9.5, Zona Hotelera",
+    "km_carretera": 9.5,
+    "estado": "abierto",
+    "fuente": "https://casamalca.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "NEST Tulum",
+    "alias": [
+      "Nest Hotel Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 9.5, Zona Hotelera",
+    "km_carretera": 9.5,
+    "estado": "abierto",
+    "fuente": "https://www.nesttulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Be Tulum",
+    "alias": [
+      "Be Tulum Beach & Spa Resort",
+      "Be Destination Tulum"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 10, Zona Hotelera",
+    "km_carretera": 10.0,
+    "estado": "abierto",
+    "fuente": "https://www.betulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dos Ceibas Tulum",
+    "alias": [
+      "Dos Ceibas Eco Retreat",
+      "Hotel Dos Ceibas"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 10, Zona Hotelera",
+    "km_carretera": 10.0,
+    "estado": "abierto",
+    "fuente": "https://www.dosceibas.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Rosa del Viento",
+    "alias": [
+      "Hotel Rosa del Viento"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 10, Zona Hotelera Sur",
+    "km_carretera": 10.0,
+    "estado": "abierto",
+    "fuente": "https://oyster.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Nômade Tulum",
+    "alias": [
+      "Nomade Tulum",
+      "Hotel Nomade"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 10.5, Zona Hotelera Sur",
+    "km_carretera": 10.5,
+    "estado": "abierto",
+    "fuente": "https://www.nomadetulum.com",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Libelula Tulum",
+    "alias": [
+      "Hotel Libelula",
+      "Libelula Sian Ka'an"
+    ],
+    "zona": "tulum_zh",
+    "ubicacion": "Carretera Tulum-Boca Paila Km 10.5, cerca de Arco Maya",
+    "km_carretera": 10.5,
+    "estado": "abierto",
+    "fuente": "https://hotelwithview.com",
+    "confianza": "alta"
+  }
+]

@@ -1,0 +1,1712 @@
+[
+  {
+    "nombre": "Ikarus Kiteboarding School & Hotel Boutique",
+    "alias": [
+      "Ikarus Kite Camp",
+      "Ikarus Hotel Isla Blanca"
+    ],
+    "zona": "isla_blanca",
+    "ubicacion": "Península de Isla Blanca, Laguna Chacmuchuch, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://kiteboardmexico.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Punta Blanca Hotel & Beach Club",
+    "alias": [
+      "Punta Blanca Isla Blanca"
+    ],
+    "zona": "isla_blanca",
+    "ubicacion": "Extremo norte de la Península de Isla Blanca, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://kitesurfmexico.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Cabañas & Glamping Isla Blanca",
+    "alias": [
+      "Isla Blanca Glamping",
+      "Kite Camp Isla Blanca"
+    ],
+    "zona": "isla_blanca",
+    "ubicacion": "Laguna Chacmuchuch, Isla Blanca, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://kitesurfmexico.com/",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Villa Isla Blanca",
+    "alias": [
+      "Casa de Playa Blanca",
+      "Villa Privada Isla Blanca"
+    ],
+    "zona": "isla_blanca",
+    "ubicacion": "Isla Blanca, Isla Mujeres Continental, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://villaislablanca.com/",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Atelier Playa Mujeres",
+    "alias": [
+      "Atelier de Hoteles",
+      "Atelier All Inclusive Adults Only"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Prolongación Bonampak s/n, Complejo Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://atelierdehoteles.com/atelier-playa-mujeres",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Estudio Playa Mujeres",
+    "alias": [
+      "Estudio de Hoteles",
+      "Estudio Family All Inclusive"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Prolongación Bonampak s/n, Complejo Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://atelierdehoteles.com/estudio-playa-mujeres",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Finest Playa Mujeres",
+    "alias": [
+      "Finest All Inclusive by Excellence",
+      "Finest Resort"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Lote 10 Mza 1 Sm 3, Prolongación Bonampak, Costa Mujeres / Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.finestresorts.com/cancun/finest-playa-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets Playa Mujeres Golf & Spa Resort",
+    "alias": [
+      "Secrets Playa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Lote RTH-7-PM-II, Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/secrets/mexico/playa-mujeres-golf-spa-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Playa Mujeres Golf & Spa Resort",
+    "alias": [
+      "Dreams Playa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Lote RTH-7-PM-II, Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/dreams/mexico/playa-mujeres-golf-spa-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets Playa Blanca Costa Mujeres",
+    "alias": [
+      "Secrets Playa Blanca"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Lote 38 Mza 1 Sm 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/secrets/mexico/playa-blanca-costa-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Dunamar",
+    "alias": [
+      "Hotel Riu Dunamar Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Carretera a Costa Mujeres km 3.5, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-dunamar/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Palace Costa Mujeres",
+    "alias": [
+      "Hotel Riu Palace Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Carretera a Costa Mujeres km 3.5, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-palace-costa-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Latino",
+    "alias": [
+      "Hotel Riu Latino Costa Mujeres Adults Only"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Carretera a Costa Mujeres km 4, Cancún, Quintana Roo",
+    "km_carretera": 4.0,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-latino/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Catalonia Grand Costa Mujeres All Suites & Spa",
+    "alias": [
+      "Catalonia Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Blvd. Costa Mujeres Lt. 5, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-grand-costa-mujeres",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Planet Hollywood Cancun, An Autograph Collection All-Inclusive Resort",
+    "alias": [
+      "Planet Hollywood Cancun"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Punta Sam Carretera Federal Lote 7 Manzana 2 SM 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.planethollywoodhotels.com/resorts/cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Planet Hollywood Adult Scene Cancun, An Autograph Collection All-Inclusive Resort",
+    "alias": [
+      "Planet Hollywood Adult Scene"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Punta Sam Carretera Federal Lote 7 Manzana 2 SM 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.planethollywoodhotels.com/resorts/cancun/adult-scene",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Ocean Allure Costa Mujeres",
+    "alias": [
+      "Ocean by H10 Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Carretera Costa Mujeres, Isla Mujeres Continental, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.oceanhotels.net/es",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "SHA Wellness Clinic Mexico",
+    "alias": [
+      "SHA Mexico",
+      "SHA Clinic Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://shawellness.com/es/sha-mexico/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Impression Isla Mujeres by Secrets (Terminal Muelle Privado)",
+    "alias": [
+      "Secrets Impression Isla Mujeres Lounge",
+      "Impression Isla Mujeres Transfer Lounge"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Muelle privado de recepción continental para traslados turísticos a Impression Isla Mujeres, Costa Mujeres / Marina Hacienda del Mar, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/secrets/mexico/impression-isla-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Excellence Playa Mujeres",
+    "alias": [
+      "Excellence Resort Playa Mujeres"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Prolongación Bonampak s/n Mz. 1 Lt.10 Sm. 3, Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.excellenceresorts.com/cancun/excellence-playa-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Beloved Playa Mujeres",
+    "alias": [
+      "The Beloved Hotel",
+      "Beloved Boutique Resort"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Calle Bonampak s/n Mz 1 Lt 10 Sm 3, Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.belovedhotels.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Excellence Coral Playa Mujeres",
+    "alias": [
+      "Coral Playa Mujeres by Excellence"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.excellenceresorts.com/cancun/excellence-coral-playa-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "SLS Playa Mujeres Cancun",
+    "alias": [
+      "SLS All-Inclusive Playa Mujeres"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Complejo Playa Mujeres, Sm 3 Mz 1 Lt 13, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.ennismore.com/brands/sls/sls-playa-mujeres/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Palladium Costa Mujeres Resort & Spa",
+    "alias": [
+      "Grand Palladium Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Vialidad Paseo Mujeres, Manzana 1, Lote 10, SM 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/costamujerescancun/grand-palladium-costa-mujeres-resort-spa",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "TRS Coral Hotel",
+    "alias": [
+      "TRS Coral Costa Mujeres Adults Only",
+      "TRS Coral Hotel Palladium"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Vialidad Paseo Mujeres, Manzana 1, Lote 10, SM 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/costamujerescancun/trs-coral-hotel",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Family Selection at Grand Palladium Costa Mujeres Resort & Spa",
+    "alias": [
+      "Family Selection Costa Mujeres"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Vialidad Paseo Mujeres, SM 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.palladiumhotelgroup.com/es/hoteles/mexico/costamujerescancun/family-selection-at-grand-palladium-costa-mujeres",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Majestic Elegance Costa Mujeres",
+    "alias": [
+      "Majestic Elegance Playa Mujeres",
+      "Majestic Elegance"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Carretera Libre Cancún - Punta Sam Mz 9, Lote 3, SM 3, Costa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.majestic-resorts.com/es/nuestros-resorts/majestic-elegance-costa-mujeres",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Majestic Mirage Costa Mujeres",
+    "alias": [
+      "Majestic Mirage"
+    ],
+    "zona": "costa_mujeres",
+    "ubicacion": "Costa Mujeres / Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.majestic-resorts.com/es",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Garza Blanca Resort & Spa Cancun",
+    "alias": [
+      "Garza Blanca Cancun",
+      "Garza Blanca Playa Mujeres"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Carretera a Punta Sam km 5.2, Playa Mujeres, Quintana Roo",
+    "km_carretera": 5.2,
+    "estado": "abierto",
+    "fuente": "https://cancun.garzablancaresort.com/es",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Villa del Palmar Cancun Luxury Beach Resort & Spa",
+    "alias": [
+      "Villa del Palmar Cancun",
+      "Villa del Palmar Punta Sam"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Carretera a Punta Sam km 5.2, Playa Mujeres, Quintana Roo",
+    "km_carretera": 5.2,
+    "estado": "abierto",
+    "fuente": "https://www.villapalmarcancun.com/es",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "La Amada Residences Playa Mujeres",
+    "alias": [
+      "La Amada Marina & Residences"
+    ],
+    "zona": "playa_mujeres",
+    "ubicacion": "Marina La Amada, Complejo Playa Mujeres, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://laamada.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hyatt Vivid Cancun",
+    "alias": [
+      "Dreams Vista Cancun Golf & Spa Resort",
+      "Dreams Vista Cancun"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Lote 1-03 Mz 85 Sm 84, Fraccionamiento Puerta del Mar, Puerto Juárez, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "renombrado",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/hyatt-vivid/mexico/cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Marina Hacienda del Mar Condominios & Muelle",
+    "alias": [
+      "Hacienda del Mar Cancun",
+      "Marina Hacienda del Mar"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Carretera Puerto Juárez - Punta Sam km 1.5, SM 86, Puerto Juárez, Quintana Roo",
+    "km_carretera": 1.5,
+    "estado": "abierto",
+    "fuente": "https://marinahaciendadelmar.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "All Ritmo Cancun Resort & Waterpark",
+    "alias": [
+      "All Ritmo Resort",
+      "Sea Adventure Resort"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Carretera a Puerto Juárez - Punta Sam km 3.5, Puerto Juárez, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://www.allritmocancunresort.com/es/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Del Sol Puerto Juárez",
+    "alias": [
+      "Hotel Del Sol"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Av. López Portillo SM 85 MZ 4 Lote 5, Puerto Juárez, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.cancundelsol.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Casa Caribe Cancun Hotel",
+    "alias": [
+      "Hotel Casa Caribe"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Av. López Portillo SM 85 MZ 4 Lote 8, Puerto Juárez, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelcasacaribecancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Caribbean Paradise Hotel Puerto Juárez",
+    "alias": [
+      "Hotel Caribbean Paradise"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Calle 4 SM 85, Puerto Juárez, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/caribbean-paradise.html",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Residencial La Joya Puerto Juárez",
+    "alias": [
+      "La Joya Condos Puerto Juárez"
+    ],
+    "zona": "puerto_juarez",
+    "ubicacion": "Carretera Puerto Juárez - Punta Sam km 2, Puerto Juárez, Cancún, Quintana Roo",
+    "km_carretera": 2.0,
+    "estado": "abierto",
+    "fuente": "https://www.booking.com/hotel/mx/residencial-la-joya.html",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Fiesta Inn Cancun Las Americas",
+    "alias": [
+      "Fiesta Inn Las Americas"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Bonampak Lote 1 Mz 1 SM 4A, Plaza Las Américas, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.fiestainn.com/hoteles/fiesta-inn-cancun-las-americas",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "City Express Plus by Marriott Cancun Centro",
+    "alias": [
+      "City Express Plus Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Nichupté Mz 19 Lote 1 SM 8, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunpt-city-express-plus-cancun-aeropuerto/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Four Points by Sheraton Cancun Centro",
+    "alias": [
+      "Four Points Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Tulum Sur Mz 1 Lote 2 SM 15-A, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunfp-four-points-cancun-centro/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "ibis Cancun Centro",
+    "alias": [
+      "Hotel ibis Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Rodrigo Gómez Mz 1 Lote 3 SM 11, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://all.accor.com/hotel/6810/index.es.shtml",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Krystal Urban Cancun Centro",
+    "alias": [
+      "Krystal Urban Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Sayil Lote 4-C SM 4A, Malecón Américas, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.krystalurban-cancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Suites Malecon Cancun",
+    "alias": [
+      "Malecon Americas Suites"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Bonampak Mz 1 Lte 1 SM 4A, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.suitesmaleconcancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Adhara Hacienda Cancun",
+    "alias": [
+      "Adhara Cancun",
+      "Hotel Hacienda Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Carlos Nader Mz 2 Lote 1-2 SM 23, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.adharacancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Plaza Caribe Cancun",
+    "alias": [
+      "Plaza Caribe"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. López Portillo y Pino SM 23, Frente a Terminal ADO, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hotelplazacaribe.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Smart Cancun by Oasis",
+    "alias": [
+      "Smart Oasis Cancun",
+      "Hotel Smart Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Tulum 13-14 SM 20, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/smart-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Oh! The Urban Oasis",
+    "alias": [
+      "Oh Cancun The Urban Oasis"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Tulum 11 SM 20, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/oh-the-urban-oasis",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Antillano Cancun",
+    "alias": [
+      "Hotel Antillano"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Tulum y Claveles SM 22, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.hotelantillano.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Xbalamqué Resort & Spa",
+    "alias": [
+      "Hotel Xbalamque Cancun Centro"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Yaxchilán 31 SM 22, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://xbalamque.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Bonampak Cancún",
+    "alias": [
+      "Hotel Bonampak"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Bonampak 225 SM 4, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelbonampak.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Batab",
+    "alias": [
+      "Hotel Batab Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Chichén Itzá 52 SM 23, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelbatab.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Caribe Internacional",
+    "alias": [
+      "Caribe Internacional Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Yaxchilán y Sunyaxchén SM 25, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelcaribeinternacional.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Mex Hoteles Cancun Centro",
+    "alias": [
+      "Mex Hoteles Centro"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Yaxchilán 37 SM 22, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.mexhoteles.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Soberanis",
+    "alias": [
+      "Hotel Soberanis Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Cobá 5 y 7 SM 22, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://hotelsoberaniscancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Suites Gaby",
+    "alias": [
+      "Suites Gaby Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Sunyaxchén 46 SM 25, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.suitesgaby.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Fairfield by Marriott Cancun Downtown",
+    "alias": [
+      "Fairfield Inn Downtown Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Tulum SM 4 Mz 1 Lt 2, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cundf-fairfield-cancun-downtown/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Selina Cancun Downtown",
+    "alias": [
+      "Selina Cancun Laguna / Centro"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Av. Uxmal 35 SM 23, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.selina.com/mexico/cancun-downtown/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Courtyard by Marriott Cancun Airport",
+    "alias": [
+      "Courtyard Cancun Airport"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Blvd. Luis Donaldo Colosio Km 12.5, Cancún, Quintana Roo",
+    "km_carretera": 12.5,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cuncy-courtyard-cancun-airport/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Fairfield Inn & Suites by Marriott Cancun Airport",
+    "alias": [
+      "Fairfield Cancun Airport"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Blvd. Luis Donaldo Colosio SM 301 Mz 1 Lte 1, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunfa-fairfield-inn-and-suites-cancun-airport/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hilton Garden Inn Cancun Airport",
+    "alias": [
+      "Hilton Garden Inn Aeropuerto Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Aeropuerto Internacional de Cancún, Carretera Cancún-Chetumal Km 22, Terminal 2, Cancún, Quintana Roo",
+    "km_carretera": 22.0,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/cunaugi-hilton-garden-inn-cancun-airport/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Avani Cancun Airport",
+    "alias": [
+      "NH Cancun Airport",
+      "Hotel Avani Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Blvd. Luis Donaldo Colosio Km 12.5 Mz 01 Lt 01, SM 301, Cancún, Quintana Roo",
+    "km_carretera": 12.5,
+    "estado": "renombrado",
+    "fuente": "https://www.avanihotels.com/es/cancun-airport",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Comfort Inn Cancun Aeropuerto",
+    "alias": [
+      "Comfort Inn Cancun"
+    ],
+    "zona": "cancun_centro",
+    "ubicacion": "Carretera Cancún-Aeropuerto Km 12.8 SM 301 Mz 02 Lte 01, Cancún, Quintana Roo",
+    "km_carretera": 12.8,
+    "estado": "abierto",
+    "fuente": "https://www.choicehotels.com/mexico/cancun/comfort-inn-hotels/mx085",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "SLS Cancun Hotel & Residences",
+    "alias": [
+      "SLS Puerto Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 1.5, Puerto Cancún, Cancún, Quintana Roo",
+    "km_carretera": 1.5,
+    "estado": "abierto",
+    "fuente": "https://www.slscancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Renaissance Cancun Resort & Marina",
+    "alias": [
+      "Renaissance Puerto Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 1.5, Puerto Cancún, Cancún, Quintana Roo",
+    "km_carretera": 1.5,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunbr-renaissance-cancun-resort-and-marina/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Imperial Las Perlas",
+    "alias": [
+      "Imperial Las Perlas"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 2.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 2.5,
+    "estado": "abierto",
+    "fuente": "https://hotelimperiallasperlas.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Cancún Bay Resort",
+    "alias": [
+      "Cancun Bay Resort All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 3.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://www.cancunbayresort.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Temptation Cancun Resort",
+    "alias": [
+      "Temptation Resort Cancun Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 3.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://www.temptation-experience.com/es/resorts/temptation-cancun-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Tower by Temptation Cancun Resort",
+    "alias": [
+      "The Tower at Temptation"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 3.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://www.temptation-experience.com/es/the-tower/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Calypso Cancun",
+    "alias": [
+      "Calypso Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 3.5, Callejón del Pescador, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 3.5,
+    "estado": "abierto",
+    "fuente": "https://hotelcalypsocancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Sotavento Cancun",
+    "alias": [
+      "Sotavento Hotel & Yacht Club"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 4, Callejón del Pescador, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 4.0,
+    "estado": "abierto",
+    "fuente": "https://hotelsotaventocancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Maya Caribe Faranda Cancun",
+    "alias": [
+      "Maya Caribe Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 4, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 4.0,
+    "estado": "abierto",
+    "fuente": "https://www.hotelmayacaribe.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Oasis Palm",
+    "alias": [
+      "Oasis Palm All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 4.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 4.5,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/oasis-palm",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Oasis Palm",
+    "alias": [
+      "Grand Oasis Palm All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 4.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 4.5,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/grand-oasis-palm",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Occidental Costa Cancún",
+    "alias": [
+      "Barcelo Costa Cancun",
+      "Occidental Costa Cancun All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 4.5, Playa Linda, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 4.5,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/occidental-costa-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Casa Maya Cancun",
+    "alias": [
+      "Casa Maya"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 5.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 5.5,
+    "estado": "abierto",
+    "fuente": "https://www.casamaya.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Palace Peninsula",
+    "alias": [
+      "Hotel Riu Palace Peninsula"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 5.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 5.5,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-palace-peninsula/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Caribe",
+    "alias": [
+      "Hotel Riu Caribe"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 6, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 6.0,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-caribe/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Dos Playas Faranda Cancun",
+    "alias": [
+      "Dos Playas Faranda"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 6.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 6.5,
+    "estado": "abierto",
+    "fuente": "https://www.hoteldosplayascancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Imperial Laguna Faranda",
+    "alias": [
+      "Imperial Laguna Faranda"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Calle Quetzal 11, Blvd. Kukulcán Km 7.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 7.5,
+    "estado": "abierto",
+    "fuente": "https://www.hotelimperiallagunacancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Presidente InterContinental Cancun Resort",
+    "alias": [
+      "InterContinental Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 7.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 7.5,
+    "estado": "abierto",
+    "fuente": "https://www.ihg.com/intercontinental/hotels/us/en/cancun/cunzr/hoteldetail",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Dreams Sands Cancun Resort & Spa",
+    "alias": [
+      "Dreams Sands Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 8.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 8.5,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/dreams/mexico/sands-cancun-resort-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Fiesta Americana Cancun Villas",
+    "alias": [
+      "Fiesta Americana Villas Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 8.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 8.5,
+    "estado": "abierto",
+    "fuente": "https://www.fiestamericana.com/hoteles/fiesta-americana-cancun-villas",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Palace Las Americas",
+    "alias": [
+      "Hotel Riu Palace Las Americas Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 8.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 8.5,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-palace-las-americas/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Cancun",
+    "alias": [
+      "Hotel Riu Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 9, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.0,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Fiesta Americana Coral Beach Cancun",
+    "alias": [
+      "Coral Beach Cancun All Inclusive Spa Resort"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 9.5, Punta Cancún, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.5,
+    "estado": "abierto",
+    "fuente": "https://www.coralbeachcancunresort.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hyatt Ziva Cancun",
+    "alias": [
+      "Hyatt Ziva Punta Cancun",
+      "Camino Real Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Punta Cancún s/n, Blvd. Kukulcán Km 9.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.5,
+    "estado": "abierto",
+    "fuente": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Krystal Cancun",
+    "alias": [
+      "Hotel Krystal Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 9, Punta Cancún, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.0,
+    "estado": "abierto",
+    "fuente": "https://www.krystal-hotels.com/krystal-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Krystal Grand Cancun",
+    "alias": [
+      "Hotel Krystal Grand Punta Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 9, Punta Cancún, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.0,
+    "estado": "abierto",
+    "fuente": "https://www.krystal-hotels.com/krystal-grand-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Aloft Cancun",
+    "alias": [
+      "Aloft Hotel Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 9 Mz 48 Lote 8-1, Punta Cancún, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.0,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunsl-aloft-cancun/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Salvia Cancun Condominiums",
+    "alias": [
+      "Salvia Condos Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 9, Punta Cancún, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 9.0,
+    "estado": "abierto",
+    "fuente": "https://salviacancun.com/",
+    "confianza": "media"
+  },
+  {
+    "nombre": "Grand Park Royal Cancun",
+    "alias": [
+      "Park Royal Cancun Caribe",
+      "Grand Park Royal Caribe"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 10.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 10.5,
+    "estado": "abierto",
+    "fuente": "https://www.parkroyal.mx/es/hoteles/grand-park-royal-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Flamingo Cancun Resort",
+    "alias": [
+      "Flamingo Resort Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 11, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 11.0,
+    "estado": "abierto",
+    "fuente": "https://www.flamingocancunresort.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel NYX Cancun",
+    "alias": [
+      "NYX Hotel Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 11.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 11.5,
+    "estado": "abierto",
+    "fuente": "https://www.nyxcancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Wyndham Alltra Cancun All-Inclusive Resort",
+    "alias": [
+      "Panama Jack Resorts Cancun",
+      "Gran Caribe Resort"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 11.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 11.5,
+    "estado": "renombrado",
+    "fuente": "https://www.wyndhamhotels.com/wyndham-alltra/cancun-mexico/wyndham-alltra-cancun/overview",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hyatt Zilara Cancun",
+    "alias": [
+      "The Royal Cancun All Suites",
+      "Hyatt Zilara Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 11.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 11.5,
+    "estado": "abierto",
+    "fuente": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-zilara-cancun/cunjr",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Riu Palace Kukulkan",
+    "alias": [
+      "Hotel Riu Palace Kukulkan Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 12, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 12.0,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-palace-kukulkan/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Park Royal Beach Cancun",
+    "alias": [
+      "Park Royal Cancún"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 12.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 12.5,
+    "estado": "abierto",
+    "fuente": "https://www.parkroyal.mx/es/hoteles/park-royal-beach-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Westin Lagunamar Ocean Resort Villas & Spa",
+    "alias": [
+      "Westin Lagunamar Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 12.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 12.5,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunwi-the-westin-lagunamar-ocean-resort-villas-and-spa-cancun/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Live Aqua Beach Resort Cancun",
+    "alias": [
+      "Live Aqua Cancun Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 12.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 12.5,
+    "estado": "abierto",
+    "fuente": "https://www.liveaqua.com/hoteles-y-resorts/live-aqua-beach-resort-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Casa Turquesa",
+    "alias": [
+      "Casa Turquesa Boutique Hotel"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 13, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 13.0,
+    "estado": "abierto",
+    "fuente": "https://www.hotelcasaturquesa.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Royal Sands Resort & Spa All Inclusive",
+    "alias": [
+      "The Royal Sands"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 13.5, Retorno del Rey 32, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 13.5,
+    "estado": "abierto",
+    "fuente": "https://www.royalresorts.com/resorts/the-royal-sands",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Occidental Tucancún",
+    "alias": [
+      "Barcelo Tucancun",
+      "Occidental Tucancun All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 13.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 13.5,
+    "estado": "abierto",
+    "fuente": "https://www.barcelo.com/es-mx/occidental-tucancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Kempinski Hotel Cancun",
+    "alias": [
+      "The Ritz-Carlton Cancun",
+      "Kempinski Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Retorno del Rey 36, Blvd. Kukulcán Km 14, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.0,
+    "estado": "renombrado",
+    "fuente": "https://www.kempinski.com/en/hotel-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sandos Cancun All Inclusive",
+    "alias": [
+      "Sandos Cancun Lifestyle Resort"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 14 Mz 53 Lote 37-1, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.0,
+    "estado": "abierto",
+    "fuente": "https://www.sandos.com/es/sandos-cancun/resort-todo-incluido",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "JW Marriott Cancun Resort & Spa",
+    "alias": [
+      "JW Marriott Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 14.5 Mz 53 Lote 40-A, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.5,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunjw-jw-marriott-cancun-resort-and-spa/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Marriott Cancun, An All-Inclusive Resort",
+    "alias": [
+      "Marriott Cancun Resort",
+      "CasaMagna Marriott Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 14.5 Retorno Chac L-41, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.5,
+    "estado": "renombrado",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunmx-marriott-cancun-an-all-inclusive-resort/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hard Rock Hotel Cancun",
+    "alias": [
+      "Hard Rock Cancun All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 14.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.5,
+    "estado": "abierto",
+    "fuente": "https://www.hardrockhotelcancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets The Vine Cancun",
+    "alias": [
+      "Secrets The Vine Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 14.5 Retorno del Rey Lote 38, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.5,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/secrets/mexico/the-vine-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Golden Parnassus Resort & Spa",
+    "alias": [
+      "Golden Parnassus All Inclusive Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 14.5 Retorno del Rey Mz 53 Lote 37, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 14.5,
+    "estado": "abierto",
+    "fuente": "https://www.goldenparnassusresortspa.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Paradisus Cancun All Inclusive",
+    "alias": [
+      "Paradisus Cancun",
+      "Gran Meliá Cancún"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 16.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 16.5,
+    "estado": "abierto",
+    "fuente": "https://www.melia.com/es/hoteles/mexico/cancun/paradisus-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Grand Oasis Cancun",
+    "alias": [
+      "Grand Oasis All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 16.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 16.5,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/grand-oasis-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Pyramid Cancun at Grand Oasis",
+    "alias": [
+      "The Pyramid at Grand Oasis"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 16.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 16.5,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/the-pyramid-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Sens Cancun",
+    "alias": [
+      "The Sens Hotel & Spa by Oasis",
+      "Grand Oasis Sens"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 16.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 16.5,
+    "estado": "abierto",
+    "fuente": "https://oasishoteles.com/es/hoteles/the-sens-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hyatt Vivid Grand Island",
+    "alias": [
+      "Hyatt Vivid Grand Island Cancun",
+      "Grand Island Cancun Resort"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 16.5, Grand Island, Nichupté Lagoon, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 16.5,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/hyatt-vivid/mexico/grand-island/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Emporio Cancun",
+    "alias": [
+      "Hotel Emporio Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 17 Retorno Gucumatz Lote 43, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 17.0,
+    "estado": "abierto",
+    "fuente": "https://hotelesemporio.com/hoteles/emporio-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Iberostar Selection Cancun",
+    "alias": [
+      "Iberostar Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 17, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 17.0,
+    "estado": "abierto",
+    "fuente": "https://www.iberostar.com/hoteles/cancun/iberostar-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Coral Level at Iberostar Selection Cancun",
+    "alias": [
+      "Coral Level Iberostar Cancun Adults Only"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 17, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 17.0,
+    "estado": "abierto",
+    "fuente": "https://www.iberostar.com/hoteles/cancun/coral-level-at-iberostar-selection-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Seadust Cancun Family Resort",
+    "alias": [
+      "Great Parnassus Family Resort",
+      "Seadust Cancun All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 17, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 17.0,
+    "estado": "renombrado",
+    "fuente": "https://www.seadustcancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hilton Cancun Mar Caribe All-Inclusive Resort",
+    "alias": [
+      "Royal Uno All Inclusive",
+      "The Royal Caribbean"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 17 Lote 50, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 17.0,
+    "estado": "renombrado",
+    "fuente": "https://www.hilton.com/en/hotels/cunchhh-hilton-cancun-mar-caribe-all-inclusive-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Secrets Mirabel Cancun Resort & Spa",
+    "alias": [
+      "Secrets Mirabel Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 17.5, Playa Delfines, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 17.5,
+    "estado": "abierto",
+    "fuente": "https://www.hyattinclusivecollection.com/es/resorts-hoteles/secrets/mexico/mirabel-cancun-resort-spa/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Crown Paradise Club Cancun",
+    "alias": [
+      "Crown Paradise Club All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 18.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 18.5,
+    "estado": "abierto",
+    "fuente": "https://www.crownparadise.com/cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hotel Riu Ventura",
+    "alias": [
+      "Riu Ventura Cancun"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 19, Playa Delfines, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 19.0,
+    "estado": "abierto",
+    "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-ventura/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Cancun Plaza Condos",
+    "alias": [
+      "Cancun Plaza Best Beach"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 19.5, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 19.5,
+    "estado": "abierto",
+    "fuente": "https://cancunplazahotel.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "GR Solaris Cancun",
+    "alias": [
+      "GR Solaris All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 19.5 Segunda Etapa Lote 59-2, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 19.5,
+    "estado": "abierto",
+    "fuente": "https://www.hotelessolaris.com/es/gr-solaris-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Royal Solaris Cancun",
+    "alias": [
+      "Royal Solaris All Inclusive Resort & Marina"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 19.5 Segunda Etapa Lote 64, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 19.5,
+    "estado": "abierto",
+    "fuente": "https://www.hotelessolaris.com/es/royal-solaris-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "GR Caribe by Solaris Deluxe All Inclusive",
+    "alias": [
+      "GR Caribe Solaris"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 19.5 Segunda Etapa Lote 59-1, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 19.5,
+    "estado": "abierto",
+    "fuente": "https://www.hotelessolaris.com/es/gr-caribe-by-solaris",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Sun Palace Cancun",
+    "alias": [
+      "Sun Palace Couples Only All Inclusive"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 20, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 20.0,
+    "estado": "abierto",
+    "fuente": "https://cancun.palaceresorts.com/es/hoteles/sun-palace",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Westin Resort & Spa, Cancun",
+    "alias": [
+      "Westin Cancun",
+      "Westin Punta Nizuc"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 20, Punta Nizuc, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 20.0,
+    "estado": "abierto",
+    "fuente": "https://www.marriott.com/en-us/hotels/cunwi-the-westin-resort-and-spa-cancun/overview/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "NIZUC Resort & Spa",
+    "alias": [
+      "Hotel Nizuc Resort"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 21.2, Punta Nizuc, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 21.2,
+    "estado": "abierto",
+    "fuente": "https://www.nizuc.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Club Med Cancun Yucatan",
+    "alias": [
+      "Club Med Cancun",
+      "Club Med Punta Nizuc"
+    ],
+    "zona": "zh_cancun",
+    "ubicacion": "Blvd. Kukulcán Km 21.5, Punta Nizuc, Zona Hotelera, Cancún, Quintana Roo",
+    "km_carretera": 21.5,
+    "estado": "abierto",
+    "fuente": "https://www.clubmed.com.mx/r/cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Moon Palace Cancun (Sunrise & Nizuc Sections)",
+    "alias": [
+      "Moon Palace Resort",
+      "Moon Palace Sunrise",
+      "Moon Palace Nizuc"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Carretera Federal Cancún - Chetumal Km 340, Cancún, Quintana Roo",
+    "km_carretera": 340.0,
+    "estado": "abierto",
+    "fuente": "https://cancun.palaceresorts.com/es/hoteles/moon-palace-cancun",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "The Grand at Moon Palace Cancun",
+    "alias": [
+      "The Grand Moon Palace",
+      "The Grand Cancun"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Carretera Federal Cancún - Chetumal Km 340, Cancún, Quintana Roo",
+    "km_carretera": 340.0,
+    "estado": "abierto",
+    "fuente": "https://thegrand.palaceresorts.com/es",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Moon Palace The Golf & Spa Resort Cancun",
+    "alias": [
+      "Moon Palace Golf Club"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Carretera Federal Cancún - Chetumal Km 340, Cancún, Quintana Roo",
+    "km_carretera": 340.0,
+    "estado": "abierto",
+    "fuente": "https://cancun.palaceresorts.com/es/golf",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Hilton Cancun, an All-Inclusive Resort",
+    "alias": [
+      "Hilton Cancun All Inclusive",
+      "Hilton Riviera Maya"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Carretera Federal Libre 307 Cancún-Tulum Km 248, Cancún, Quintana Roo",
+    "km_carretera": 248.0,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/cunqrhh-hilton-cancun-an-all-inclusive-resort/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Waldorf Astoria Cancun",
+    "alias": [
+      "Waldorf Astoria Riviera Maya",
+      "Waldorf Cancun"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Carretera Federal Libre 307 Cancún-Tulum Km 248, Cancún, Quintana Roo",
+    "km_carretera": 248.0,
+    "estado": "abierto",
+    "fuente": "https://www.hilton.com/en/hotels/cunnwwa-waldorf-astoria-cancun/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Haven Riviera Cancun All-Inclusive Resort",
+    "alias": [
+      "Haven Riviera Cancun Adults Only",
+      "Haven Cancun"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Carretera Federal Chetumal - Puerto Juárez Km 335, Cancún, Quintana Roo",
+    "km_carretera": 335.0,
+    "estado": "abierto",
+    "fuente": "https://www.havenresorts.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "AVA Resort Cancun",
+    "alias": [
+      "AVA Cancun All-Inclusive",
+      "AVA Resort Nizuc"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Blvd. Kukulcán Km 25.3, Punta Nizuc Sur / Carretera hacia Moon Palace, Cancún, Quintana Roo",
+    "km_carretera": 25.3,
+    "estado": "abierto",
+    "fuente": "https://www.avaresortcancun.com/",
+    "confianza": "alta"
+  },
+  {
+    "nombre": "Santuario María Desatadora de Nudos (La Desatadora)",
+    "alias": [
+      "La Desatadora",
+      "Santuario Desatadora de Nudos"
+    ],
+    "zona": "moon_hilton_desatadora",
+    "ubicacion": "Supermanzana 319 / Polígono Sur, Zona Huayacán-Desatadora, Cancún, Quintana Roo",
+    "km_carretera": null,
+    "estado": "abierto",
+    "fuente": "https://desatadoradenudos.org/",
+    "confianza": "alta"
+  }
+]

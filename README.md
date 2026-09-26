@@ -1,73 +1,94 @@
-# React + TypeScript + Vite
+# La Union - Reservas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web (PWA) para La Unión, transportación turística en Cancún. Bajo un mismo
+armazón conviven **dos aplicaciones**, alternables desde un botón de menú (hamburguesa)
+que abre un panel lateral:
 
-Currently, two official plugins are available:
+1. **Órdenes de servicio** — reservas y vouchers de transportación (la app original).
+2. **Comprobantes de venta** — el recibo que se entrega al pasajero (la app nueva).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+No hay router: `src/App.tsx` guarda cuál app está activa en un estado (`appActiva`) y
+muestra un bloque u otro. Añadir una tercera app se hace agregando un objeto al arreglo
+`APPS` de `src/components/AppDrawer.tsx`.
 
-## React Compiler
+Documentación ampliada:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [`docs/ARQUITECTURA.md`](docs/ARQUITECTURA.md) — cómo está armado el proyecto, dónde
+  vive cada dato y las reglas de negocio de comprobantes.
+- [`docs/DESPLIEGUE.md`](docs/DESPLIEGUE.md) — cómo correrlo en local, cómo compilarlo,
+  la topología real de producción y las trampas ya conocidas.
 
-## Expanding the ESLint configuration
+## Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Front:** React 19 + TypeScript, Vite 7, Tailwind CSS 4, `vite-plugin-pwa`.
+- **Back:** Express 5, `nedb-promises` (base de datos embebida en archivo, no
+  Prisma ni MySQL), JWT (`jsonwebtoken`), `bcryptjs`, `multer` + `sharp` para avatares.
+- PDF de comprobantes: `jsPDF`, generado en el cliente.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Estructura del repo
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+launion-ordenes/
+├── src/                  # Front (React + TS)
+│   ├── components/       # 14 componentes (formularios, listas, modales, selectores)
+│   ├── utils/            # Persistencia (cookies/localStorage) y generación de PDF
+│   ├── types.ts          # Tipos de dominio: Order, Receipt, CompanyInfo
+│   └── App.tsx           # Alterna entre las dos apps, sin router
+├── server/               # API (Express 5)
+│   ├── app.js            # Arranque, CORS, montaje de rutas
+│   ├── routes.js         # Login, registro, usuarios, avatares
+│   ├── middleware.js     # verifyToken (JWT) y resizeImage (sharp → webp)
+│   └── db/users.db       # Base nedb: solo usuarios, nada de negocio
+└── docs/
+    ├── ARQUITECTURA.md
+    └── DESPLIEGUE.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Dónde viven los datos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+El servidor **solo** guarda usuarios y sus avatares. Todo lo demás vive en el navegador:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Dato | Dónde | Archivo | Límite práctico |
+|---|---|---|---|
+| Órdenes de servicio | Cookie `union_orders` (30 días) | `src/utils/storage.ts` | ~8 registros antes de perder datos en silencio |
+| Comprobantes de venta | `localStorage` (`union_receipts`) | `src/utils/receiptStorage.ts` | ~14 000 registros |
+| Datos de la empresa (para el PDF) | Cookie `union_company` (365 días) | `src/utils/storage.ts` | — |
+| Usuarios y avatares | `server/db/users.db` + `server/uploads/` | `server/routes.js` | — |
+
+Detalle y motivo medido de estos límites en `docs/ARQUITECTURA.md`.
+
+## Arrancar en local
+
+Dos terminales: una para el servidor (`server/`, puerto 3021) y otra para el front
+(raíz, Vite en `5173`). Comandos exactos, variables de entorno y diagnóstico en
+[`docs/DESPLIEGUE.md`](docs/DESPLIEGUE.md).
+
+```bash
+# terminal 1
+cd server && npm install && npm run dev
+
+# terminal 2
+npm install && npm run dev
 ```
+
+## Scripts
+
+| Comando (raíz) | Qué hace |
+|---|---|
+| `npm run dev` | Levanta Vite en modo desarrollo (`5173`) |
+| `npm run build` | `tsc -b` + `vite build`, genera `dist/` |
+| `npm run lint` | ESLint sobre todo el proyecto |
+| `npm run preview` | Sirve `dist/` para probar el build localmente |
+
+| Comando (`server/`) | Qué hace |
+|---|---|
+| `npm run dev` | `node --watch app.js` |
+
+## Limitaciones conocidas
+
+- Las **órdenes de servicio siguen guardándose en una cookie** (techo real de ~8
+  registros codificados en ~4 KB). Es un riesgo de pérdida silenciosa de datos y está
+  pendiente de migrar a un almacenamiento con más capacidad (ver `docs/ARQUITECTURA.md`).
+- No hay endpoint público de registro: `/api/register` exige un JWT de un usuario con
+  rol `admin` (`server/routes.js`). Un usuario nuevo solo puede darlo de alta otro ya
+  autenticado como admin, no existe alta propia.

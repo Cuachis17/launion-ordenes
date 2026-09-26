@@ -16,6 +16,7 @@ import Register from './components/Register'
 import ChangePasswordModal from './components/ChangePasswordModal'
 import { loadOrders, saveOrders, loadCompany, saveCompany } from './utils/storage'
 import type { Order, CompanyInfo } from './types'
+import CotizadorTraslados from './components/CotizadorTraslados'
 
 export default function App() {
   const [reservations, setReservations] = useState<Order[]>(() => loadOrders())
@@ -49,6 +50,10 @@ export default function App() {
   useEffect(() => {
     saveOrders(reservations)
   }, [reservations])
+
+  useEffect(() => {
+    setPanelMovil('form')
+  }, [appActiva])
 
   // Captura del evento beforeinstallprompt y mostrar modal 1s después
   useEffect(() => {
@@ -193,7 +198,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header
-        count={appActiva === 'ordenes' ? reservations.length : receipts.length}
+        count={appActiva === 'ordenes' ? reservations.length : appActiva === 'comprobantes' ? receipts.length : 0}
         onOpenEditor={handleOpenEditor}
         onLoginClick={() => setShowLoginModal(true)}
         onProfileClick={() => setShowProfileModal(true)}
@@ -201,8 +206,11 @@ export default function App() {
         subtitulo={APPS.find((a) => a.id === appActiva)?.nombre ?? ''}
         unidad={appActiva === 'ordenes'
           ? ['reserva activa', 'reservas activas']
-          : ['comprobante emitido', 'comprobantes emitidos']}
+          : appActiva === 'comprobantes'
+            ? ['comprobante emitido', 'comprobantes emitidos']
+            : ['consulta realizada', 'consultas realizadas']}
         user={user}
+        mostrarResumen={appActiva !== 'cotizador'}
       />
 
       <AppDrawer
@@ -457,6 +465,8 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {appActiva === 'cotizador' && <CotizadorTraslados />}
 
       {editingReceipt && (
         <EditReceiptModal
