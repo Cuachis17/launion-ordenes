@@ -1,4 +1,6 @@
+/* Estilos globales y tokens semánticos compartidos por la interfaz. */
 @import "tailwindcss";
+@import "./styles/theme.css";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
