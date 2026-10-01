@@ -2,8 +2,10 @@
 import { useEffect, useState } from 'react'
 import { loadOrders, saveOrders, loadCompany, saveCompany } from '../utils/storage'
 import { loadReceipts, saveReceipts } from '../utils/receiptStorage'
+import { useAvisoCreado } from './useAvisoCreado'
 import { siguienteVoucher, type Receipt, type Order, type CompanyInfo } from '../types'
 export function useAppData() {
+  const avisoCreado = useAvisoCreado()
   const [reservations, setReservations] = useState<Order[]>(() => loadOrders())
   const [receipts, setReceipts] = useState<Receipt[]>(() => loadReceipts())
   const [editingReceipt, setEditingReceipt] = useState<Receipt | null>(null)
@@ -20,6 +22,7 @@ export function useAppData() {
 
   function handleAddReservation(o: Order) {
     setReservations((prev) => [o, ...prev].slice(0, 10))
+    avisoCreado.mostrar('orden', o.id)
   }
 
   function handleDeleteReservation(id: string) {
@@ -42,11 +45,15 @@ export function useAppData() {
       ? { ...entrante, voucher: entrante.voucher.trim() }
       : { ...entrante, voucher: siguienteVoucher(receipts) }
     const siguientes = [r, ...receipts]
-    setReceipts(siguientes)
     if (!saveReceipts(siguientes)) {
       alert('No se pudo guardar el comprobante: ' +
         'el almacenamiento del navegador está lleno o bloqueado.')
+      return false
     }
+    // El aviso confirma persistencia; nunca anuncia éxito cuando falló localStorage.
+    setReceipts(siguientes)
+    avisoCreado.mostrar('comprobante', r.id)
+    return true
   }
 
   // Duplicar es lo más pedido en operación: el mismo traslado con otro pasajero.
@@ -75,7 +82,7 @@ export function useAppData() {
   }
 
 return {
-  reservations, receipts, editingReceipt, setEditingReceipt, companyInfo,
+  avisoCreado, reservations, receipts, editingReceipt, setEditingReceipt, companyInfo,
   setCompanyInfo, editingReservation, setEditingReservation, handleAddReservation,
   handleDeleteReservation, handleEditClick, handleSaveEditedReservation,
   handleAddReceipt, handleDuplicateReceipt, handleSaveEditedReceipt,

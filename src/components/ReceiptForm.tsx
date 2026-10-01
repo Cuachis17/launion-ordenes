@@ -4,14 +4,19 @@ import type { Receipt } from '../types'
 import { useFormularioComprobante } from '../hooks/useFormularioComprobante'
 import CamposComprobante from './CamposComprobante'
 
-export default function ReceiptForm({ onSubmit }: { onSubmit: (receipt: Receipt) => void }) {
+export default function ReceiptForm({ onSubmit }: {
+  onSubmit: (receipt: Receipt) => boolean | void
+}) {
   const formulario = useFormularioComprobante()
   function submit(event: FormEvent) {
     event.preventDefault()
     const receipt = formulario.preparar()
     if (!receipt) return
-    onSubmit({ ...receipt, id: crypto.randomUUID(), generatedAt: new Date().toISOString() })
-    formulario.reset()
+    const guardado = onSubmit({
+      ...receipt, id: crypto.randomUUID(), generatedAt: new Date().toISOString(),
+    })
+    // Conservar la captura permite reintentar cuando el navegador rechaza el guardado.
+    if (guardado !== false) formulario.reset()
   }
   return (
     <form onSubmit={submit} className="space-y-3">

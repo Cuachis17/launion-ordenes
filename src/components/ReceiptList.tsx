@@ -12,6 +12,8 @@ type Props = {
   onDuplicate?: (receipt: Receipt) => void
   companyInfo: CompanyInfo
   user: unknown
+  enfocarId?: string
+  enfocarRevision?: number
 }
 type FilterTab = 'todos' | ServiceKind
 const TABS: { key: FilterTab; label: string }[] = [
@@ -32,10 +34,24 @@ function fechaCorta(iso: string) {
 }
 
 export default function ReceiptList({
-  receipts, onDelete, onEdit, onDuplicate, companyInfo, user,
+  receipts, onDelete, onEdit, onDuplicate, companyInfo, user, enfocarId,
+  enfocarRevision = 0,
 }: Props) {
-  const [query, setQuery] = useState('')
-  const [tab, setTab] = useState<FilterTab>('todos')
+  const [filtros, setFiltros] = useState<{
+    objetivo?: string
+    query: string
+    tab: FilterTab
+  }>({ objetivo: '-0', query: '', tab: 'todos' })
+  const objetivo = `${enfocarId ?? ''}-${enfocarRevision}`
+  // Ver debe revelar la tarjeta aunque el usuario estuviera buscando otro servicio o pasajero.
+  const query = filtros.objetivo === objetivo ? filtros.query : ''
+  const tab = filtros.objetivo === objetivo ? filtros.tab : 'todos'
+  function setQuery(value: string) {
+    setFiltros({ objetivo, query: value, tab })
+  }
+  function setTab(value: FilterTab) {
+    setFiltros({ objetivo, query, tab: value })
+  }
   if (!receipts.length) {
     return (
       <div className="py-12 text-center text-muted-foreground">
@@ -77,8 +93,10 @@ export default function ReceiptList({
       {filtered.map((receipt) => {
         const pending = pendingAmount(receipt)
         return (
-          <article key={receipt.id}
-            className="min-w-0 rounded-xl border border-border bg-card p-4 shadow-lg">
+          <article key={receipt.id} id={`comprobante-${receipt.id}`} data-id={receipt.id}
+            tabIndex={-1}
+            className="min-w-0 scroll-mt-24 rounded-xl border border-border bg-card p-4 shadow-lg
+              focus-visible:outline-2 focus-visible:outline-ring">
             <div className="flex flex-wrap items-center gap-2">
               <span className="break-all font-mono font-semibold">{receipt.voucher}</span>
               <span className="max-w-full break-words rounded-full bg-secondary px-2 py-1

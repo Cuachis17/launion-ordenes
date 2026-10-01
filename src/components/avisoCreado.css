@@ -1,0 +1,81 @@
+/* Aviso de alta sobre la zona segura del móvil y foco temporal de la tarjeta creada. */
+.aviso-creado {
+  --aviso-exito-fondo: var(--color-emerald-50);
+  --aviso-exito-borde: var(--color-emerald-500);
+  --aviso-exito-accion: var(--color-emerald-600);
+  --aviso-exito-texto: var(--color-emerald-900);
+  --aviso-exito-contraste: var(--color-white);
+  background: var(--aviso-exito-fondo);
+  border: 3px solid var(--aviso-exito-borde);
+  color: var(--aviso-exito-texto);
+  position: fixed;
+  z-index: 70;
+  right: 16px;
+  bottom: calc(env(safe-area-inset-bottom) + 16px);
+  left: 16px;
+  max-width: 420px;
+  animation: aparecer-aviso 160ms ease-out;
+}
+.aviso-creado-titulo,
+.aviso-creado-subtitulo {
+  color: var(--aviso-exito-texto);
+}
+.aviso-creado-icono {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--aviso-exito-accion);
+  color: var(--aviso-exito-contraste);
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 700;
+}
+.aviso-creado-ver {
+  background: var(--aviso-exito-accion);
+  color: var(--aviso-exito-contraste);
+  /* Blanco/emerald600 supera 3:1; 20px en negrita es texto grande y cumple AA. */
+  font-size: 20px;
+  font-weight: 700;
+}
+.aviso-creado-pdf {
+  border: 2px solid var(--aviso-exito-accion);
+  color: var(--aviso-exito-texto);
+}
+.aviso-creado-pdf:hover,
+.aviso-creado-cerrar:hover {
+  background: var(--color-emerald-100);
+}
+.aviso-creado-cerrar {
+  color: var(--aviso-exito-texto);
+}
+.aviso-creado button:focus-visible {
+  outline-color: var(--aviso-exito-texto);
+}
+[data-recien-creado='true'] {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+}
+@keyframes aparecer-aviso {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 640px) {
+  .aviso-creado {
+    left: auto;
+    width: 420px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aviso-creado {
+    animation: none;
+  }
+}

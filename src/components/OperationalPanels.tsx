@@ -1,4 +1,6 @@
 // Paneles de captura y consulta pública de órdenes y comprobantes.
+import AvisoCreado from './AvisoCreado'
+import { useEnfocarCreado } from '../hooks/useEnfocarCreado'
 import ReservationForm from './ReservationForm'
 import ReservationList from './ReservationList'
 import ReceiptForm from './ReceiptForm'
@@ -8,20 +10,35 @@ import type { useAppData } from '../hooks/useAppData'
 import type { SessionUser } from '../hooks/useSession'
 import type { AppId } from './apps'
 export default function OperationalPanels({ data, activa, user, panelMovil, setPanelMovil,
- setShowLoginModal }: {
+ setShowLoginModal, elegir }: {
  data: ReturnType<typeof useAppData>
  activa: AppId
  user: SessionUser | null
  panelMovil: 'form' | 'lista'
  setPanelMovil: (panel: 'form' | 'lista') => void
  setShowLoginModal: (show: boolean) => void
+ elegir: (app: AppId) => void
 }) {
+ const { objetivo, enfocar } = useEnfocarCreado()
  const {
-  reservations, receipts, companyInfo, setEditingReceipt, handleAddReservation,
+  avisoCreado, reservations, receipts, companyInfo, setEditingReceipt, handleAddReservation,
   handleDeleteReservation, handleEditClick, handleAddReceipt, handleDuplicateReceipt,
   handleDeleteReceipt
 } = data
+ const alta = avisoCreado.aviso
+ const registro = alta?.tipo === 'orden' ? reservations.find(r => r.id === alta.id)
+   : receipts.find(r => r.id === alta?.id)
+ function verCreado() {
+   if (!alta) return
+   const destino = alta.tipo === 'orden' ? 'ordenes' : 'comprobantes'
+   if (activa !== destino) elegir(destino)
+   if (window.matchMedia('(max-width: 1023px)').matches) setPanelMovil('lista')
+   enfocar(alta)
+ }
  return <>
+      {alta && registro && <AvisoCreado key={`${alta.tipo}-${alta.id}`} control={avisoCreado}
+        registro={registro} companyInfo={companyInfo} user={user} onVer={verCreado} />}
+
       {activa === 'ordenes' && (
       <div
         className="container mx-auto px-3 sm:px-4 py-2 sm:py-8 max-w-6xl">
@@ -91,6 +108,8 @@ mb-4 sm:mb-6">Nuevo comprobante</h2>
 mb-4 sm:mb-6">Comprobantes recientes</h2>
               <ReceiptList
                 receipts={receipts}
+                enfocarId={objetivo?.tipo === 'comprobante' ? objetivo.id : undefined}
+                enfocarRevision={objetivo?.revision}
                 onDelete={handleDeleteReceipt}
                 onEdit={user ? setEditingReceipt : undefined}
                 onDuplicate={user ? handleDuplicateReceipt : undefined}

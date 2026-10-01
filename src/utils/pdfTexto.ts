@@ -78,19 +78,91 @@ export function textoEnCaja(
 }
 
 /**
- * Carga una imagen asincronamente para ser incrustada en jsPDF.
- * Retorna null si la URL es indefinida o si la carga falla.
+ * Convierte cualquier imagen o URL a Data URL PNG manteniendo el canal alfa.
+ * jsPDF no soporta WebP: al recibir un HTMLImageElement o data URI webp lo
+ * rasteriza internamente en canvas auxiliar a JPEG, convirtiendo la transparencia
+ * en fondo negro. Redibujar en canvas 2D limitado a 512px y exportar como PNG
+ * conserva el canal alfa intacto sin inflar el tamano del PDF.
  */
-export function cargarImagenPdf(url: string | undefined): Promise<HTMLImageElement | null> {
+export async function imagenPngParaPdf(
+  src: string | HTMLImageElement,
+): Promise<string | null> {
+  if (!src) {
+    return null
+  }
+  try {
+    let img: HTMLImageElement
+    if (typeof src === 'string') {
+      img = new Image()
+      img.crossOrigin = 'anonymous'
+      img.src = src
+    } else {
+      img = src
+    }
+    if (!img.complete) {
+      const ok = await new Promise<boolean>((resolve) => {
+        img.onload = () => resolve(true)
+        img.onerror = () => resolve(false)
+      })
+      if (!ok) {
+        return null
+      }
+    }
+
+    const nw = img.naturalWidth || img.width
+    const nh = img.naturalHeight || img.height
+    if (!nw || !nh) {
+      return null
+    }
+
+    const maxLado = 512
+    let w = nw
+    let h = nh
+    if (w > maxLado || h > maxLado) {
+      if (w >= h) {
+        h = Math.round((h * maxLado) / w)
+        w = maxLado
+      } else {
+        w = Math.round((w * maxLado) / h)
+        h = maxLado
+      }
+    }
+
+    const canvas = document.createElement('canvas')
+    canvas.width = w
+    canvas.height = h
+    const ctx = canvas.getContext('2d')
+    if (!ctx) {
+      return null
+    }
+    ctx.clearRect(0, 0, w, h)
+    ctx.drawImage(img, 0, 0, w, h)
+    return canvas.toDataURL('image/png')
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Carga una imagen asincronamente para ser incrustada en jsPDF convertida a PNG.
+ * Retorna null si la URL es indefinida o si la conversion/carga falla.
+ */
+export async function cargarImagenPdf(
+  url: string | undefined,
+): Promise<HTMLImageElement | null> {
   if (!url) {
-    return Promise.resolve(null)
+    return null
+  }
+  const pngData = await imagenPngParaPdf(url)
+  if (!pngData) {
+    return null
   }
   return new Promise((resolver) => {
     const img = new Image()
     img.crossOrigin = 'anonymous'
     img.onload = () => resolver(img)
     img.onerror = () => resolver(null)
-    img.src = url
+    img.src = pngData
   })
 }
 

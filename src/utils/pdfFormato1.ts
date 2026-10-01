@@ -33,6 +33,7 @@ export async function downloadOrderPdf(
   const u = user as UsuarioConAvatar | undefined
 
   const avatarUrl = (u?.id && u?.avatar) ? `${apiUrl}/api/users/${u.id}/avatar` : undefined
+  // cargarImagenPdf normaliza a PNG: jsPDF no soporta WebP y rasterizaria a JPEG con fondo negro.
   const img = (await cargarImagenPdf(avatarUrl)) ?? (await cargarImagenPdf(unionLogo as string))
 
   doc.setFont('helvetica', 'normal')

@@ -13,6 +13,10 @@ por `user.role === 'admin'`. `useAppNavigation.ts` vuelve a órdenes al perder e
 | `hooks/useAppData.ts` | Persistencia local, altas, edición y duplicado |
 | `hooks/useSession.ts` | Verificar cookie al iniciar, volver a la ventana y cada 60 segundos |
 | `hooks/useAppNavigation.ts` | Aplicación activa y pestaña móvil |
+| `hooks/useAvisoCreado.ts` | Aviso de alta y reloj pausado durante interacción |
+| `hooks/useEnfocarCreado.ts` | Scroll, foco y resaltado temporal de la tarjeta creada |
+| `components/AvisoCreado.tsx` | Confirmación accesible con Ver, PDF y cierre |
+| `utils/accionesPdf.ts` | PDF de orden: formato 1 sin sesión y formato 2 con sesión |
 | `hooks/useUsuariosAdmin.ts` | Carga, reintento y estado optimista con reversión por fila |
 | `hooks/useFormularioComprobante.ts` | Estado y validación comunes de comprobantes |
 | `components/OperationalPanels.tsx` | Captura y listas de órdenes y comprobantes |
@@ -139,10 +143,20 @@ usar alturas calculadas para evitar solapamientos.
 
 `receiptPdf.ts` construye, descarga o comparte el comprobante; `receiptPdfPartes.ts`
 dibuja encabezado y pie, y `receiptPdfLogo.ts` recupera el avatar con fallback al
-logo de La Unión. En encabezado, el voucher largo reduce su fuente y estrecha el
-bloque izquierdo. Compartir usa `navigator.share` si acepta archivos; si no,
-descarga el PDF. `e2e/pdf.spec.ts`, prueba «datos máximimos», exige 2 páginas para
-el formato 1 con notas largas.
+logo de La Unión. `imagenPngParaPdf` en `pdfTexto.ts` convierte imágenes a PNG con
+canvas, preserva transparencia y limita el lado mayor a 512 px. Los avatares se
+guardan en WebP; jsPDF no soporta ese formato y su conversión interna a JPEG volvía
+negro el fondo transparente. `cargarImagenPdf` (formatos 1 y 2) y `logoDelUsuario`
+(comprobante) usan el helper. En encabezado, el voucher largo reduce su fuente y
+estrecha el bloque izquierdo. Compartir usa `navigator.share` si acepta archivos;
+si no, descarga el PDF. También descarga si compartir falla; cancelar (`AbortError`)
+no descarga.
+
+Las pruebas están repartidas: `e2e/pdf.spec.ts` cubre casos normales;
+`e2e/pdf-max.spec.ts` prueba datos máximos y exige 2 páginas con notas largas;
+`e2e/pdf-logo.spec.ts` comprueba que la esquina de un logo WebP transparente no sea
+negra. Comparten `e2e/helpers/pdfRender.ts` (descarga, render y captura) y
+`e2e/helpers/pdfDatos.ts` (datos de prueba).
 
 `OperationalPanels` alterna formulario/lista mediante `PanelHelpers` por debajo de
 `lg`; en escritorio muestra ambos. Los hijos de los grids tienen `min-w-0`.
@@ -150,16 +164,37 @@ el formato 1 con notas largas.
 usan sus colores semánticos. Los interruptores y acciones del panel admin miden al
 menos 44 px. Las confirmaciones y errores se muestran dentro del panel.
 
+## Aviso después de crear
+
+`OperationalPanels` muestra `AvisoCreado` tras el alta: «✓ Orden creada» o
+«✓ Comprobante emitido». El mensaje usa `role="status"` y `aria-live="polite"`.
+Ver vuelve a la aplicación del registro; en móvil abre su pestaña Lista y en escritorio
+conserva los dos paneles. Localiza `orden-{id}` o `comprobante-{id}` tras dos frames,
+hace scroll y da foco a la tarjeta. `data-recien-creado="true"` aplica
+un contorno durante dos segundos. El movimiento reducido elimina el scroll suave
+y la animación de entrada; `avisoCreado.css` posiciona el aviso sobre la zona segura.
+
+El alta de comprobantes guarda primero en `localStorage`: si falla, mantiene el
+formulario, muestra el aviso nativo de almacenamiento y no añade tarjeta ni toast.
+Ver limpia los filtros del historial para revelar el registro aunque otra búsqueda
+lo ocultara. El aviso dura ocho segundos; su reloj conserva el tiempo restante mientras
+recibe foco, puntero, contacto táctil o prepara el PDF. Ver conserva el aviso y Cerrar lo
+retira. PDF reutiliza `accionesPdf` para órdenes y `shareReceiptPdf` para comprobantes;
+si falla, muestra un error recuperable dentro del aviso. `e2e/aviso.spec.ts` cubre
+creación, Ver y descarga en móvil 390 y escritorio 1280; desactiva la API nativa
+para comprobar el fallback de compartir sin abrir diálogos del sistema operativo.
+
 ## Verificación y pendientes comprobados
 
 Desde la raíz: `npx tsc -b`, `npx eslint <archivos tocados>`, `npm run build`,
-`npx playwright test e2e/pdf.spec.ts` y `npx playwright test e2e/admin.spec.ts`.
+`npx playwright test e2e/pdf.spec.ts`, `npx playwright test e2e/admin.spec.ts` y
+`npx playwright test e2e/aviso.spec.ts --project=movil-390 --project=escritorio-1280`.
 La configuración Playwright usa puerto 5175 y proyectos móvil 360/390 y escritorio.
 Los servidores persistentes deben iniciarse en Terminal.app según las reglas del equipo.
 
-- `src/hooks/useAppData.ts:63`: duplicar deja `voucher` vacío y guardar la edición no
+- `src/hooks/useAppData.ts:64`: duplicar deja `voucher` vacío y guardar la edición no
   asigna `siguienteVoucher`; ese camino puede guardar un comprobante sin folio.
-- `src/hooks/useAppData.ts:67`: guardar edición o borrar ignora el retorno de
+- `src/hooks/useAppData.ts:74`: guardar edición o borrar ignora el retorno de
   `saveReceipts`; un fallo de almacenamiento no muestra aviso en esos caminos.
 - `index.html:9`: enlaza `/src/style.css`, que no existe; el build emite un aviso.
 - `src/utils/storage.ts:18`: no verifica la escritura de cookies. No se migró persistencia.

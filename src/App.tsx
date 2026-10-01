@@ -127,7 +127,7 @@ export default function App() {
 
       <PwaInstall />
       <OperationalPanels data={data}
-        activa={activa}
+        activa={activa} elegir={elegir}
         user={user} panelMovil={panelMovil}
         setPanelMovil={setPanelMovil}
         setShowLoginModal={setShowLoginModal} />

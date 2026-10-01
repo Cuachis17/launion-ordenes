@@ -23,6 +23,7 @@ export async function downloadOrderPdfFormat2(
   const u = user as UsuarioConAvatar | undefined
   const api = import.meta.env.VITE_API_URL ?? ''
   const avatarUrl = (u?.id && u?.avatar) ? `${api}/api/users/${u.id}/avatar` : undefined
+  // cargarImagenPdf normaliza a PNG: jsPDF no soporta WebP y rasterizaria a JPEG con fondo negro.
   const [imgUser, imgUnion] = await Promise.all([
     cargarImagenPdf(avatarUrl),
     cargarImagenPdf(unionLogo as string),
