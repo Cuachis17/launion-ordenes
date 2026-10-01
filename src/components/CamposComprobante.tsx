@@ -76,8 +76,8 @@ export default function CamposComprobante({ form, errors, update }: Props) {
       </div>
       {llegada && (
         <CampoFormulario label="Número de vuelo" value={form.flight ?? ''}
-          placeholder="AA1234" error={errors.flight}
-          onChange={(value) => update('flight', value)} />
+          placeholder="AA1234" error={errors.flight} className="uppercase"
+          onChange={(value) => update('flight', value.toUpperCase())} />
       )}
       <section className="space-y-3 rounded-xl border border-border bg-muted p-3">
         <div className="flex items-center justify-between gap-3">
@@ -105,14 +105,16 @@ export default function CamposComprobante({ form, errors, update }: Props) {
           <p className="flex justify-between gap-2 text-sm">
             <span>Total</span><span>{formatMoney(form.total, form.currency)}</span>
           </p>
-          <p className="flex justify-between gap-2 text-sm">
+          <p className="flex justify-between gap-2 text-sm text-emerald-700">
             <span>Anticipo</span><span>{formatMoney(form.paid, form.currency)}</span>
           </p>
-          <p className="flex flex-wrap justify-between gap-2 border-t border-border
-            pt-1 font-medium">
-            <span>Saldo a pagar al abordar</span>
-            <span>{formatMoney(pendingAmount(form), form.currency)}</span>
-          </p>
+          <div className="flex items-center justify-between text-amber-800 pt-1 border-t
+            border-border">
+            <span className="font-medium">Saldo a pagar al abordar</span>
+            <span className="text-lg font-semibold">
+              {formatMoney(pendingAmount(form), form.currency)}
+            </span>
+          </div>
         </div>
       </section>
     </div>

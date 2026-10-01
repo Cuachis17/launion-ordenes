@@ -27,14 +27,27 @@ por `user.role === 'admin'`. `useAppNavigation.ts` vuelve a órdenes al perder e
 | `components/SelectorServicio.tsx` | Llegada, Salida, InterHotel, Tour y Otro para órdenes |
 | `components/CamposComprobante.tsx` | Campos compartidos para crear y editar recibos |
 | `components/CampoFormulario.tsx` | Campo reutilizable con etiqueta |
-| `components/CampoFecha.tsx` / `CampoHora.tsx` | Fecha y hora de comprobantes; hora en 24 h |
+| `CampoFecha.tsx` / `CampoHora.tsx` | Fecha y hora de órdenes y comprobantes (24 h) |
 | `components/CotizadorTraslados.tsx` | Cotizador independiente |
 | `components/Header.tsx` / `UserProfileModal.tsx` | Cabecera y perfil |
 | `components/Login.tsx` / `Register.tsx` / `ChangePasswordModal.tsx` | Acceso y cuentas |
 
 `ReservationForm`, `ReservationList` y `EditReservationModal` gestionan órdenes.
+Tanto `ReservationForm` como `EditReservationModal` usan `CampoFecha` y `CampoHora`
+compartidos con Comprobantes. No usar inputs nativos `date`/`time`: en iPhone se
+desbordan. `CampoFecha` acepta `minimo` (ISO); al crear una orden bloquea días
+anteriores. `fechaISO()` en `src/utils/fechaOrden.ts` calcula hoy en hora local;
+usar UTC adelantaba el día después de las 19:00 en Cancún. Al guardar, las órdenes
+conservan el formato habitual de fecha y hora; `formatDateDisplay` y `parseToIso`
+adaptan la fecha entre el selector y el formato histórico.
 `ReceiptForm`, `ReceiptList` y `EditReceiptModal` gestionan comprobantes.
+`ReceiptCard.tsx` presenta comprobantes con Enviar y acciones de icono para editar,
+duplicar, descargar y eliminar; `ReceiptIcons.tsx` contiene sus iconos SVG.
 Para añadir una app se amplían `AppId`, `APPS` y su render en `App.tsx`.
+
+`e2e/orden-fecha.spec.ts` comprueba los selectores en móvil 360/390, el formato
+persistido y el día local a las 21:00 en Cancún. No reescribir `CampoFecha` ni
+`CampoHora`: órdenes y comprobantes usan los mismos selectores.
 
 ## Persistencia y límites
 

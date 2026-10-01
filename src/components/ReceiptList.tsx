@@ -1,9 +1,8 @@
-// Historial filtrable de comprobantes; muestra nombres libres sin perder la clasificación Otro.
+// Historial filtrable de comprobantes con acciones compactas y estado visual restaurado.
 import { useState } from 'react'
 import type { CompanyInfo, Receipt, ServiceKind } from '../types'
-import { etiquetaServicio, pendingAmount } from '../types'
-import { formatMoney } from '../utils/receiptStorage'
-import { downloadReceiptPdf, shareReceiptPdf } from '../utils/receiptPdf'
+import { IconReceipt, IconSearch } from './ReceiptIcons'
+import ReceiptCard from './ReceiptCard'
 
 type Props = {
   receipts: Receipt[]
@@ -15,7 +14,9 @@ type Props = {
   enfocarId?: string
   enfocarRevision?: number
 }
+
 type FilterTab = 'todos' | ServiceKind
+
 const TABS: { key: FilterTab; label: string }[] = [
   { key: 'todos', label: 'Todos' },
   { key: 'llegada', label: 'Llegadas' },
@@ -23,18 +24,19 @@ const TABS: { key: FilterTab; label: string }[] = [
   { key: 'hotel', label: 'Hotel' },
   { key: 'otro', label: 'Otro' },
 ]
-const ACCION = 'min-h-11 rounded-lg border border-border px-3 text-sm '
-  + 'hover:bg-accent focus-visible:outline-2 focus-visible:outline-ring'
+
 function normalize(value: string) {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
 }
-function fechaCorta(iso: string) {
-  const [year, month, day] = iso.split('-')
-  return day && month && year ? `${day}/${month}/${year}` : iso
-}
 
 export default function ReceiptList({
-  receipts, onDelete, onEdit, onDuplicate, companyInfo, user, enfocarId,
+  receipts,
+  onDelete,
+  onEdit,
+  onDuplicate,
+  companyInfo,
+  user,
+  enfocarId,
   enfocarRevision = 0,
 }: Props) {
   const [filtros, setFiltros] = useState<{
@@ -42,102 +44,88 @@ export default function ReceiptList({
     query: string
     tab: FilterTab
   }>({ objetivo: '-0', query: '', tab: 'todos' })
+
   const objetivo = `${enfocarId ?? ''}-${enfocarRevision}`
-  // Ver debe revelar la tarjeta aunque el usuario estuviera buscando otro servicio o pasajero.
   const query = filtros.objetivo === objetivo ? filtros.query : ''
   const tab = filtros.objetivo === objetivo ? filtros.tab : 'todos'
+
   function setQuery(value: string) {
     setFiltros({ objetivo, query: value, tab })
   }
+
   function setTab(value: FilterTab) {
     setFiltros({ objetivo, query, tab: value })
   }
-  if (!receipts.length) {
+
+  if (receipts.length === 0) {
     return (
-      <div className="py-12 text-center text-muted-foreground">
-        <p className="font-medium">Aún no hay comprobantes</p>
-        <p className="mt-1 text-sm">Captura el primero en el formulario.</p>
+      <div className="flex flex-col items-center justify-center py-12 text-center text-gray-400">
+        <IconReceipt className="w-12 h-12 mb-3" />
+        <p className="font-medium text-gray-500">Aún no hay comprobantes</p>
+        <p className="text-sm mt-1">Captura el primero en el formulario de la izquierda.</p>
       </div>
     )
   }
+
   const search = normalize(query.trim())
   const filtered = receipts.filter((receipt) => {
     if (tab !== 'todos' && receipt.service !== tab) return false
+    if (!search) return true
     return normalize(receipt.voucher).includes(search)
       || normalize(receipt.passenger).includes(search)
   }).sort((a, b) => b.generatedAt.localeCompare(a.generatedAt))
+
   return (
-    <div className="space-y-4 text-foreground">
-      <label className="block text-sm">
-        Buscar comprobantes
-        <input value={query} onChange={(event) => setQuery(event.target.value)}
-          placeholder="Buscar por voucher o pasajero"
-          className="mt-1 w-full rounded-lg border border-border bg-input-background px-3 py-2
-            focus-visible:outline-2 focus-visible:outline-ring" />
-      </label>
-      <div className="flex flex-wrap gap-1 rounded-lg border border-border bg-muted p-1">
-        {TABS.map(({ key, label }) => (
-          <button key={key} type="button" aria-pressed={tab === key} onClick={() => setTab(key)}
-            className={`min-h-11 rounded-lg px-3 text-sm focus-visible:outline-2
-              focus-visible:outline-ring ${tab === key
-                ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:bg-accent'}`}>
-            {label}
-          </button>
-        ))}
+    <div className="space-y-4">
+      <div className="space-y-3">
+        <div className="relative">
+          <IconSearch className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2
+            text-gray-400 pointer-events-none" />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Buscar por voucher o pasajero"
+            className="block w-full rounded-lg border-gray-200 shadow-sm py-2 pr-3 !pl-10"
+          />
+        </div>
+
+        <div className="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1 flex-wrap">
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              type="button"
+              onClick={() => setTab(t.key)}
+              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                tab === t.key
+                  ? 'bg-indigo-600 text-white shadow-sm'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
       </div>
-      {!filtered.length && (
-        <p className="py-8 text-center text-muted-foreground">
+
+      {filtered.length === 0 ? (
+        <p className="text-center text-gray-400 py-8">
           Ningún comprobante coincide con la búsqueda.
         </p>
+      ) : (
+        <div className="space-y-3">
+          {filtered.map((r) => (
+            <ReceiptCard
+              key={r.id}
+              receipt={r}
+              companyInfo={companyInfo}
+              user={user}
+              onDelete={onDelete}
+              onEdit={onEdit}
+              onDuplicate={onDuplicate}
+            />
+          ))}
+        </div>
       )}
-      {filtered.map((receipt) => {
-        const pending = pendingAmount(receipt)
-        return (
-          <article key={receipt.id} id={`comprobante-${receipt.id}`} data-id={receipt.id}
-            tabIndex={-1}
-            className="min-w-0 scroll-mt-24 rounded-xl border border-border bg-card p-4 shadow-lg
-              focus-visible:outline-2 focus-visible:outline-ring">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="break-all font-mono font-semibold">{receipt.voucher}</span>
-              <span className="max-w-full break-words rounded-full bg-secondary px-2 py-1
-                text-xs font-medium text-secondary-foreground">
-                {etiquetaServicio(receipt)}
-              </span>
-            </div>
-            <p className="mt-1.5 truncate text-sm font-medium" title={receipt.passenger}>
-              {receipt.passenger}
-            </p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              {fechaCorta(receipt.date)} · {receipt.time} hrs · {receipt.pax} pax
-            </p>
-            <p className="mt-1 truncate text-xs text-muted-foreground"
-              title={`${receipt.pickup} → ${receipt.dropoff}`}>
-              {receipt.pickup} → {receipt.dropoff}
-            </p>
-            <p className="mt-2.5 text-sm font-medium">
-              {pending > 0 ? `Saldo: ${formatMoney(pending, receipt.currency)}` : 'Pagado completo'}
-            </p>
-            <div className="mt-3 flex flex-wrap gap-2 border-t border-border pt-3">
-              <button type="button" onClick={() => shareReceiptPdf(receipt, companyInfo, user)}
-                className="min-h-11 flex-1 rounded-lg bg-primary px-3 text-sm
-                  text-primary-foreground
-                  focus-visible:outline-2 focus-visible:outline-ring">Enviar</button>
-              {onEdit && <button type="button" className={ACCION}
-                onClick={() => onEdit(receipt)}>Editar</button>}
-              {onDuplicate && <button type="button" className={ACCION}
-                onClick={() => onDuplicate(receipt)}>Duplicar</button>}
-              <button type="button" className={ACCION}
-                onClick={() => downloadReceiptPdf(receipt, companyInfo, user)}>
-                Descargar PDF
-              </button>
-              <button type="button" className={`${ACCION} text-destructive`}
-                onClick={() => {
-                  if (confirm('¿Eliminar este comprobante?')) onDelete(receipt.id)
-                }}>Eliminar</button>
-            </div>
-          </article>
-        )
-      })}
     </div>
   )
 }

@@ -53,9 +53,17 @@ export default function ReservationList({
 }: Props) {
   if (!reservations.length) {
     return (
-      <div className="flex flex-col items-center py-12 text-center text-muted-foreground">
-        <p className="font-medium">Aún no hay reservas</p>
-        <p className="mt-1 text-sm">Crea la primera en el formulario.</p>
+      <div className="py-12 flex flex-col items-center text-center">
+        <svg className="w-10 h-10 text-gray-300 mb-3" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" strokeWidth="1.5">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d={'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5'
+              + 'a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2'} />
+        </svg>
+        <p className="text-gray-500 font-medium">Aún no hay reservas</p>
+        <p className="text-sm text-gray-400 mt-1">
+          Crea la primera en el formulario de la izquierda.
+        </p>
       </div>
     )
   }
@@ -85,10 +93,13 @@ export default function ReservationList({
                   if (confirm('¿Estás seguro de que deseas eliminar esta reserva?')) {
                     onDelete(order.id)
                   }
-                }}><IconoOrden tipo="eliminar" /></button>
+                }}>
+                <IconoOrden tipo="eliminar" />
+              </button>
             </div>
           </div>
-          <div className="mt-3 grid grid-cols-1 gap-2 text-sm text-muted-foreground sm:grid-cols-3">
+          <div className="mt-3 grid grid-cols-1 gap-2 text-sm text-muted-foreground
+            sm:grid-cols-3">
             <div className="flex min-w-0 items-center gap-2">
               <IconoOrden tipo="fecha" /><span className="break-words">{order.date}</span>
             </div>

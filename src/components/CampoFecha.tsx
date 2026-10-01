@@ -53,11 +53,12 @@ function esMismoDia(a: Date, anio: number, mes: number, dia: number): boolean {
   return a.getFullYear() === anio && a.getMonth() === mes && a.getDate() === dia
 }
 
-export default function CampoFecha({ valor, onCambiar, error, id }: {
+export default function CampoFecha({ valor, onCambiar, error, id, minimo }: {
   valor: string
   onCambiar: (v: string) => void
   error?: string
   id?: string
+  minimo?: string
 }): ReactElement {
   const hoy = new Date()
   const seleccion = parsearISO(valor)
@@ -70,9 +71,10 @@ export default function CampoFecha({ valor, onCambiar, error, id }: {
   // Al abrir, muestra el mes de la fecha seleccionada (o el actual si no hay).
   useEffect(() => {
     if (!abierto) return
-    const s = parsearISO(valor)
-    setAnioVista(s ? s.anio : hoy.getFullYear())
-    setMesVista(s ? s.mes : hoy.getMonth())
+    const s = parsearISO(valor) || { anio: hoy.getFullYear(), mes: hoy.getMonth() }
+    const m = minimo && parsearISO(minimo)
+    const f = m && s.anio * 12 + s.mes < m.anio * 12 + m.mes ? m : s
+    setAnioVista(f.anio); setMesVista(f.mes)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [abierto])
 
@@ -186,15 +188,17 @@ export default function CampoFecha({ valor, onCambiar, error, id }: {
               const esSeleccionado = seleccion
                 ? esMismoDia(fecha, seleccion.anio, seleccion.mes, seleccion.dia)
                 : false
+              const deshabilitado = Boolean(minimo && formatearISO(fecha.getFullYear(), fecha.getMonth(), fecha.getDate()) < minimo)
               return (
                 <button
                   key={i}
                   type="button"
                   onClick={() => elegirDia(fecha)}
+                  disabled={deshabilitado}
                   className={`flex h-10 w-10 items-center justify-center rounded-lg text-sm transition-colors ${
                     esSeleccionado
                       ? 'bg-indigo-600 text-white font-medium'
-                      : enMesActual
+                      : enMesActual && !deshabilitado
                         ? 'text-gray-900 hover:bg-gray-100'
                         : 'text-gray-400 hover:bg-gray-100'
                   } ${esHoy && !esSeleccionado ? 'border border-indigo-600' : ''}`}

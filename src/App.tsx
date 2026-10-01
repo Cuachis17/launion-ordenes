@@ -40,7 +40,7 @@ export default function App() {
   }
   return (
     <div
-        className="min-h-screen bg-gradient-to-br from-background to-muted">
+        className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header
         count={activa === 'ordenes' ? reservations.length
           : activa === 'comprobantes' ? receipts.length : 0}

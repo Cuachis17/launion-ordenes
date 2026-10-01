@@ -27,15 +27,15 @@ export default function EditReceiptModal({ receipt, onClose, onSave }: {
     if (next) onSave(next)
   }
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/40 p-4"
-      >
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/40 p-4">
       <button type="button" aria-label="Cerrar comprobante" onClick={onClose}
         className="absolute inset-0" />
       <form ref={contenedor} onSubmit={save} role="dialog" aria-modal="true"
         aria-labelledby="editar-comprobante-titulo"
         className="relative w-full max-w-2xl overflow-hidden rounded-xl bg-card shadow-2xl">
         <div className="flex items-center justify-between border-b border-border p-4">
-          <h3 id="editar-comprobante-titulo" className="text-lg font-semibold text-card-foreground">
+          <h3 id="editar-comprobante-titulo"
+            className="text-lg font-semibold text-card-foreground">
             {isDuplicate ? 'Duplicar comprobante' : 'Editar comprobante'}
           </h3>
           <button type="button" onClick={onClose} aria-label="Cerrar"
@@ -45,13 +45,21 @@ export default function EditReceiptModal({ receipt, onClose, onSave }: {
         <div className="max-h-[70vh] overflow-y-auto p-4">
           <CamposComprobante {...formulario} />
         </div>
-        <div className="flex justify-end gap-3 border-t border-border p-4">
-          <button type="button" onClick={onClose}
-            className="min-h-11 rounded-lg border border-border px-4 text-foreground
-              focus-visible:outline-2 focus-visible:outline-ring">Cancelar</button>
-          <button type="submit"
-            className="min-h-11 rounded-lg bg-primary px-4 text-primary-foreground
-              focus-visible:outline-2 focus-visible:outline-ring">Guardar</button>
+        <div className="border-t border-border p-4">
+          <div className="flex flex-col sm:flex-row gap-3 justify-end">
+            <button type="button" onClick={onClose}
+              className="w-full sm:w-auto min-h-11 rounded-lg border border-border px-4
+                text-foreground focus-visible:outline-2 focus-visible:outline-ring
+                hover:bg-accent">
+              Cancelar
+            </button>
+            <button type="submit"
+              className="w-full sm:w-auto min-h-11 rounded-lg bg-primary px-4
+                text-primary-foreground focus-visible:outline-2 focus-visible:outline-ring
+                hover:bg-primary/90">
+              Guardar
+            </button>
+          </div>
         </div>
       </form>
     </div>

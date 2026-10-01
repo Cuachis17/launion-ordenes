@@ -1,4 +1,11 @@
 // Conversión de fechas de órdenes históricas entre su presentación y el input ISO.
+export function fechaISO(fecha: Date): string {
+  const anio = fecha.getFullYear()
+  const mes = String(fecha.getMonth() + 1).padStart(2, '0')
+  const dia = String(fecha.getDate()).padStart(2, '0')
+  return `${anio}-${mes}-${dia}`
+}
+
 // Helper para mostrar fecha en formato 'DD - nombre de mes - YYYY'
 export function formatDateDisplay(iso?: string) {
     if (!iso) return ''
@@ -48,3 +55,22 @@ export function parseToIso(s?: string) {
     }
     return ''
   }
+
+export function roundToNextQuarter(date = new Date()) {
+  const minutes = date.getMinutes()
+  const remainder = 15 - (minutes % 15)
+  if (remainder === 15) {
+    date.setSeconds(0, 0)
+    return date
+  }
+  date.setMinutes(minutes + remainder)
+  date.setSeconds(0, 0)
+  return date
+}
+
+export function defaultTimeString() {
+  const d = roundToNextQuarter()
+  const hh = d.getHours().toString().padStart(2, '0')
+  const mm = d.getMinutes().toString().padStart(2, '0')
+  return `${hh}:${mm}`
+}

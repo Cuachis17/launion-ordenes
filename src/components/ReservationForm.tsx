@@ -1,86 +1,191 @@
-// Captura de órdenes sin sesión; reutiliza el selector compartido y preserva fechas locales.
-import { useState } from 'react'
-import type { FormEvent } from 'react'
+// Formulario de creación de reservas con CampoFecha y CampoHora compartidos.
+import React, { useState } from 'react'
 import type { Order } from '../types'
-import CampoFormulario from './CampoFormulario'
+import { fechaISO, formatDateDisplay, defaultTimeString } from '../utils/fechaOrden'
+import CampoFecha from './CampoFecha'
 import CampoHora from './CampoHora'
 import SelectorServicio from './SelectorServicio'
 
-function horaInicial() {
-  const now = new Date()
-  now.setMinutes(Math.ceil(now.getMinutes() / 15) * 15)
-  return `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
-}
-function fechaVisible(iso: string) {
-  const fecha = new Date(`${iso}T00:00:00`)
-  const dia = String(fecha.getDate()).padStart(2, '0')
-  const mes = fecha.toLocaleString('es-ES', { month: 'long' })
-  return `${dia} - ${mes} - ${fecha.getFullYear()}`
-}
-function vacia(): Order {
-  return {
-    id: '', agency: '', provider: '', service: 'Llegada',
-    date: new Date().toISOString().slice(0, 10), time: horaInicial(), hotel: '',
-    passengers: 1, room: '', flight: '', notes: '', generatedAt: '',
-  }
-}
+export default function ReservationForm({ onSubmit }: { onSubmit: (o: Order) => void }) {
+  const todayIso = fechaISO(new Date())
 
-export default function ReservationForm({ onSubmit }: { onSubmit: (order: Order) => void }) {
-  const [form, setForm] = useState(vacia)
-  function update<K extends keyof Order>(key: K, value: Order[K]) {
-    setForm((previous) => ({ ...previous, [key]: value }))
+  const [agency, setAgency] = useState('')
+  const [provider, setProvider] = useState('')
+  const [service, setService] = useState('Llegada')
+  const [date, setDate] = useState(() => todayIso)
+  const [time, setTime] = useState(() => defaultTimeString())
+  const [hotel, setHotel] = useState('')
+  const [passengers, setPassengers] = useState(1)
+  const [room, setRoom] = useState('')
+  const [flight, setFlight] = useState('')
+  const [notes, setNotes] = useState('')
+
+  function generateId() {
+    return Math.random().toString(36).slice(2, 10)
   }
-  function submit(event: FormEvent) {
-    event.preventDefault()
-    onSubmit({
-      ...form,
-      id: Math.random().toString(36).slice(2, 10),
-      service: form.service.trim() || 'Otro',
-      date: fechaVisible(form.date),
-      passengers: Number(form.passengers) || 0,
+
+  function submit(e?: React.FormEvent) {
+    e?.preventDefault()
+    const order: Order = {
+      id: generateId(),
+      agency,
+      provider,
+      service: service.trim() || 'Otro',
+      date: formatDateDisplay(date),
+      time,
+      hotel,
+      passengers: Number(passengers) || 0,
+      room,
+      flight,
+      notes,
       generatedAt: new Date().toLocaleString('es-ES', { dateStyle: 'long' }),
-    })
-    // Conserva la selección de servicio, como el formulario previo, al emitir varias órdenes.
-    setForm({ ...vacia(), service: form.service })
+    }
+    onSubmit(order)
+
+    // Resetear manteniendo defaults
+    setAgency('')
+    setProvider('')
+    setHotel('')
+    setRoom('')
+    setFlight('')
+    setPassengers(1)
+    setNotes('')
+    setTime(defaultTimeString())
+    setDate(todayIso)
   }
+
   return (
-    <form onSubmit={submit} className="space-y-4 text-foreground">
-      <CampoFormulario label="Título de Reserva" value={form.agency}
-        placeholder="Ej: Reserva Receptiva" onChange={(value) => update('agency', value)} />
-      <CampoFormulario label="Proveedor (quien hace el servicio)" value={form.provider ?? ''}
-        placeholder="Ej: Transportes XYZ" onChange={(value) => update('provider', value)} />
-      <SelectorServicio value={form.service} onChange={(value) => update('service', value)} />
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <CampoFormulario label="Fecha" type="date" value={form.date} required
-          min={new Date().toISOString().slice(0, 10)}
-          onChange={(value) => update('date', value)} />
+    <form onSubmit={submit} className="space-y-4 text-gray-900">
+      <div>
+        <label htmlFor="orden-agency" className="block text-sm font-medium text-gray-700">
+          Título de Reserva
+        </label>
+        <input
+          id="orden-agency"
+          value={agency}
+          onChange={(e) => setAgency(e.target.value)}
+          className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+          placeholder="Ej: Reserva Receptiva"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="orden-provider" className="block text-sm font-medium text-gray-700">
+          Proveedor (quien hace el servicio)
+        </label>
+        <input
+          id="orden-provider"
+          value={provider}
+          onChange={(e) => setProvider(e.target.value)}
+          className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+          placeholder="Ej: Transportes XYZ"
+        />
+      </div>
+
+      <SelectorServicio value={service} onChange={setService} />
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="min-w-0">
-          <label htmlFor="orden-hora" className="text-sm font-medium">Hora</label>
-          <CampoHora id="orden-hora" valor={form.time}
-            onCambiar={(value) => update('time', value)} />
+          <label htmlFor="orden-fecha" className="block text-sm font-medium text-gray-700">
+            Fecha
+          </label>
+          <CampoFecha
+            id="orden-fecha"
+            valor={date}
+            onCambiar={setDate}
+            minimo={todayIso}
+          />
+          <p id="date-help" className="mt-1 text-sm text-gray-500">
+            Selecciona fecha (no se permiten fechas pasadas).
+          </p>
+        </div>
+        <div className="min-w-0">
+          <label htmlFor="orden-hora" className="block text-sm font-medium text-gray-700">
+            Hora
+          </label>
+          <CampoHora
+            id="orden-hora"
+            valor={time}
+            onCambiar={setTime}
+          />
         </div>
       </div>
-      <CampoFormulario label="Hotel" value={form.hotel} placeholder="Ej: Hotel Paradisus"
-        onChange={(value) => update('hotel', value)} />
-      <div className="grid grid-cols-2 gap-3">
-        <CampoFormulario label="Pasajeros" type="number" min={0} value={form.passengers}
-          onChange={(value) => update('passengers', Number(value))} />
-        <CampoFormulario label="Habitación" value={form.room} placeholder="Ej: 301"
-          onChange={(value) => update('room', value)} />
+
+      <div>
+        <label htmlFor="orden-hotel" className="block text-sm font-medium text-gray-700">
+          Hotel
+        </label>
+        <input
+          id="orden-hotel"
+          value={hotel}
+          onChange={(e) => setHotel(e.target.value)}
+          className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+          placeholder="Ej: Hotel Paradisus"
+        />
       </div>
-      <CampoFormulario label="Número de Vuelo" value={form.flight} placeholder="Ej: AA1234"
-        onChange={(value) => update('flight', value)} />
-      <label className="block text-sm font-medium">
-        Notas
-        <textarea value={form.notes ?? ''} placeholder="Notas importantes..."
-          onChange={(event) => update('notes', event.target.value)}
-          className="mt-1 w-full rounded-lg border border-border bg-input-background px-3 py-2
-            focus-visible:outline-2 focus-visible:outline-ring" />
-      </label>
+
+      <div className="grid grid-cols-2 gap-3">
+        <div>
+          <label htmlFor="orden-passengers" className="block text-sm font-medium text-gray-700">
+            Pasajeros
+          </label>
+          <input
+            id="orden-passengers"
+            type="number"
+            min={0}
+            value={passengers}
+            onChange={(e) => setPassengers(Number(e.target.value))}
+            className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+          />
+        </div>
+        <div>
+          <label htmlFor="orden-room" className="block text-sm font-medium text-gray-700">
+            Habitación
+          </label>
+          <input
+            id="orden-room"
+            value={room}
+            onChange={(e) => setRoom(e.target.value)}
+            className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+            placeholder="Ej: 301"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="orden-flight" className="block text-sm font-medium text-gray-700">
+          Número de Vuelo
+        </label>
+        <input
+          id="orden-flight"
+          value={flight}
+          onChange={(e) => setFlight(e.target.value)}
+          className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+          placeholder="Ej: AA1234"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="orden-notes" className="block text-sm font-medium text-gray-700">
+          Notas
+        </label>
+        <textarea
+          id="orden-notes"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          className="mt-1 block w-full rounded-lg border-gray-200 shadow-sm"
+          placeholder="Notas importantes..."
+        />
+      </div>
+
       <div className="flex justify-end">
-        <button type="submit"
-          className="min-h-11 rounded-lg bg-primary px-4 py-2 text-primary-foreground
-            focus-visible:outline-2 focus-visible:outline-ring">Crear Reserva</button>
+        <button
+          type="submit"
+          className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg
+            hover:bg-indigo-700"
+        >
+          Crear Reserva
+        </button>
       </div>
     </form>
   )
